@@ -1,10 +1,11 @@
 import React, { Component } from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
-import "./Footer.scss"
+import "./Header.scss"
+import config from "../../../data/SiteConfig"
 
-// const FooterLinks = ({ data }) => (
-//   <Footer>
+// const HeaderLinks = ({ data }) => (
+//   <header>
 //     <nav>
 //       {data.allMarkdownRemark.edges.map(link => {
 //         console.log(link.node.frontmatter.title);
@@ -13,16 +14,16 @@ import "./Footer.scss"
 //         </Link>
 //       })}
 //     </nav>
-//   </Footer>
+//   </header>
 // )
 
 export default () => (
   <StaticQuery
     query={graphql`
-      query FooterMenuQuery { 
+      query HeaderMenuQuery { 
         allMarkdownRemark(
           sort: {fields: [fields___sort], order: ASC}, 
-          filter: {fields: { isActive: { eq: true} , onFooterMenu: {eq: true}}}
+          filter: {fields: { isActive: { eq: true} , onHeaderMenu: {eq: true}}}
         ) {
           edges {
             node {
@@ -38,20 +39,23 @@ export default () => (
       }
     `}
     render={data => (
-      <footer>
+      <header>
         <nav>
+          <Link to={`/`}>
+            {config.siteTitleShort}
+          </Link>
           {data.allMarkdownRemark.edges.map((link, i) => 
             <Link to={link.node.fields.slug} key={i}>
               {link.node.frontmatter.title}
             </Link>
           )}
         </nav>
-      </footer>
+      </header>
     )}
   />
 )
 
-// Footer.propTypes = {
+// Header.propTypes = {
 //   data: PropTypes.shape({
 //     allMarkdownRemark: PropTypes.shape({
 //       edges: PropTypes.shape({

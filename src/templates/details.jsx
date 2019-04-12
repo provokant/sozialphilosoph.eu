@@ -8,23 +8,26 @@ import config from "../../data/SiteConfig"
 export default class DetailsTemplate extends React.Component {
   render() {
     const { slug } = this.props.pageContext
-    const postNode = this.props.data.markdownRemark
+    const { data } = this.props
+    const postNode = data.markdownRemark
     const post = postNode.frontmatter
     if (!post.id) {
       post.id = slug
     }
     return (
       <Layout>
-        <div>
-          <Helmet>
-            <title>{`${post.title} | ${config.siteTitle}`}</title>
-          </Helmet>
-          <SEO postPath={slug} postNode={postNode} postSEO />
-          <div>
+        <Helmet>
+          <title>{`${post.title} | ${config.siteTitle}`}</title>
+        </Helmet>
+        <SEO postPath={slug} postNode={postNode} postSEO />
+        <article>
+          <header>
             <h1>{post.title}</h1>
+          </header>
+          <section>
             <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
-          </div>
-        </div>
+          </section>
+        </article>
       </Layout>
     )
   }

@@ -116,6 +116,7 @@ exports.createPages = ({ graphql, actions }) => {
                   fields {
                     slug
                     isIndex
+                    hasChildren
                   }
                 }
               }
@@ -130,7 +131,10 @@ exports.createPages = ({ graphql, actions }) => {
         }
         result.data.allMarkdownRemark.edges.forEach(edge => {
 
-          if (edge.node.fields.isIndex) {
+          // const { node } = edge
+          // const { fields } = node
+
+          if (edge.node.fields.isIndex && edge.node.fields.hasChildren) {
             createPage({
               path: edge.node.fields.slug,
               component: overviewPage,

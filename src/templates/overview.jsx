@@ -19,18 +19,16 @@ export default class OverviewTemplate extends React.Component {
 
     return (
       <Layout>
-        <div>
-          <Helmet>
-            {/* <title>{`${post.title} | ${config.siteTitle}`}</title> */}
-          </Helmet>
+        <Helmet>
+          {/* <title>{`${post.title} | ${config.siteTitle}`}</title> */}
+        </Helmet>
 
-          <PostListing postEdges={postEdges} />
+        <PostListing postEdges={postEdges} />
 
-          {/* <div>
-            <h1>{post.title}</h1>
-            <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
-          </div> */}
-        </div>
+        {/* <div>
+          <h1>{post.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+        </div> */}
       </Layout>
     )
   }
