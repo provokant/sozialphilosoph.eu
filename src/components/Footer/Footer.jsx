@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import "./Footer.scss"
+import config from "../../../data/SiteConfig"
 
 // const FooterLinks = ({ data }) => (
 //   <Footer>
@@ -38,13 +39,16 @@ export default () => (
       }
     `}
     render={data => (
-      <footer>
-        <nav>
-          {data.allMarkdownRemark.edges.map((link, i) => 
-            <Link to={link.node.fields.slug} key={i}>
-              {link.node.frontmatter.title}
-            </Link>
-          )}
+      <footer className="bg-grey-darker">
+        <nav className="container flex justify-end mx-auto mt-20 py-10">
+          <p className="text-white self-start mr-7">{config.siteDescription}</p>
+          <div className="self-stretch">
+            {data.allMarkdownRemark.edges.map((link, i) => (
+              <Link to={link.node.fields.slug} key={i} className="text-white py-6">
+                {link.node.frontmatter.title}
+              </Link>
+))}
+          </div>
         </nav>
       </footer>
     )}

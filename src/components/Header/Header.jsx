@@ -1,6 +1,6 @@
-import React, { Component } from "react"
+import React from "react"
 import { Link, StaticQuery, graphql } from "gatsby"
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import "./Header.scss"
 import config from "../../../data/SiteConfig"
 
@@ -39,16 +39,16 @@ export default () => (
       }
     `}
     render={data => (
-      <header>
-        <nav>
-          <Link to={`/`}>
+      <header className="bg-grey-lighter mb-8">
+        <nav className="container mx-auto flex">
+          <Link to="/" className="py-10 text-lg">
             {config.siteTitleShort}
           </Link>
-          {data.allMarkdownRemark.edges.map((link, i) => 
-            <Link to={link.node.fields.slug} key={i}>
+          {data.allMarkdownRemark.edges.map((link, i) => (
+            <Link to={link.node.fields.slug} key={i} className="py-10 pl-8 text-lg">
               {link.node.frontmatter.title}
             </Link>
-          )}
+))}
         </nav>
       </header>
     )}

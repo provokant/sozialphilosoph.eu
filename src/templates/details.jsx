@@ -16,11 +16,9 @@ export default class DetailsTemplate extends React.Component {
     }
     return (
       <Layout>
-        <Helmet>
-          <title>{`${post.title} | ${config.siteTitle}`}</title>
-        </Helmet>
+        <Helmet title={`${post.title} | ${config.siteTitle}`} />
         <SEO postPath={slug} postNode={postNode} postSEO />
-        <article>
+        <article className="container mx-auto">
           <header>
             <h1>{post.title}</h1>
           </header>

@@ -8,13 +8,13 @@ import config from "../../data/SiteConfig"
 
 class Index extends React.Component {
   render() {
-    const postEdges = this.props.data.allMarkdownRemark.edges
+    const { edges } = this.props.data.allMarkdownRemark
 
     return (
       <Layout>
         <Helmet title={config.siteTitle} />
         <SEO />
-        <PostListing postEdges={postEdges} />
+        <PostListing postEdges={edges} />
       </Layout>
     )
   }

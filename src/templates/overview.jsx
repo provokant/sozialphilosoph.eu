@@ -2,20 +2,11 @@ import React from "react"
 import Helmet from "react-helmet"
 import { graphql } from "gatsby"
 import Layout from "../layout"
-import SEO from "../components/SEO/SEO"
 import PostListing from "../components/PostListing/PostListing"
-import config from "../../data/SiteConfig"
 
 export default class OverviewTemplate extends React.Component {
   render() {
-    const { slug } = this.props.pageContext
-    const postEdges = this.props.data.allMarkdownRemark.edges
-    // const postNode = this.props.data.markdownRemark
-    // const post = postNode.frontmatter
-    // if (!post.id) {
-    //   post.id = slug
-    // }
-    console.log(this.props)
+    const { edges } = this.props.data.allMarkdownRemark
 
     return (
       <Layout>
@@ -23,12 +14,7 @@ export default class OverviewTemplate extends React.Component {
           {/* <title>{`${post.title} | ${config.siteTitle}`}</title> */}
         </Helmet>
 
-        <PostListing postEdges={postEdges} />
-
-        {/* <div>
-          <h1>{post.title}</h1>
-          <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
-        </div> */}
+        <PostListing postEdges={edges} />
       </Layout>
     )
   }
@@ -63,5 +49,4 @@ export const pageQuery = graphql`
       }
     }
   }
-
 `

@@ -1,7 +1,5 @@
 const path = require("path")
 const _ = require("lodash")
-const moment = require("moment")
-const siteConfig = require("./data/SiteConfig")
 
 const postNodes = []
 
@@ -19,6 +17,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   if (node.internal.type === "MarkdownRemark") {
     const fileNode = getNode(node.parent)
     const parsedFilePath = path.parse(fileNode.relativePath)
+    const { frontmatter } = node
 
     if (parsedFilePath.name !== "index" && parsedFilePath.dir !== "") {
       slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`
@@ -30,40 +29,40 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       onLandingPage = true
     }
 
-    if (Object.prototype.hasOwnProperty.call(node.frontmatter, "hasChildren")) {
-      hasChildren = node.frontmatter.hasChildren
+    if (Object.prototype.hasOwnProperty.call(frontmatter, "hasChildren")) {
+      ({ hasChildren } = frontmatter)
     } else {
       hasChildren = true
     }
 
     if (Object.prototype.hasOwnProperty.call(node, "frontmatter")) {
-      if (Object.prototype.hasOwnProperty.call(node.frontmatter, "slug"))
-        slug = `/${_.kebabCase(node.frontmatter.slug)}`
+      if (Object.prototype.hasOwnProperty.call(frontmatter, "slug"))
+        slug = `/${_.kebabCase(frontmatter.slug)}`
 
-      if (Object.prototype.hasOwnProperty.call(node.frontmatter, "isActive")) {
-        isActive = node.frontmatter.isActive
+      if (Object.prototype.hasOwnProperty.call(frontmatter, "isActive")) {
+        ({ isActive } = frontmatter)
       } else {
         isActive = true
       }
 
-      if (Object.prototype.hasOwnProperty.call(node.frontmatter, "onLandingPage")) {
-        onLandingPage = node.frontmatter.onLandingPage
+      if (Object.prototype.hasOwnProperty.call(frontmatter, "onLandingPage")) {
+        ({ onLandingPage } = frontmatter)
       }
 
-      if (Object.prototype.hasOwnProperty.call(node.frontmatter, "onHeaderMenu")) {
-        onHeaderMenu = node.frontmatter.onHeaderMenu
+      if (Object.prototype.hasOwnProperty.call(frontmatter, "onHeaderMenu")) {
+        ({ onHeaderMenu } = frontmatter)
       } else {
         onHeaderMenu = false
       }
 
-      if (Object.prototype.hasOwnProperty.call(node.frontmatter, "onFooterMenu")) {
-        onFooterMenu = node.frontmatter.onFooterMenu
+      if (Object.prototype.hasOwnProperty.call(frontmatter, "onFooterMenu")) {
+        ({ onFooterMenu } = frontmatter)
       } else {
         onFooterMenu = false
       }
       
-      if (Object.prototype.hasOwnProperty.call(node.frontmatter, "sort")) {
-        sort = node.frontmatter.sort
+      if (Object.prototype.hasOwnProperty.call(frontmatter, "sort")) {
+        ({ sort } = frontmatter)
       } else {
         sort = 10000
       }
@@ -81,13 +80,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
-exports.setFieldsOnGraphQLNodeType = ({ type, actions }) => {
-  const { name } = type
-  const { createNodeField } = actions
-  if (name === "MarkdownRemark") {
-    // addSiblingNodes(createNodeField)
-  }
-}
+// exports.setFieldsOnGraphQLNodeType = ({ type, actions }) => {
+//   const { name } = type
+//   const { createNodeField } = actions
+//   if (name === "MarkdownRemark") {
+//     addSiblingNodes(createNodeField)
+//   }
+// }
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -131,27 +130,27 @@ exports.createPages = ({ graphql, actions }) => {
         }
         result.data.allMarkdownRemark.edges.forEach(edge => {
 
-          // const { node } = edge
-          // const { fields } = node
+          const { excerpt } = edge.node.frontmatter
+          const { slug, sort, title, isIndex, hasChildren } = edge.node.fields
 
-          if (edge.node.fields.isIndex && edge.node.fields.hasChildren) {
+          if (isIndex && hasChildren) {
             createPage({
-              path: edge.node.fields.slug,
+              path: slug,
               component: overviewPage,
               context: {
-                excerpt: edge.node.frontmatter.excerpt,
-                slug: edge.node.fields.slug,
-                sort: edge.node.fields.sort,
-                title: edge.node.fields.title
+                excerpt,
+                slug,
+                sort,
+                title
               }
             })
           } else {
             createPage({
-              path: edge.node.fields.slug,
+              path: slug,
               component: detailsPage,
               context: {
-                slug: edge.node.fields.slug,
-                title: edge.node.fields.title
+                slug,
+                title
               }
             })
           }

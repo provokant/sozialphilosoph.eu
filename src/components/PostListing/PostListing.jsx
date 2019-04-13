@@ -22,11 +22,10 @@ class PostListing extends React.Component {
     return (
       <>
         {this.postList.map((post, i) => (
-          <section className={`post-listing`} key={i}>
-            <Link to={post.path} key={post.title}>
-              <h2>{post.title}</h2>
-              <p>{post.excerpt}</p>
-              <pre>{post.hasChildren}</pre>
+          <section className="container mx-auto" key={i}>
+            <Link to={post.path} key={post.title} className={`mb-6 py-20 flex hover:opacity-75 ${  i % 2 === 0 ? `flex-row-reverse` : ``}`}>
+              <h2 className={i % 2 === 0 && `ml-10`}>{post.title}</h2>
+              <p className={i % 2 !== 0 && `ml-10`}>{post.excerpt}</p>
             </Link>
           </section>
         ))}
