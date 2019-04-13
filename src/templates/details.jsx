@@ -1,29 +1,29 @@
-import React from "react"
-import Helmet from "react-helmet"
-import { graphql } from "gatsby"
-import Layout from "../layout"
-import SEO from "../components/SEO/SEO"
-import config from "../../data/SiteConfig"
+import React from 'react'
+import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
+import PropTypes from 'prop-types'
+import Layout from '../layout'
+import SEO from '../components/SEO/SEO'
+import { siteTitle } from '../../data/SiteConfig'
 
 export default class DetailsTemplate extends React.Component {
   render() {
-    const { slug } = this.props.pageContext
-    const { data } = this.props
-    const postNode = data.markdownRemark
-    const post = postNode.frontmatter
-    if (!post.id) {
-      post.id = slug
-    }
+    const { pageContext, data } = this.props
+    const { slug } = pageContext
+    const { markdownRemark } = data
+    const { html } = markdownRemark
+    const { title } = markdownRemark.frontmatter
+
     return (
       <Layout>
-        <Helmet title={`${post.title} | ${config.siteTitle}`} />
-        <SEO postPath={slug} postNode={postNode} postSEO />
+        <Helmet title={`${title} | ${siteTitle}`} />
+        <SEO postPath={slug} postNode={markdownRemark} postSEO />
         <article className="container mx-auto">
           <header>
-            <h1>{post.title}</h1>
+            <h1>{title}</h1>
           </header>
           <section>
-            <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+            <div dangerouslySetInnerHTML={{ __html: html }} />
           </section>
         </article>
       </Layout>
@@ -43,3 +43,14 @@ export const pageQuery = graphql`
     }
   }
 `
+
+DetailsTemplate.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.object.isRequired
+    }).isRequired,
+  }).isRequired,
+  pageContext: PropTypes.shape({
+    slug: PropTypes.string.isRequired
+  }).isRequired
+}

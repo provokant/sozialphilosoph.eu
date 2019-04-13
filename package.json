@@ -24,6 +24,7 @@
     "gatsby-transformer-sharp": "2.1.10",
     "lodash": "^4.17.4",
     "moment": "^2.23.0",
+    "prop-types": "^15.7.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0",
@@ -38,6 +39,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.4",
+    "gatsby-plugin-sass": "^2.0.11",
     "gh-pages": "^2.0.1",
     "prettier": "^1.16.0",
     "remark-cli": "^6.0.1",
@@ -51,8 +53,6 @@
   "keywords": [
     "gatsby",
     "berlin",
-    "tempelhof",
-    "NGO",
     "portfolio",
     "nextlevelshit"
   ],

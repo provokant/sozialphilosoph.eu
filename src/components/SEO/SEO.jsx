@@ -1,7 +1,8 @@
-import React, { Component } from "react"
-import Helmet from "react-helmet"
-import urljoin from "url-join"
-import config from "../../../data/SiteConfig"
+import React, { Component } from 'react'
+import Helmet from 'react-helmet'
+import urljoin from 'url-join'
+import PropTypes from 'prop-types'
+import config from '../../../data/SiteConfig'
 
 class SEO extends Component {
   render() {
@@ -12,15 +13,11 @@ class SEO extends Component {
     let postURL
     if (postSEO) {
       const postMeta = postNode.frontmatter
-      title = postMeta.title
-        ? postMeta.title
-        : config.siteTitle
+      title = postMeta.title ? postMeta.title : config.siteTitle
       description = postMeta.description
         ? postMeta.description
         : postNode.excerpt
-      image = postMeta.image
-        ? postMeta.image
-        : config.siteLogo
+      image = postMeta.image ? postMeta.image : config.siteLogo
       postURL = urljoin(config.siteUrl, config.pathPrefix, postPath)
     } else {
       title = config.siteTitle
@@ -32,42 +29,42 @@ class SEO extends Component {
     const blogURL = urljoin(config.siteUrl, config.pathPrefix)
     const schemaOrgJSONLD = [
       {
-        "@context": "http://schema.org",
-        "@type": "WebSite",
+        '@context': 'http://schema.org',
+        '@type': 'WebSite',
         url: blogURL,
         name: title,
-        alternateName: config.siteTitleAlt ? config.siteTitleAlt : ""
-      }
+        alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
+      },
     ]
     if (postSEO) {
       schemaOrgJSONLD.push(
         {
-          "@context": "http://schema.org",
-          "@type": "BreadcrumbList",
+          '@context': 'http://schema.org',
+          '@type': 'BreadcrumbList',
           itemListElement: [
             {
-              "@type": "ListItem",
+              '@type': 'ListItem',
               position: 1,
               item: {
-                "@id": postURL,
+                '@id': postURL,
                 name: title,
-                image
-              }
-            }
-          ]
+                image,
+              },
+            },
+          ],
         },
         {
-          "@context": "http://schema.org",
-          "@type": "BlogPosting",
+          '@context': 'http://schema.org',
+          '@type': 'BlogPosting',
           url: blogURL,
           name: title,
-          alternateName: config.siteTitleAlt ? config.siteTitleAlt : "",
+          alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
           headline: title,
           image: {
-            "@type": "ImageObject",
-            url: image
+            '@type': 'ImageObject',
+            url: image,
           },
-          description
+          description,
         }
       )
     }
@@ -91,6 +88,26 @@ class SEO extends Component {
       </Helmet>
     )
   }
+}
+
+SEO.propTypes = {
+  postNode: PropTypes.shape({
+    frontmatter: PropTypes.shape({
+      description: PropTypes.string,
+      title: PropTypes.string,
+      image: PropTypes.string,
+    }).isRequired,
+    feilds: PropTypes.shape({
+      title: PropTypes.string.isRequired,
+    }).isRequired,
+    excerpt: PropTypes.string.isRequired
+  }).isRequired,
+  postPath: PropTypes.string.isRequired,
+  postSEO: PropTypes.bool
+}
+
+SEO.getDefaultProps = {
+  postSEO: false
 }
 
 export default SEO
