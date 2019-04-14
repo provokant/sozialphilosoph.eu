@@ -28,7 +28,7 @@ export default Index
 Index.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.object.isRequired
+      edges: PropTypes.array.isRequired
     }).isRequired,
   }).isRequired
 }
@@ -45,9 +45,10 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 300)
           frontmatter {
             title
+            bgColor
           }
           fields {
             slug

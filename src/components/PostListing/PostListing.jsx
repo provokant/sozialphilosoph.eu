@@ -11,13 +11,14 @@ class PostListing extends React.Component {
     postEdges.forEach(postEdge => {
       const { node } = postEdge
       const { fields, frontmatter, excerpt } = node
-      const { image, title } = frontmatter
+      const { image, title, bgColor } = frontmatter
 
       postList.push({
         path: fields.slug,
         excerpt,
         image,
         title,
+        bgColor
       })
     })
     return postList
@@ -27,16 +28,23 @@ class PostListing extends React.Component {
     return (
       <>
         {this.postList.map((post, i) => (
-          <section className="container mx-auto" key={post.path}>
-            <Link
-              to={post.path}
-              className={`mb-6 py-20 flex hover:opacity-75 ${
-                i % 2 === 0 ? `flex-row-reverse` : ``
-              }`}
-            >
-              <h2 className={i % 2 === 0 && `ml-10`}>{post.title}</h2>
-              <p className={i % 2 !== 0 && `ml-10`}>{post.excerpt}</p>
-            </Link>
+          <section style={{backgroundColor: post.bgColor}} key={post.path}>
+            <div className="container mx-auto">
+              <Link
+                to={post.path}
+                className={`mb-6 py-20 flex hover:opacity-75 ${
+                  i % 2 === 0 ? `flex-row-reverse` : ` `
+                }`}
+              >
+                <div className="w-1/2">
+                  <h2 className="text-5xl tracking-tight w-2/3 mb-4">{post.title}</h2>
+                  <p className="text-xl leading-normal">{post.excerpt}</p>
+                </div>
+                <div className="w-1/2">
+                  {post.image && <img alt="" src={post.image} className="object-contain" />}
+                </div>
+              </Link>
+            </div>
           </section>
         ))}
       </>
@@ -45,17 +53,19 @@ class PostListing extends React.Component {
 }
 
 PostListing.propTypes = {
-  postEdges: PropTypes.shape({
-    node: PropTypes.shape({
-      frontmatter: PropTypes.shape({
-        title: PropTypes.string.isRequired,
+  postEdges: PropTypes.arrayOf(
+    PropTypes.shape({
+      node: PropTypes.shape({
+        frontmatter: PropTypes.shape({
+          title: PropTypes.string.isRequired,
+        }).isRequired,
+        fields: PropTypes.shape({
+          slug: PropTypes.string.isRequired,
+        }).isRequired,
+        excerpt: PropTypes.string.isRequired
       }).isRequired,
-      feilds: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-      }).isRequired,
-      excerpt: PropTypes.string.isRequired
-    }).isRequired,
-  }).isRequired,
+    })
+  ).isRequired,
 }
 
 export default PostListing

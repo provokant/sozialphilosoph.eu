@@ -36,6 +36,7 @@ export const pageQuery = graphql`
           excerpt
           frontmatter {
             title
+            bgColor
           }
           fields {
             slug
@@ -49,7 +50,7 @@ export const pageQuery = graphql`
 OverviewTemplate.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.object.isRequired
+      edges: PropTypes.array.isRequired
     }).isRequired,
   }).isRequired
 }

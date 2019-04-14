@@ -48,6 +48,11 @@ article > footer {
   */
  @tailwind components;
  
+a {
+  text-decoration: none;
+  @apply text-black;
+}
+
  /**
   * Here you would add any of your custom component classes; stuff that you'd
   * want loaded *before* the utilities so that the utilities could still

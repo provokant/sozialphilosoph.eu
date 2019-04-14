@@ -97,16 +97,15 @@ SEO.propTypes = {
       title: PropTypes.string,
       image: PropTypes.string,
     }).isRequired,
-    feilds: PropTypes.shape({
-      title: PropTypes.string.isRequired,
-    }).isRequired,
     excerpt: PropTypes.string.isRequired
-  }).isRequired,
-  postPath: PropTypes.string.isRequired,
+  }),
+  postPath: PropTypes.string,
   postSEO: PropTypes.bool
 }
 
 SEO.getDefaultProps = {
+  postNode: undefined,
+  postPath: ``,
   postSEO: false
 }
 

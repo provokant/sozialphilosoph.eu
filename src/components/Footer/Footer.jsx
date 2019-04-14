@@ -27,15 +27,15 @@ export default () => (
       }
     `}
     render={data => (
-      <footer className="bg-grey-darker">
-        <nav className="container flex justify-end mx-auto mt-20 py-10">
+      <footer className="bg-black">
+        <nav className="container flex justify-end mx-auto py-10">
           <p className="text-white self-start mr-7">{config.siteDescription}</p>
           <div className="self-stretch">
             {data.allMarkdownRemark.edges.map(link => (
               <Link
                 to={link.node.fields.slug}
                 key={link.node.fields.slug}
-                className="text-white py-6"
+                className="text-white py-6 ml-4"
               >
                 {link.node.frontmatter.title}
               </Link>

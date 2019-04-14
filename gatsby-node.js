@@ -30,7 +30,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     }
 
     if (Object.prototype.hasOwnProperty.call(frontmatter, 'hasChildren')) {
-      ;({ hasChildren } = frontmatter)
+      ({ hasChildren } = frontmatter)
     } else {
       hasChildren = true
     }
@@ -40,29 +40,29 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         slug = `/${_.kebabCase(frontmatter.slug)}`
 
       if (Object.prototype.hasOwnProperty.call(frontmatter, 'isActive')) {
-        ;({ isActive } = frontmatter)
+        ({ isActive } = frontmatter)
       } else {
         isActive = true
       }
 
       if (Object.prototype.hasOwnProperty.call(frontmatter, 'onLandingPage')) {
-        ;({ onLandingPage } = frontmatter)
+        ({ onLandingPage } = frontmatter)
       }
 
       if (Object.prototype.hasOwnProperty.call(frontmatter, 'onHeaderMenu')) {
-        ;({ onHeaderMenu } = frontmatter)
+        ({ onHeaderMenu } = frontmatter)
       } else {
         onHeaderMenu = false
       }
 
       if (Object.prototype.hasOwnProperty.call(frontmatter, 'onFooterMenu')) {
-        ;({ onFooterMenu } = frontmatter)
+        ({ onFooterMenu } = frontmatter)
       } else {
         onFooterMenu = false
       }
 
       if (Object.prototype.hasOwnProperty.call(frontmatter, 'sort')) {
-        ;({ sort } = frontmatter)
+        ({ sort } = frontmatter)
       } else {
         sort = 10000
       }
@@ -123,7 +123,7 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors)
         }
         result.data.allMarkdownRemark.edges.forEach(edge => {
-          const { excerpt } = edge.node.frontmatter
+          const { html } = edge.node
           const { slug, sort, title, isIndex, hasChildren } = edge.node.fields
 
           if (isIndex && hasChildren) {
@@ -131,7 +131,7 @@ exports.createPages = ({ graphql, actions }) => {
               path: slug,
               component: overviewPage,
               context: {
-                excerpt,
+                html,
                 slug,
                 sort,
                 title,
