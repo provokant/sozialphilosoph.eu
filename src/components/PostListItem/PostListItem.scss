@@ -1,0 +1,29 @@
+$min-height: 70vh;
+
+section {
+  position: sticky;
+  top: 0;
+  min-height: $min-height;
+  height: $min-height;
+
+  &.intro {
+    height: 100%;
+  }
+
+  .columns {
+    column-count: 2;
+
+    p {
+      text-align: justify;
+      hyphens: auto;
+      hyphenate-limit-chars: 6 3 3;
+      hyphenate-limit-lines: 2;   
+      hyphenate-limit-last: always;
+      hyphenate-limit-zone: 8%;
+    }
+  }
+}
+
+img {
+  mix-blend-mode: multiply;
+}

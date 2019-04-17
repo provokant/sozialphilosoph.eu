@@ -18,9 +18,9 @@ export default class DetailsTemplate extends React.Component {
       <Layout>
         <Helmet title={`${title} | ${siteTitle}`} />
         <SEO postPath={slug} postNode={markdownRemark} postSEO />
-        <article className="container mx-auto">
+        <article className="container mx-auto mb-6 py-20">
           <header>
-            <h1>{title}</h1>
+            <h1 className="text-5xl font-thin tracking-tight w-2/3 mb-4 uppercase">{title}</h1>
           </header>
           <section>
             <div dangerouslySetInnerHTML={{ __html: html }} />

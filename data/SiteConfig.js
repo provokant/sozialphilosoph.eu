@@ -1,6 +1,6 @@
 const config = {
   siteTitle: 'Praesto - GatsbyJS Starter', // Site title.
-  siteTitleShort: 'Praesto Starter', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitleShort: 'Praesto', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: 'GatsbyJS Starter', // Alternative site title for SEO.
   siteLogo: '/logos/logo-1024.png', // Logo used for SEO and manifest.
   siteUrl: 'https://localhost:8000', // Domain of your website without pathPrefix.

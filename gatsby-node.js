@@ -102,9 +102,12 @@ exports.createPages = ({ graphql, actions }) => {
             allMarkdownRemark(filter: { fields: { isActive: { eq: true } } }) {
               edges {
                 node {
+                  html
                   frontmatter {
                     sort
                     title
+                    image
+                    bgColor
                   }
                   fields {
                     slug
@@ -123,8 +126,9 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors)
         }
         result.data.allMarkdownRemark.edges.forEach(edge => {
-          const { html } = edge.node
-          const { slug, sort, title, isIndex, hasChildren } = edge.node.fields
+          const { html, frontmatter, fields } = edge.node
+          const { sort, title, bgColor, image } = frontmatter
+          const { slug, isIndex, hasChildren } = fields
 
           if (isIndex && hasChildren) {
             createPage({
@@ -135,6 +139,8 @@ exports.createPages = ({ graphql, actions }) => {
                 slug,
                 sort,
                 title,
+                image,
+                bgColor
               },
             })
           } else {

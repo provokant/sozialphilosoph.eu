@@ -1,30 +1,4 @@
-/* // * {
-//   box-sizing: border-box;
-// }
-
-// html {
-//   height: 100%;
-// }
-
-// body {
-//   margin: 0;
-//   padding: 20px;
-// } */
-
-/* nav,
-main > header > nav,
-main > footer > nav,
-main > section,
-article > header,
-article > section,
-article > footer {
-  display: grid;
-  max-width: 90rem;
-  margin: 0 auto;
-  grid-auto-flow: column;
-  justify-content: start;
-  grid-column-gap: 1rem;
-} */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed');
 
 /**
  * This injects Tailwind's base styles, which is a combination of
@@ -46,11 +20,19 @@ article > footer {
   *
   * @import "tailwindcss/components";
   */
- @tailwind components;
+@tailwind components;
+
+body { 
+  overflow-y: scroll;
+}
  
 a {
   text-decoration: none;
   @apply text-black;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
  /**

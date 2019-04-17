@@ -1,7 +1,17 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import config from '../../../data/SiteConfig'
-import './Header.css'
+import './Header.sass'
+
+const classNames = {
+  defaultLink: 'block mt-4 lg:inline-block lg:mt-0 text-grey-darkest hover:text-black py-3',
+  get link() {
+    return `${this.defaultLink} mr-6`
+  },
+  get brand() {
+    return `${this.defaultLink} lowercase font-bold tracking-wide text-black self-end`
+  },
+}
 
 export default () => (
   <StaticQuery
@@ -27,25 +37,25 @@ export default () => (
       }
     `}
     render={data => (
-      <header className="bg-black">
-        <nav className="container mx-auto flex items-center justify-between flex-wrap p-6">
-          <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-            <div className="text-sm lg:flex-grow">
-              <Link to="/" className="block mt-4 lg:inline-block lg:mt-0 text-grey-dark hover:text-white mr-6">
-                {config.siteTitleShort}
-              </Link>
+      <header>
+        <nav className="container mx-auto flex items-center justify-between flex-wrap">
+          <div className="text-sm w-full block flex-grow justify-between lg:flex lg:items-center lg:w-auto">
+            <div className="">
               {data.allMarkdownRemark.edges.map(link => (
                 <Link
                   to={link.node.fields.slug}
                   key={link.node.fields.slug}
-                  className="block mt-4 lg:inline-block lg:mt-0 text-grey-dark hover:text-white mr-4"
+                  activeClassName="text-black"
+                  className={classNames.link}
                 >
                   {link.node.frontmatter.title}
                 </Link>
               ))}
             </div>
+            <Link to="/" className={classNames.brand}>
+              {config.siteTitleShort}
+            </Link>
           </div>
-
         </nav>
       </header>
     )}

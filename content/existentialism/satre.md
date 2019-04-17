@@ -1,7 +1,20 @@
 ---
 title: "Satre"
-path: ""
 sort: 101
 image: ""
-bgColor: "#F56E48"
+bgColor: "#E3F3F9"
 ---
+Das philosophische Hauptwerk Sartres Das Sein und das Nichts (L’être et le néant, 1943) gilt als theoretisches Fundament des Existentialismus. Hier zeigt Sartre auf, dass sich das menschliche Sein (Für-Sich) von dem anderen Sein, den Dingen, Tieren, Sachen etc. (An-sich) durch seinen Bezug zum Nichts unterscheidet.
+
+Der Mensch ist ein Sein, „das nicht das ist, was es ist, und das das ist, was es nicht ist“. [2]
+Als einziges Wesen, das verneinen könne, das einen Bezug zu dem Noch-Nicht oder Nicht-Mehr habe, das lügen könne, also das sagen, was nicht sei, habe der Mensch damit auch die Bürde der Freiheit und damit auch die Verantwortung. Das Hauptwerk zeigt in Analysen menschlicher Situationen, wie sich die Freiheit in allen Bezügen des Seins des Menschen aufdrängt, der Mensch vor dieser Verantwortung flieht und wie der konkrete Bezug zum Anderen ihm erst diese Verantwortung und Freiheit aufzeigt. Das Vorurteil, dass es sich bei dem Existentialismus sartrescher Prägung um einen egoistischen Individualismus handelt, kann so nicht aufrechterhalten werden. Im Gegenteil: In seinen Analysen kommt Sartre zu dem Schluss, dass menschliches Leben niemals als vereinzeltes Leben verstanden werden könne. Damit argumentiert er gegen den Solipsismus.
+
+Methodisch geht Sartre phänomenologisch vor, indem er die oben genannten Existentiale wie Freiheit, Furcht, Angst, Liebe, Scham als Zeugen für die Freiheit des Menschen befragt. Durch diese Analysen gelangt er schließlich auch zu dem Anderen als mir gegenübertretende Freiheit und zeigt auf, dass unsere Freiheit und Verantwortung eine ontologische Entsprechung hat. Somit kann Sartre zwar keine moralischen Forderungen stellen, bejaht aber solche grundsätzlich, wenngleich sie auch von überindividuellen Bezügen abgelöst werden müssen und ihre eigentliche Entsprechung in der Verantwortlichkeit jedes Einzelnen finden.
+
+> „Aber wenn wirklich die Existenz der Essenz vorausgeht, so ist der Mensch verantwortlich für das, was er ist. Somit ist der erste Schritt des Existentialismus, jeden Menschen in den Besitz dessen, was er ist, zu bringen, und auf ihm die gänzliche Verantwortung für seine Existenz ruhen zu lassen. Und wenn wir sagen, dass der Mensch für sich selber verantwortlich ist, so wollen wir nicht sagen, dass der Mensch gerade eben nur für seine Individualität verantwortlich ist, sondern dass er verantwortlich ist für alle Menschen.“ [3]
+
+Nun findet sich aber gerade hier häufig der Einwand, warum Menschen denn dann unmoralisch handeln bzw. ihre Verantwortung nicht wahrnehmen, wenn wir doch frei sind. Der Mensch hat nach Sartre einen Bezug zum Nichts eben dadurch, dass er in seiner eigenen Seinsstruktur selber Nichts ist, d. h. der oben zitierte Satz bringt zum Ausdruck, dass wir selbst immer wieder vor der Verantwortung fliehen können: Sartre nennt diese ontologische Struktur des Menschen „mauvaise foi“, die Unaufrichtigkeit oder Selbstlüge. Er beschreibt, wie wir in der Selbstlüge zugleich Lügner und Belogener in einer Person sind, und zeigt auf, warum dieses offensichtlich logisch Widersinnige nachzuvollziehen ist: Da wir offensichtlich nicht eindeutig zu bestimmen sind, wie die Analyse der mauvaise foi nahelegt, tätigen wir immer wieder einen sog. Entwurf.
+
+> „Der Mensch ist zuerst ein Entwurf, der sich subjektiv lebt, anstatt nur ein Schaum zu sein oder eine Fäulnis oder ein Blumenkohl; nichts existiert diesem Entwurf vorweg, nichts ist im Himmel, und der Mensch wird zuerst das sein, was er zu sein geplant hat, nicht was er sein wollen wird. Denn was wir gewöhnlich unter Wollen verstehen, ist eine bewusste Entscheidung, die für die meisten unter uns dem nachfolgt, zu dem sie sich selbst gemacht haben. Ich kann mich einer Partei anschließen wollen, ein Buch schreiben, mich verheiraten, alles das ist nur Kundmachung einer ursprünglicheren, spontaneren Wahl als was man Willen nennt“. [4]
+
+In seinen literarischen Werken wird dies – Entwurf und Änderung eines Grundentwurfes – immer wieder zum Thema gemacht.

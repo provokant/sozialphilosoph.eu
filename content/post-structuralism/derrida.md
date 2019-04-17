@@ -1,8 +1,8 @@
 ---
 title: "Derrida"
 sort: 001
-image: "static/derrida.png"
-bgColor: "#DA394E"
+image: "/content/derrida.png"
+bgColor: "#F2C1C4"
 ---
 
 Jacques Derrida war ein französischer Philosoph, der als Begründer und Hauptvertreter der Dekonstruktion gilt.

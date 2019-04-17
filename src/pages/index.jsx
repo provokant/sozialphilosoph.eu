@@ -49,6 +49,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             bgColor
+            image
           }
           fields {
             slug
