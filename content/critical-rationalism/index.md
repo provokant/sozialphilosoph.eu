@@ -1,7 +1,7 @@
 ---
 title: "Critical rationalism"
-bgColor: "#1B998B"
-image: "/content/post-structuralism.png"
+bgColor: "#eae3f9"
+image: "images/content/post-structuralism.png"
 onHeaderMenu: true
 sort: 300
 ---

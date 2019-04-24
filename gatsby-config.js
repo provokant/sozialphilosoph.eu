@@ -19,9 +19,14 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-postcss',
-    'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-lodash',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        postCssPlugins: [require('tailwindcss')('./tailwind.js')],
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -61,6 +66,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sitemap',
     {

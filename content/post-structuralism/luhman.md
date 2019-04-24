@@ -1,7 +1,7 @@
 ---
 title: "Luhman"
-bgColor: "#F27D85"
-sort: 004
+bgColor: "#B8DFED"
+sort: 104
 ---
 
 Albert Camus ist der zweite wichtige große Vertreter des französischen Existentialismus.

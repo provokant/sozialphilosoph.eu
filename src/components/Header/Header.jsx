@@ -4,12 +4,15 @@ import config from '../../../data/SiteConfig'
 import './Header.sass'
 
 const classNames = {
-  defaultLink: 'block mt-4 lg:inline-block lg:mt-0 text-grey-darkest hover:text-black py-3',
+  default: 'inline-block mt-0 py-3',
+  get defaultLink() {
+    return `${this.default} text-grey-darkest hover:text-black`
+  },
   get link() {
-    return `${this.defaultLink} mr-6`
+    return `${this.defaultLink} px-3 hidden md:inline-block`
   },
   get brand() {
-    return `${this.defaultLink} lowercase font-bold tracking-wide text-black self-end`
+    return `${this.defaultLink} lowercase font-bold tracking-wide text-black mr-8`
   },
 }
 
@@ -27,8 +30,10 @@ export default () => (
             node {
               frontmatter {
                 title
+                bgColor
               }
               fields {
+                hasChildren
                 slug
               }
             }
@@ -37,24 +42,36 @@ export default () => (
       }
     `}
     render={data => (
-      <header>
-        <nav className="container mx-auto flex items-center justify-between flex-wrap">
-          <div className="text-sm w-full block flex-grow justify-between lg:flex lg:items-center lg:w-auto">
-            <div className="">
+      <header className="header">
+        <nav className="container mx-auto flex items-center justify-between flex-wrap px-2 md:px-0">
+          <div className="text-sm w-full block flex-grow justify-between flex items-center w-auto">
+            <div>
+              <Link to="/" className={classNames.brand}>
+                {config.siteTitleShort}
+              </Link>
               {data.allMarkdownRemark.edges.map(link => (
                 <Link
                   to={link.node.fields.slug}
                   key={link.node.fields.slug}
                   activeClassName="text-black"
                   className={classNames.link}
+                  activeStyle={{
+                    backgroundColor: link.node.fields.hasChildren ? link.node.frontmatter.bgColor : ``
+                  }}
                 >
                   {link.node.frontmatter.title}
                 </Link>
               ))}
             </div>
-            <Link to="/" className={classNames.brand}>
-              {config.siteTitleShort}
-            </Link>
+            <div className="text-grey italic hidden lg:block">
+              Flat-File System based on GatsbyJS for advanced developers 
+            </div>
+            <div className="block md:hidden">
+              <button type="button" className="text-grey-dark tracking-wide hover:text-black">
+                <span className="mr-2">NAVIGATE</span>
+                &#9776; 
+              </button>
+            </div>
           </div>
         </nav>
       </header>

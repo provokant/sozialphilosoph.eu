@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import Layout from '../layout/index'
 import PostListing from '../components/PostListing/PostListing'
+import Image from '../components/Image/Image'
 // import PostListItem from '../components/PostListItem/PostListItem' 
 import { siteTitle } from '../../data/SiteConfig'
 
@@ -12,24 +13,22 @@ export default class OverviewTemplate extends React.Component {
     const { data, pageContext } = this.props
     const { allMarkdownRemark } = data
     const { edges } = allMarkdownRemark
-    const { title, bgColor, html, image, path } = pageContext
-
-    console.log(image)
+    const { title, bgColor, html, image } = pageContext
 
     return (
       <Layout>
         <Helmet title={`${title} | ${siteTitle}`} />
-        <section style={{backgroundColor: bgColor}} key={path} className="intro">
-          <div className="container mx-auto">
-            <div className="mb-6 py-20 flex">
+        <section style={{backgroundColor: bgColor}} className="intro">
+          <div className="container mx-auto mb-20 px-2 md:px-0">
+            <div className="mb-6 pt-20 flex">
               <div className="w-2/3">
                 <h2 className="text-5xl font-thin tracking-tight w-2/3 mb-4 uppercase">{title}</h2>
-                <div className="columns" dangerouslySetInnerHTML={{ __html: html }} />
               </div>
-              <div className="w-1/3  flex items-center justify-center">
-                {image && <img alt="" src={image} className="object-contain" />}
+              <div className="w-1/3 flex just ify-end">
+                {image && <Image src={image} />}
               </div>
             </div>
+            <div className="columns" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
         </section>
         <PostListing postEdges={edges} />

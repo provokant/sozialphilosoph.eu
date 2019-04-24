@@ -1,10 +1,8 @@
 ---
-title: "Why are you here?"
-sort: 400
-onHeaderMenu: true
-isActive: true
+title: "Who are we?"
+sort: 500
 hasChildren: false
-bgColor: "#f1e1f7"
+bgColor: "#f7e1f3"
 ---
 
 ## Want to reach out?

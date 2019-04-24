@@ -2,30 +2,31 @@ import React from 'react'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import './PostListItem.scss'
+import Image from '../Image/Image'
 
 class PostListItem extends React.Component {
   render() {
     const { postNode, isOdd, isIntro } = this.props
 
     return (
-      <section style={{backgroundColor: postNode.bgColor}} key={postNode.path} className={isIntro ? `intro` : ``}>
-        <div className="container mx-auto">
+      <section style={{color: postNode.bgColor ? postNode.bgColor : `#fff`}} key={postNode.path} className={isIntro ? `intro` : ``}>
+        <div className="container mx-auto px-2 md:px-0">
           <Link
             to={postNode.path}
-            className={`mb-6 py-20 flex ${
-              isOdd ? `flex-row-reverse text-right` : ``
+            className={`mb-6 py-20 block md:flex ${
+              isOdd ? `md:flex-row-reverse md:text-right` : ``
             }`}
           >
             <div 
-              className={`w-1/2 ${
-                isOdd ? `flex flex-col items-end` : ``
+              className={`w-full md:w-2/3 ${
+                isOdd ? `flex flex-col md:items-end` : ``
               }`}
             >
-              <h2 className="text-5xl font-thin tracking-tight w-2/3 mb-4 uppercase">{postNode.title}</h2>
-              <p className="text-xl leading-normal">{postNode.excerpt}</p>
+              <h2 className="text-5xl font-thin tracking-tight md:w-2/3 mb-4 uppercase">{postNode.title}</h2>
+              <p className="text-xl leading-normal text-justify">{postNode.excerpt}</p>
             </div>
-            <div className="w-1/2 flex items-center justify-center">
-              {postNode.image && <img alt="" src={postNode.image} className="object-contain" />}
+            <div className="flex items-center justify-center w-full md:w-1/3">
+              {postNode.image && <Image src={postNode.image} />}
             </div>
           </Link>
         </div>
@@ -35,7 +36,7 @@ class PostListItem extends React.Component {
 }
 
 PostListItem.propTypes = {
-  postNode: PropTypes.arrayOf(
+  postNode: PropTypes.shape(
     PropTypes.shape({
       node: PropTypes.shape({
         frontmatter: PropTypes.shape({

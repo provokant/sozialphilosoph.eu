@@ -1,7 +1,7 @@
 ---
 title: "Popper"
-image: "/content/derrida.png"
-bgColor: "#2FA295"
+image: "images/content/derrida.png"
+bgColor: "#E5DBF9"
 sort: 301
 ---
 

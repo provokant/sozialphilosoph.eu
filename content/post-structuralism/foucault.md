@@ -1,7 +1,7 @@
 ---
 title: "Foucault"
-bgColor: "#F2A7AC"
-sort: 002
+bgColor: "#D0EBF4"
+sort: 102
 ---
 
 Albert Camus ist der zweite wichtige große Vertreter des französischen Existentialismus.

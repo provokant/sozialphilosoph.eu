@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import './Footer.scss'
-import config from '../../../data/SiteConfig'
+import { siteDescription, footerLogo } from '../../../data/SiteConfig'
+import Image from '../Image/Image';
 
 export default () => (
   <StaticQuery
@@ -29,7 +30,8 @@ export default () => (
     render={data => (
       <footer className="bg-black">
         <nav className="container flex justify-end mx-auto py-10">
-          <p className="text-white self-start mr-7">{config.siteDescription}</p>
+          {/* {footerLogo && <Image src={footerLogo} />} */}
+          <p className="text-white self-start mr-7">{siteDescription}</p>
           <div className="self-stretch">
             {data.allMarkdownRemark.edges.map(link => (
               <Link

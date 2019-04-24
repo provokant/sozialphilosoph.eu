@@ -1,6 +1,5 @@
 ---
 title: "Imprint"
-image: ""
 onFooterMenu: true
 onLandingPage: false
 hasChildren: false

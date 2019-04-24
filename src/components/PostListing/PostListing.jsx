@@ -28,7 +28,7 @@ class PostListing extends React.Component {
     return (
       <>
         {this.postList.map((post, i) => (
-          <PostListItem postNode={post} isOdd={i % 2 !== 0} />
+          <PostListItem postNode={post} isOdd={i % 2 !== 0} key={post.slug} />
         ))}
       </>
     )
