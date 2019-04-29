@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import { siteDescription, footerLogo } from '../../../data/SiteConfig'
-import Image from '../Image/Image';
+import Image from '../Image/Image'
+import './Footer.scss'
 
 export default () => (
   <StaticQuery

@@ -1,0 +1,1 @@
+https://plato.stanford.edu/entries/adorno/
