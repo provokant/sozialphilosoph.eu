@@ -164,20 +164,22 @@ exports.createPages = ({ graphql, actions }) => {
               context: {
                 slug,
                 title,
+                highlight,
+                question
               },
             })
 
             if (highlight && question) {
-              createPage({
-                path: `${slug}${_.kebabCase(question)}`,
-                component: detailsPage,
-                context: {
-                  slug: `${slug}${_.kebabCase(question)}`,
-                  title,
-                  highlight,
-                  question
-                },
-              })
+              // createPage({
+              //   path: `${slug}${_.kebabCase(question)}`,
+              //   component: detailsPage,
+              //   context: {
+              //     slug: `${slug}${_.kebabCase(question)}`,
+              //     title,
+              //     highlight,
+              //     question
+              //   },
+              // })
             }
           }
         })
