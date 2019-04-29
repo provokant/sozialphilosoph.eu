@@ -15,7 +15,7 @@ const config = {
   landingPageTitle: 'praesto Starter-Kit',
   landingPageTeaser: 'Flat-File CMS (Content Management System) based on GatsbyJS for advanced developers',
   landingPageImage: 'images/content/hands.png',
-  footerLogo: 'images/logos/nls.svg'
+  footerLogo: 'images/logos/logo-1024.png'
 }
 
 // Validate

@@ -23,5 +23,8 @@
     "typescript",
     "typescriptreact",
     "yml"
+  ],
+  "cSpell.words": [
+    "apply"
   ]
 }

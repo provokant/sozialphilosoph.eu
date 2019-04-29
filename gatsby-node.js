@@ -7,6 +7,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
   let slug
   let sort
+  let highlight
+  let question
   let onLandingPage
   let onHeaderMenu
   let onFooterMenu
@@ -33,6 +35,14 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       ({ hasChildren } = frontmatter)
     } else {
       hasChildren = true
+    }
+
+    if (Object.prototype.hasOwnProperty.call(frontmatter, 'highlight') && Object.prototype.hasOwnProperty.call(frontmatter, 'question')) {
+      ({ highlight } = frontmatter);
+      ({ question } = frontmatter)
+    } else {
+      highlight = -1
+      question = ``
     }
 
     if (Object.prototype.hasOwnProperty.call(node, 'frontmatter')) {
@@ -69,6 +79,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     }
     createNodeField({ node, name: 'slug', value: slug })
     createNodeField({ node, name: 'sort', value: sort })
+    createNodeField({ node, name: 'highlight', value: highlight })
+    createNodeField({ node, name: 'question', value: question })
     createNodeField({ node, name: 'onHeaderMenu', value: onHeaderMenu })
     createNodeField({ node, name: 'onFooterMenu', value: onFooterMenu })
     createNodeField({ node, name: 'onLandingPage', value: onLandingPage })
@@ -113,6 +125,8 @@ exports.createPages = ({ graphql, actions }) => {
                     slug
                     isIndex
                     hasChildren
+                    highlight
+                    question
                   }
                 }
               }
@@ -128,7 +142,7 @@ exports.createPages = ({ graphql, actions }) => {
         result.data.allMarkdownRemark.edges.forEach(edge => {
           const { html, frontmatter, fields } = edge.node
           const { sort, title, bgColor, image } = frontmatter
-          const { slug, isIndex, hasChildren } = fields
+          const { slug, isIndex, hasChildren, highlight, question } = fields
 
           if (isIndex && hasChildren) {
             createPage({
@@ -152,6 +166,19 @@ exports.createPages = ({ graphql, actions }) => {
                 title,
               },
             })
+
+            if (highlight && question) {
+              createPage({
+                path: `${slug}${_.kebabCase(question)}`,
+                component: detailsPage,
+                context: {
+                  slug: `${slug}${_.kebabCase(question)}`,
+                  title,
+                  highlight,
+                  question
+                },
+              })
+            }
           }
         })
       })

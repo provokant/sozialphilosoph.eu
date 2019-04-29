@@ -5,25 +5,44 @@ section {
   top: 0;
   min-height: $min-height;
   height: $min-height;
-  background-color: currentColor;
-  border-top: 1px solid rgba(0 ,0 ,0 ,0.1);  // box-shadow: inset -2px 0 0 black;
+  background-color: #fff;
+  // background-color: currentColor;
+  // border-top: 1px solid rgba(0 ,0 ,0 ,0.1);  // box-shadow: inset -2px 0 0 black;
+  box-shadow: 0 -2rem 2rem rgba(0, 0, 0, 0.03);
 
-  // &:after {
-  //   content: "";
-  //   position: absolute;
-  //   width: 120vw;
-  //   height: 100%;
-  //   left: -10vw;
-  //   top: 0;
-  //   left: -10vw;
-  //   box-shadow: 
-  //     2rem 0 1rem currentColor,
-  //     5rem 0 8rem currentColor,
-  //     4rem 0 3rem currentColor;
-  // }
+  &.item {
+
+    a {
+      color: currentColor;
+    }
+
+    p {
+      @apply .font-thin;
+    }
+
+    h1, h2, h3, h4, h5 {
+      // border-bottom: 2px solid currentColor;
+    }
+
+    img {
+      mix-blend-mode: multiply;
+
+      &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: green;
+      }
+    }
+  }
 
   &.intro,
   &.details {
+
+    box-shadow: unset;
+    
     p {
       text-align: justify;
       hyphens: auto;
@@ -78,8 +97,4 @@ section {
       column-count: 3;
     }
   }
-}
-
-img {
-  mix-blend-mode: multiply;
 }

@@ -1,8 +1,8 @@
 ---
-title: "Post-Structuralism"
-sort: 100
+title: "Aesthetics"
+sort: 500
 image: "images/content/post-structuralism.png"
-bgColor: "#1D73AD"
+bgColor: "#AA66A5"
 onHeaderMenu: true
 ---
 

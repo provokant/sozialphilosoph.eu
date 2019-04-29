@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import config from '../../../data/SiteConfig'
-import './Header.sass'
+import './Header.scss'
 
 const classNames = {
   default: 'inline-block mt-0 py-3',
@@ -13,7 +13,7 @@ const classNames = {
   },
   get brand() {
     return `${this.defaultLink} lowercase font-bold tracking-wide text-black mr-8`
-  },
+  }
 }
 
 export default () => (

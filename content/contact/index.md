@@ -1,10 +1,10 @@
 ---
-title: "Why are you here?"
-sort: 400
-onHeaderMenu: true
+title: "Why are you here?"  
+onHeaderMenu: false
 isActive: true
 hasChildren: false
 bgColor: "#f1e1f7"
+onLandingPage: false
 ---
 
 ## Want to reach out?

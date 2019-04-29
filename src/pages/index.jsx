@@ -19,6 +19,10 @@ class Index extends React.Component {
         <Helmet title={siteTitle} />
         <SEO />
         <section className="index flex items-center" style={{ backgroundColor }}>
+
+          <figure className="absolute w-full max-w-lg mx-auto my-auto">
+            <Image src={landingPageImage} />
+          </figure>
           <div className="container mx-auto mb-20 relative">
             <div className="mb-6 pt-20 flex justify-center">
               <div className="w-1/2 text-center">
@@ -27,9 +31,6 @@ class Index extends React.Component {
               </div>
             </div>
           </div>
-          <figure className="absolute w-full max-w-lg mx-auto my-auto">
-            <Image src={landingPageImage} />
-          </figure>
         </section>
         <PostListing postEdges={edges} />
       </Layout>

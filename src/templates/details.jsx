@@ -13,7 +13,7 @@ export default class DetailsTemplate extends React.Component {
     const { slug } = pageContext
     const { markdownRemark } = data
     const { html } = markdownRemark
-    const { title } = markdownRemark.frontmatter
+    const { title, source } = markdownRemark.frontmatter
 
     return (
       <Layout>
@@ -25,6 +25,8 @@ export default class DetailsTemplate extends React.Component {
           </header>
           <section className="details md:w-2/3" style={{ backgroundColor }}>
             <div dangerouslySetInnerHTML={{ __html: html }} />
+
+            {source && <div className="text-italic text-sm border-t-2 pt-3 text-grey-darker">{source}</div>} 
           </section>
         </article>
       </Layout>
@@ -40,6 +42,7 @@ export const pageQuery = graphql`
       excerpt
       frontmatter {
         title
+        source
       }
     }
   }

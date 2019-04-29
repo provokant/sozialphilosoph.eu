@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import './Footer.scss'
 import { siteDescription, footerLogo } from '../../../data/SiteConfig'
 import Image from '../Image/Image';
 
@@ -28,10 +27,23 @@ export default () => (
       }
     `}
     render={data => (
-      <footer className="bg-black">
+      <footer className="bg-black h-screen flex flex-col justify-between">
+        <div className="flex flex-col items-center py-10">
+          <p className="text-xl w-2/3 text-center text-white">
+            Want to know what Foucault thinks psychiatries are for?
+          </p>
+          <div className="flex mt-8">
+            <button className="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded" type="button">No</button>
+            <Link to="existentialism/camus/" className="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded ml-6">
+              Yes, please!
+            </Link>
+          </div>
+        </div>
         <nav className="container flex justify-end mx-auto py-10">
-          {/* {footerLogo && <Image src={footerLogo} />} */}
-          <p className="text-white self-start mr-7">{siteDescription}</p>
+          <div className="max-h-10">
+            {footerLogo && <Image src={footerLogo} />}
+          </div>
+          <p className="text-grey-dark self-start mr-7">{siteDescription}</p>
           <div className="self-stretch">
             {data.allMarkdownRemark.edges.map(link => (
               <Link
