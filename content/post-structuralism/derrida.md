@@ -3,9 +3,9 @@ title: "Derrida"
 sort: 101
 image: "images/content/derrida.png"
 bgColor: "#D9EFF7"
----
+source: Lawlor, Leonard, "Jacques Derrida", The Stanford Encyclopedia of Philosophy (Summer 2018 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/sum2018/entries/derrida/>.
 
-# Jacques Derrida
+---
 
 Jacques Derrida (1930–2004) was the founder of “deconstruction,” a way of criticizing not only both literary and philosophical texts but also political institutions. Although Derrida at times expressed regret concerning the fate of the word “deconstruction,” its popularity indicates the wide-ranging influence of his thought, in philosophy, in literary criticism and theory, in art and, in particular, architectural theory, and in political theory. Indeed, Derrida’s fame nearly reached the status of a media star, with hundreds of people filling auditoriums to hear him speak, with films and televisions programs devoted to him, with countless books and articles devoted to his thinking. Beside critique, Derridean deconstruction consists in an attempt to re-conceive the difference that divides self-reflection (or self-consciousness). But even more than the re-conception of difference, and perhaps more importantly, deconstruction works towards preventing the worst violence. It attempts to render justice. Indeed, deconstruction is relentless in this pursuit since justice is impossible to achieve.
 
