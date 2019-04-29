@@ -1,9 +1,9 @@
 ---
-title: "Derrida"
+title: "Rawls"
 sort: 101
-image: "images/content/derrida.png"
+image: "images/content/rawls.png"
 bgColor: "#D9EFF7"
-source: Lawlor, Leonard, "Jacques Derrida", The Stanford Encyclopedia of Philosophy (Summer 2018 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/sum2018/entries/derrida/>.
+source: Wenar, Leif, "John Rawls", The Stanford Encyclopedia of Philosophy (Spring 2017 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/spr2017/entries/rawls/>.
 
 ---
 
@@ -383,8 +383,8 @@ Indeed public reason imposes duties of civility upon the members of internationa
 One major reason that liberal peoples tolerate decent peoples, Rawls says, is that decent peoples secure for all persons within their territory a core list of human rights. These core human rights include rights to subsistence, security, personal property, and formal equality before the law, as well as freedoms from slavery, protections of ethnic groups against genocide, and some measure of liberty of conscience (but not, as we have seen, a right to democratic participation). These core human rights are the minimal conditions required for persons to be able to engage in social cooperation in any real sense, so any well-ordered society must protect them.
 
 The role of human rights in the law of peoples is thus to set limits on international toleration. Any society that guarantees Rawls's list of human rights is to be immune from coercive intervention from other peoples. Societies that violate human rights overstep the limits of toleration, and may rightly be subject to economic sanctions or even military intervention.
-5.4 The International Original Position
 
+### 5.4 The International Original Position
 The international original position parallels the domestic original position of justice as fairness. This original position answers the question: “What terms of cooperation would free and equal peoples (liberal and decent) agree to under fair conditions?” The strategy is to build the conception of peoples into the design of this original position, along with restrictions on reasons for favoring basic principles of international law. The strategy, that is, is to describe reasonable conditions under which a rational agreement on principles can be made.
 
 In the international original position representatives of each people agree on principles for the international basic structure. Each party is behind a veil of ignorance, deprived of information about the people they represent, such as the size of its territory and population, and its relative political and economic strength. Each party tries to do the best they can for the people they represent, in terms of the fundamental interests that all peoples have.
@@ -396,8 +396,8 @@ After selecting the eight principles of the law of peoples, the parties next che
 Rawls also attempts to draw empirical support for his stability argument from the literature on the democratic peace. Social scientists have found that historically democracies have tended not to go to war with one another. Rawls explains this by saying that liberal societies are, because of their internal political structures, satisfied. Liberal peoples have no desires for imperial glory, territorial expansion, or to convert others to their religion, and whatever goods and services they need from other countries they can obtain through trade. Liberal peoples, Rawls says, have no reasons to fight aggressive wars, so a genuine peace can endure among them. And since decent peoples are defined as non-aggressive, any decent people can join this liberal peace as well.
 
 Once the parties have agreed to the eight principles of the law of peoples, they then continue to specify these principles more precisely in a process analogous to the domestic four-stage sequence.
-5.5 Non-Ideal Theory: Outlaw States and Burdened Societies
 
+### 5.5 Non-Ideal Theory: Outlaw States and Burdened Societies
 The principles selected in the international original position contain provisions for non-ideal situations: situations in which nations are unwilling to comply with the ideal principles, or are unable to cooperate on their terms. These provisions are embedded in principles 4 through 8 of the law of peoples.
 
 Outlaw states are non-compliant: they threaten the peace by attempting to expand their power and influence, or by violating the human rights of those within their territory. The principles of the law of peoples allow peoples to fight these outlaw states in self-defense, and to take coercive actions against them to stop their violations of human rights. In any military confrontations with outlaws, peoples must obey the principles of the just prosecution of war, such as avoiding direct attacks on enemy civilians in all but the most desperate circumstances. The aim of war, Rawls says, must be to bring all societies to honor the law of peoples, and eventually to become fully participating members of international society.
@@ -405,8 +405,8 @@ Outlaw states are non-compliant: they threaten the peace by attempting to expand
 Burdened societies struggle with social and economic conditions that make it difficult for them to maintain either liberal or decent institutions. A burdened society may lack sufficient material or social resources to support a scheme of social cooperation, perhaps because its population has grown beyond its territory's means to support it. It is the basic structure and political culture of a society that are most crucial for its self-sufficiency; yet the international community must help a burdened society to rise above this threshold. The law of peoples (eighth principle) requires that burdened peoples be assisted until they can handle their own affairs (i.e., become well-ordered).
 
 This duty of assistance is Rawls's greatest divergence from the rules of today's international law. Accepting this duty would require significant changes in how nations respond to global poverty and failed states.
-5.6 Reconciliation and Realistic Utopia
 
+### 5.6 Reconciliation and Realistic Utopia
 Rawls's vision is of a perpetually peaceful and cooperative international order, where liberal and decent peoples stand ready to pacify aggressive states, to secure core human rights, and to help struggling countries until they become self-sufficient.
 
 Compared to the visions of other theories, Rawls's vision has limited ambitions. Officials of democratic societies can do little more than hope that decent societies will become internally more tolerant and democratic. Once the duty to assist burdened peoples is satisfied, there are no further requirements on international economic distributions: for Rawls, inequalities across national borders are of no political concern as such. Individuals around the world may suffer greatly from bad luck, and they may be haunted by spiritual emptiness.
@@ -416,8 +416,8 @@ The limited practical goal of Rawls's law of peoples is the elimination of the g
 Nevertheless, while Rawls's vision is limited, it is also utopian. To believe that Rawls's vision is possible is to believe that individuals are not inevitably selfish or amoral, and that international relations can be more than merely a contest for power, wealth, and glory. Affirming the possibility of a just and peaceful future can inoculate us against a resignation or cynicism that might otherwise seem inevitable.
 
 “By showing how the social world may realize the features of a realistic utopia,” Rawls says, “political philosophy provides a long-term goal of political endeavor, and in working toward it gives meaning to what we can do today” (LP, 128).
-6. Further Reading
 
+## 6. Further Reading
 Beyond the texts by Rawls cited above, readers may wish to consult Rawls's lectures on Hume, Leibniz, Kant, and Hegel (LHMP) and on Hobbes, Locke, Hume, Mill, Marx, Sidgwick, and Butler (LHPP) to see how Rawls's interpretations of these authors informed his own theorizing. Reath, Herman, and Korsgaard (1997) is a collection of essays by Rawls's students on his work in the history of philosophy.
 
 Students wanting a clear guide to A Theory of Justice may wish to read Lovett (2011), or (more advanced) Mandle (2009). Voice (2011) gives an outline-style summary of Rawls's three main books that is accessible to those with some undergraduate philosophical training. Mandle and Reidy (2014) offers an alphabetized list of short entries, from Abortion to Maximin to Wittgenstein, of important concepts, issues, influences and critics.
