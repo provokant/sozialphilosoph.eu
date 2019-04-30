@@ -12,6 +12,7 @@ const config = {
   userLocation: 'North Pole, Earth', // User location to display in the author segment.
   themeColor: '#c62828', // Used for setting manifest and progress theme colors.
   backgroundColor: '#fff', // Used for setting manifest background color.
+  backgroundImage: 'images/content/bg.jpg',
   landingPageTitle: 'That this fear to error is already the error itself ...',
   landingPageTeaser: 'Selected philosophical writings. We are gathering introductional information for any philosophy-interested person. Easy-to-read, well researched, user-friendly',
   landingPageImage: 'images/content/hands.png',

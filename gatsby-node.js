@@ -37,14 +37,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       hasChildren = true
     }
 
-    if (Object.prototype.hasOwnProperty.call(frontmatter, 'highlight') && Object.prototype.hasOwnProperty.call(frontmatter, 'question')) {
-      ({ highlight } = frontmatter);
-      ({ question } = frontmatter)
-    } else {
-      highlight = -1
-      question = ``
-    }
-
     if (Object.prototype.hasOwnProperty.call(node, 'frontmatter')) {
       if (Object.prototype.hasOwnProperty.call(frontmatter, 'slug'))
         slug = `/${_.kebabCase(frontmatter.slug)}`
@@ -79,8 +71,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     }
     createNodeField({ node, name: 'slug', value: slug })
     createNodeField({ node, name: 'sort', value: sort })
-    createNodeField({ node, name: 'highlight', value: highlight })
-    createNodeField({ node, name: 'question', value: question })
     createNodeField({ node, name: 'onHeaderMenu', value: onHeaderMenu })
     createNodeField({ node, name: 'onFooterMenu', value: onFooterMenu })
     createNodeField({ node, name: 'onLandingPage', value: onLandingPage })
@@ -89,6 +79,17 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({ node, name: 'hasChildren', value: hasChildren })
 
     postNodes.push(node)
+
+    /**
+     * If question and highlight exists, add separate post.
+     */
+    if (Object.prototype.hasOwnProperty.call(frontmatter, 'highlight') && Object.prototype.hasOwnProperty.call(frontmatter, 'question')) {
+      createNodeField({ node, name: 'highlight', value: frontmatter.highlight })
+      createNodeField({ node, name: 'question', value: frontmatter.question })
+      createNodeField({ node, name: 'slug', value: `${slug}${_.kebabCase(frontmatter.question)}` })
+
+      postNodes.push(Object.apply({}, node))
+    }
   }
 }
 
@@ -165,22 +166,21 @@ exports.createPages = ({ graphql, actions }) => {
               context: {
                 slug,
                 title,
-                highlight,
-                question
               },
             })
 
             if (highlight && question) {
-              // createPage({
-              //   path: `${slug}${_.kebabCase(question)}`,
-              //   component: detailsHighlightPage,
-              //   context: {
-              //     slug: `${slug}${_.kebabCase(question)}`,
-              //     title,
-              //     highlight,
-              //     question
-              //   },
-              // })
+              createPage({
+                path: slug,
+                component: detailsHighlightPage,
+                context: {
+                  slug,
+                  title,
+                  highlight,
+                  question,
+                  bgColor
+                },
+              })
             }
           }
         })

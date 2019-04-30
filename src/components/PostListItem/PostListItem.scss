@@ -3,7 +3,7 @@ $min-height: 70vh;
 section {
   position: sticky;
   top: 0;
-  min-height: 100vh;
+  // min-height: 100vh;
   height: 100vh;
   background-color: #fff;
   // background-color: currentColor;
@@ -11,11 +11,12 @@ section {
   box-shadow: 0 -2rem 2rem rgba(0, 0, 0, 0.03);
 
   @media (min-width: 992px) {
-    min-height: $min-height;
     height: $min-height;
   }
 
   &.item {
+
+    max-height: 36rem;
 
     a {
       // Styles added to src/layout/global.css because of
@@ -68,6 +69,16 @@ section {
       transition: all 360ms;
     }
 
+    @media (max-width: 991px) {
+      .image {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0;
+        width: 30%;
+      }
+    }
+
     .gatsby-image-wrapper:after {
       content: "";
       position: absolute;
@@ -118,6 +129,8 @@ section {
     // img {
     //   max-height: 6rem;
     // }
+
+    
   }
 
   &.details {
@@ -127,6 +140,19 @@ section {
 
     img {
       max-height: 6rem;
+    }
+
+    p {
+      &#highlight {
+        padding: 1rem 1.1rem;
+        margin: 0 -1.1rem;
+
+        @apply .rounded .inline-block;
+      }
+
+      .question {
+        @apply .mb-2 .text-xl .font-semibold;
+      }
     }
   }
 
@@ -144,6 +170,36 @@ section {
       mix-blend-mode: overlay;
       text-shadow: 0 1px black,  0 3px 0.4rem rgba(0,0,0,0.4);
     }
+
+    // &:after {
+    //   content: "";
+    //   display: none;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   z-index: 10;
+    //   animation: fade-in 120ms 660ms forwards;
+
+    //   @apply .absolute .bg-black;
+
+    //   @keyframes fade-in {
+    //     0% {
+    //       opacity: 1;
+    //       display: block;
+    //     }
+
+    //     99% {
+    //       opacity: 0;
+    //       display: block;
+    //     }
+
+    //     100% {
+    //       opacity: 0;
+    //       display: none;
+    //     }
+    //   }
+    // }
 
     .gatsby-image-wrapper:after {
       content: "";

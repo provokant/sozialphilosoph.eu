@@ -7,9 +7,32 @@ import SEO from '../components/SEO/SEO'
 import { siteTitle, backgroundColor } from '../../data/SiteConfig'
 
 export default class DetailsHighlightTemplate extends React.Component {
+
+  constructor(props) {
+    super(props)
+    this.highlight = props.pageContext.highlight
+    this.question = props.pageContext.question
+    this.bgColor = props.pageContext.bgColor
+  }
+  
+
+  componentDidMount() {
+    const paragraphs = document.querySelectorAll(`section p`)
+    const highlightedParagraph = paragraphs[this.highlight]
+    const questionNode = document.createElement(`div`)
+
+    questionNode.setAttribute(`class`, `question`)
+    questionNode.setAttribute(`style`, `color: ${this.bgColor}`)
+    questionNode.innerText = this.question
+
+    highlightedParagraph.prepend(questionNode)
+    highlightedParagraph.setAttribute(`id`, `highlight`)
+    highlightedParagraph.setAttribute(`style`, `background-color: ${this.bgColor}33`)
+  }
+
   render() {
-    const { pageContext, data } = this.props
-    const { slug, highlight, question } = pageContext
+    const { data, pageContext } = this.props
+    const { slug } = pageContext
     const { markdownRemark } = data
     const { html } = markdownRemark
     const { title, source } = markdownRemark.frontmatter
@@ -22,12 +45,8 @@ export default class DetailsHighlightTemplate extends React.Component {
           <header>
             <h1 className="text-5xl w-2/3 mb-4">{title}</h1>
           </header>
-          <section className="details md:w-2/3" style={{ backgroundColor }}>
+          <section className="details lg:w-2/3" style={{ backgroundColor }}>
             <div dangerouslySetInnerHTML={{ __html: html }} />
-
-            <p>{highlight}</p>
-            <p>{question}</p>
-
             {source && <div className="text-italic text-sm border-t-2 pt-3 text-grey-darker">{source}</div>} 
           </section>
         </article>
@@ -57,6 +76,9 @@ DetailsHighlightTemplate.propTypes = {
     }).isRequired,
   }).isRequired,
   pageContext: PropTypes.shape({
-    slug: PropTypes.string.isRequired
+    slug: PropTypes.string.isRequired,
+    highlight: PropTypes.number.isRequired,
+    question: PropTypes.string.isRequired,
+    bgColor: PropTypes.string.isRequired,
   }).isRequired
 }

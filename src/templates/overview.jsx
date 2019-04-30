@@ -25,9 +25,9 @@ export default class OverviewTemplate extends React.Component {
                 <h2 className="text-5xl w-2/3 mb-4">{title}</h2>
               </div>
             </div>
-            <div className="flex">
-              <div className="w-2/3" dangerouslySetInnerHTML={{ __html: html }} />
-              <div className="w-1/3 pl-8">
+            <div className="flex flex-col-reverse md:flex-row">
+              <div className="md:w-2/3" dangerouslySetInnerHTML={{ __html: html }} />
+              <div className="md:w-1/3 pb-8 md:pb-0 md:pl-8">
                 {image && <Image src={image} />}
               </div>
             </div>

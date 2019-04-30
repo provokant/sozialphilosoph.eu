@@ -22,7 +22,7 @@ export default class DetailsTemplate extends React.Component {
           <header>
             <h1 className="text-5xl w-2/3 mb-4">{title}</h1>
           </header>
-          <section className="details md:w-2/3" style={{ backgroundColor }}>
+          <section className="details lg:w-2/3" style={{ backgroundColor }}>
             <div dangerouslySetInnerHTML={{ __html: html }} />
 
             {source && <div className="text-italic text-sm border-t-2 pt-3 text-grey-darker">{source}</div>} 

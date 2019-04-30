@@ -93,7 +93,7 @@ This attention to what Beauvoir, borrowing from Heidegger, calls a “primordial
 
 A brief but packed sentence that appears early in the The Second Sex alerts us to the ways that Beauvoir used existential and Marxist categories to analyze the unique complexities of women’s situation. It reads,
 
-    Hence woman makes no claim for herself as subject because she lacks the concrete means, because she senses the necessary link connecting her to man without positing its reciprocity, and because she often derives satisfaction from her role as the Other. (p. 10)
+> Hence woman makes no claim for herself as subject because she lacks the concrete means, because she senses the necessary link connecting her to man without positing its reciprocity, and because she often derives satisfaction from her role as the Other. (p. 10)
 
 This statement needs to be read in the context of Beauvoir’s ethical-political question, “How can a human being in a woman’s situation attain fulfillment?”
 

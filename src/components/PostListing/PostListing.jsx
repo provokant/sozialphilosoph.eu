@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './PostListing.scss'
 import PostListItem from '../PostListItem/PostListItem' 
 
 class PostListing extends React.Component {

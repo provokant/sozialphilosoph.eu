@@ -2,11 +2,12 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
-import Image from '../components/Image/Image'
+// import Image from '../components/Image/Image'
 import Layout from '../layout/index'
 import PostListing from '../components/PostListing/PostListing'
 import SEO from '../components/SEO/SEO'
-import { siteTitle, landingPageTeaser, landingPageTitle, landingPageImage, backgroundColor } from '../../data/SiteConfig'
+import { siteTitle, landingPageTeaser, landingPageTitle, backgroundImage } from '../../data/SiteConfig'
+// import { siteTitle, landingPageTeaser, landingPageTitle, landingPageImage, backgroundColor, backgroundImage } from '../../data/SiteConfig'
 
 class Index extends React.Component {
   render() {
@@ -18,16 +19,16 @@ class Index extends React.Component {
       <Layout>
         <Helmet title={siteTitle} />
         <SEO />
-        <section className="index flex items-center" style={{ backgroundColor }}>
+        <section className="index flex items-center bg-cover" style={{ backgroundImage: `url(${backgroundImage})` }}>
 
-          <figure className="absolute w-full max-w-lg mx-auto my-auto">
+          {/* <figure className="absolute w-full max-w-lg mx-auto my-auto">
             <Image src={landingPageImage} />
-          </figure>
+          </figure> */}
           <div className="container mx-auto mb-20 relative">
             <div className="mb-6 pt-20 flex justify-center">
-              <div className="w-1/2">
-                <h2 className="text-5xl font-thin tracking-normal mb-4">{landingPageTitle}</h2>
-                <p className="text-xl leading-normal text-white font-bold">{landingPageTeaser}</p>
+              <div className="w-2/3 md:w-1/2">
+                <h2 className="md:text-5xl font-thin tracking-normal mb-4">{landingPageTitle}</h2>
+                <p className="md:text-xl leading-normal text-white font-bold">{landingPageTeaser}</p>
               </div>
             </div>
           </div>
