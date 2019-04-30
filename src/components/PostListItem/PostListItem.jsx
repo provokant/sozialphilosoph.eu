@@ -22,7 +22,7 @@ class PostListItem extends React.Component {
                   isOdd ? `flex flex-col md:items-end` : ``
                 }`}
               > */}
-          <Link to={postNode.path} className="mb-6 py-20 block md:flex" style={{color: postNode.bgColor ? postNode.bgColor : `#000`}}>
+          <Link to={postNode.path} className="mb-6 py-20 block md:flex" style={{ color: postNode.bgColor ? postNode.bgColor : `#000`, WebKitBackgroundClip: `text` }}>
             <div className="w-full md:w-2/3">
               <h2 className="text-5xl md:w-2/3 mb-4">{postNode.title}</h2>
               <p className="leading-normal text-xl text-normal text-black">{postNode.excerpt}</p>
