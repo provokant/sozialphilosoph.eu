@@ -26,8 +26,8 @@ class Index extends React.Component {
           <div className="container mx-auto mb-20 relative">
             <div className="mb-6 pt-20 flex justify-center">
               <div className="w-1/2">
-                <h2 className="text-5xl font-thin tracking-normal mb-4">That this fear to error is already the error itself ...</h2>
-                {/* <p className="leading-normal text-grey-darker">{landingPageTeaser}</p> */}
+                <h2 className="text-5xl font-thin tracking-normal mb-4">{landingPageTitle}</h2>
+                <p className="text-xl leading-normal text-white font-bold">{landingPageTeaser}</p>
               </div>
             </div>
           </div>

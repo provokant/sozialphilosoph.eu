@@ -100,7 +100,13 @@ section {
 
     h2 {
       mix-blend-mode: overlay;
-      text-shadow: 0 0 3rem white;
+      text-shadow: 0 0 2rem black, 0 0 0.1rem black;
+      @apply .text-white;
+    }
+    
+    p {
+      mix-blend-mode: overlay;
+      text-shadow: 0 1px black,  0 3px 0.4rem rgba(0,0,0,0.4);
     }
 
     .gatsby-image-wrapper:after {

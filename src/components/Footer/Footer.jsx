@@ -28,7 +28,7 @@ export default () => (
       }
     `}
     render={data => (
-      <footer className="bg-black h-screen flex flex-col justify-between px-2 lg:px-0">
+      <footer className="bg-black h-screen flex flex-col justify-between px-4 lg:px-2">
         <div className="flex flex-col items-center justify-center py-10 flex-grow">
           <p className="text-xl w-2/3 text-center text-white">
             Want to know what Foucault thinks psychiatries are for?

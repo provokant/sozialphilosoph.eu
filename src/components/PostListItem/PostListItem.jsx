@@ -10,7 +10,7 @@ class PostListItem extends React.Component {
 
     return (
       <section className={isIntro ? `intro` : `item`} key={postNode.path}>
-        <div className="container mx-auto px-2 lg:px-0">
+        <div className="container mx-auto px-4 lg:px-2">
           {/* <Link
               to={postNode.path}
               className={`mb-6 py-20 block md:flex ${

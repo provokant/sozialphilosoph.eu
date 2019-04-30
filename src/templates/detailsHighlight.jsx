@@ -18,7 +18,7 @@ export default class DetailsHighlightTemplate extends React.Component {
       <Layout>
         <Helmet title={`${title} | ${siteTitle}`} />
         <SEO postPath={slug} postNode={markdownRemark} postSEO />
-        <article className="container mx-auto mb-6 py-20 px-4 md:px-2">
+        <article className="container mx-auto mb-6 py-20 px-4 lg:px-2">
           <header>
             <h1 className="text-5xl w-2/3 mb-4">{title}</h1>
           </header>

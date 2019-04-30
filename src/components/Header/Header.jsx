@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import config from '../../../data/SiteConfig'
+import { siteDescription, siteTitleShort } from '../../../data/SiteConfig'
 import './Header.scss'
 
 const classNames = {
@@ -43,11 +43,11 @@ export default () => (
     `}
     render={data => (
       <header className="header">
-        <nav className="container mx-auto flex items-center justify-between flex-wrap px-2 lg:px-0">
+        <nav className="container mx-auto flex items-center justify-between flex-wrap px-4 lg:px-2">
           <div className="text-sm w-full block flex-grow justify-between flex items-center w-auto">
             <div>
               <Link to="/" className={classNames.brand}>
-                {config.siteTitleShort}
+                {siteTitleShort}
               </Link>
               {data.allMarkdownRemark.edges.map(link => (
                 <Link
@@ -62,8 +62,8 @@ export default () => (
                 </Link>
               ))}
             </div>
-            <div className="text-grey italic hidden lg:block">
-              Flat-File System based on GatsbyJS for advanced developers 
+            <div className="text-grey italic hidden xl:block">
+              {siteDescription}
             </div>
             <div className="block md:hidden">
               <button type="button" className="text-grey-dark tracking-wide hover:text-black">
