@@ -1,5 +1,6 @@
 section.item a {
   background: -webkit-linear-gradient(currentColor, #000);
-  -webkit-background-clip: text;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
 }

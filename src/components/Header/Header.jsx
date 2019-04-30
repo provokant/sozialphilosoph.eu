@@ -43,7 +43,7 @@ export default () => (
     `}
     render={data => (
       <header className="header">
-        <nav className="container mx-auto flex items-center justify-between flex-wrap px-2 md:px-0">
+        <nav className="container mx-auto flex items-center justify-between flex-wrap px-2 lg:px-0">
           <div className="text-sm w-full block flex-grow justify-between flex items-center w-auto">
             <div>
               <Link to="/" className={classNames.brand}>

@@ -19,7 +19,7 @@ export default class OverviewTemplate extends React.Component {
       <Layout>
         <Helmet title={`${title} | ${siteTitle}`} />
         <section className="intro">
-          <div className="container mx-auto mb-20 px-2 md:px-0">
+          <div className="container mx-auto mb-20 px-2 lg:px-0">
             <div className="mb-6 pt-20 flex">
               <div className="w-2/3">
                 <h2 className="text-5xl w-2/3 mb-4">{title}</h2>
