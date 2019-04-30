@@ -1,8 +1,8 @@
 ---
 title: "Laucan"
-bgColor: "#C2E3EF"
+bgColor: "#1D73AD"
 image: "images/content/derrida.png"
-sort: 103
+sort: 203
 ---
 
 Albert Camus ist der zweite wichtige große Vertreter des französischen Existentialismus.

@@ -1,7 +1,7 @@
 ---
 title: "Foucault"
-bgColor: "#D0EBF4"
-sort: 102
+bgColor: "#1D73AD"
+sort: 202
 source: Gutting, Gary and Oksala, Johanna, "Michel Foucault", The Stanford Encyclopedia of Philosophy (Spring 2019 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/spr2019/entries/foucault/>.
 image: "images/content/foucault.png"
 question: Want to know what's the origin of psychiatries by Michel Foucault?

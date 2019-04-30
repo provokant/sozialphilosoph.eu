@@ -18,17 +18,19 @@ export default class OverviewTemplate extends React.Component {
     return (
       <Layout>
         <Helmet title={`${title} | ${siteTitle}`} />
-        <section style={{backgroundColor: bgColor}} className="intro">
+        <section className="intro">
           <div className="container mx-auto mb-20 px-2 md:px-0">
             <div className="mb-6 pt-20 flex">
               <div className="w-2/3">
-                <h2 className="text-5xl font-thin tracking-tight w-2/3 mb-4 uppercase">{title}</h2>
+                <h2 className="text-5xl w-2/3 mb-4">{title}</h2>
               </div>
-              <div className="w-1/3 flex just ify-end">
+            </div>
+            <div className="flex">
+              <div className="w-2/3" dangerouslySetInnerHTML={{ __html: html }} />
+              <div className="w-1/3 pl-8">
                 {image && <Image src={image} />}
               </div>
             </div>
-            <div className="columns" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
         </section>
         <PostListing postEdges={edges} />

@@ -1,8 +1,8 @@
 ---
 title: "Someone"
-image: "images/content/derrida.png"
-bgColor: "#E0D4F9"
-sort: 302
+image: "images/content/foucault.png"
+bgColor: "#8C5E58"
+sort: 403
 ---
 
 Someone ...

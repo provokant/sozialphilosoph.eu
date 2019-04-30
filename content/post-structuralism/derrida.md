@@ -1,8 +1,8 @@
 ---
 title: "Derrida"
-sort: 101
-image: "images/content/derrida.png"
-bgColor: "#D9EFF7"
+sort: 201
+image: "images/content/foucault.png"
+bgColor: "#1D73AD"
 source: Lawlor, Leonard, "Jacques Derrida", The Stanford Encyclopedia of Philosophy (Summer 2018 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/sum2018/entries/derrida/>.
 
 ---

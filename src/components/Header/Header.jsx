@@ -53,10 +53,9 @@ export default () => (
                 <Link
                   to={link.node.fields.slug}
                   key={link.node.fields.slug}
-                  activeClassName="text-black"
                   className={classNames.link}
                   activeStyle={{
-                    backgroundColor: link.node.fields.hasChildren ? link.node.frontmatter.bgColor : ``
+                    color: link.node.fields.hasChildren ? link.node.frontmatter.bgColor : ``
                   }}
                 >
                   {link.node.frontmatter.title}

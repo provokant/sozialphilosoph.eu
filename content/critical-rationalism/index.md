@@ -1,9 +1,9 @@
 ---
 title: "Critical rationalism"
-bgColor: "#eae3f9"
-image: "images/content/post-structuralism.png"
+bgColor: "#8C5E58"
+image: "images/content/water.png"
 onHeaderMenu: true
-sort: 300
+sort: 400
 ---
 
 Critical rationalists hold that scientific theories and any other claims to knowledge can and should be rationally criticized, and (if they have empirical content) can and should be subjected to tests which may falsify them. Thus claims to knowledge may be contrastingly and normatively evaluated. They are either falsifiable and thus empirical (in a very broad sense), or not falsifiable and thus non-empirical. Those claims to knowledge that are potentially falsifiable can then be admitted to the body of empirical science, and then further differentiated according to whether they are retained or are later actually falsified. If retained, further differentiation may be made on the basis of how much subjection to criticism they have received, how severe such criticism has been, and how probable the theory is, with the least[7] probable theory that still withstands attempts to falsify it being the one to be preferred. That it is the least[7] probable theory that is to be preferred is one of the contrasting differences between critical rationalism and classical views on science, such as positivism, who hold that one should instead accept the most probable theory. (The least probable theory is the one with the highest information content and most open to future falsification.) Critical Rationalism as a discourse positioned itself against what its proponents took to be epistemologically relativist philosophies, particularly post-modernist or sociological approaches to knowledge. Critical rationalism has it that knowledge is objective (in the sense of being embodied in various substrates and in the sense of not being reducible to what humans individually "know"), and also that truth is objective (exists independently of social mediation or individual perception, but is "really real").

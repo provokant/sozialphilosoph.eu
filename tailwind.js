@@ -191,6 +191,8 @@ module.exports = {
 
   fonts: {
     sans: [
+      'Source Sans Pro',
+      'Noto Sans',
       'Open Sans',
       'system-ui',
       'BlinkMacSystemFont',
@@ -206,6 +208,7 @@ module.exports = {
       'sans-serif',
     ],
     serif: [
+      'Noto Serif',
       'Constantia',
       'Lucida Bright',
       'Lucidabright',

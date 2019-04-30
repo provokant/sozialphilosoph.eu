@@ -1,7 +1,7 @@
 ---
 title: "Post-Structuralism"
-sort: 100
-image: "images/content/post-structuralism.png"
+sort: 200
+image: "images/content/structure.png"
 bgColor: "#1D73AD"
 onHeaderMenu: true
 ---

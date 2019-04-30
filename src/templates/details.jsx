@@ -21,7 +21,7 @@ export default class DetailsTemplate extends React.Component {
         <SEO postPath={slug} postNode={markdownRemark} postSEO />
         <article className="container mx-auto mb-6 py-20 px-4 md:px-2">
           <header>
-            <h1 className="text-5xl font-thin tracking-tight w-2/3 mb-4 uppercase">{title}</h1>
+            <h1 className="text-5xl w-2/3 mb-4">{title}</h1>
           </header>
           <section className="details md:w-2/3" style={{ backgroundColor }}>
             <div dangerouslySetInnerHTML={{ __html: html }} />

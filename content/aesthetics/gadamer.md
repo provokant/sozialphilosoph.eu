@@ -1,5 +1,8 @@
 ---
 title: Gadamer’s Aesthetics
+sort: 305
+image: "images/content/foucault.png"
+bgColor: "#AA66A5"
 source: Davey, Nicholas, "Gadamer's Aesthetics", The Stanford Encyclopedia of Philosophy (Winter 2016 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/win2016/entries/gadamer-aesthetics/>.
 ---
 

@@ -3,6 +3,9 @@ title: "Who are we?"
 sort: 900
 hasChildren: false
 bgColor: "#f7e1f3"
+onLandingPage: false
+onHeaderMenu: false
+onFooterMenu: true
 ---
 
 ## Want to reach out?

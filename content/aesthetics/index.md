@@ -1,7 +1,7 @@
 ---
 title: "Aesthetics"
-sort: 500
-image: "images/content/post-structuralism.png"
+sort: 300
+image: "images/content/wall.png"
 bgColor: "#AA66A5"
 onHeaderMenu: true
 ---

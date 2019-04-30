@@ -2,8 +2,9 @@
 title: "Existentialism"
 sort: 100
 onHeaderMenu: true
-image: "images/content/post-structuralism.png"
-bgColor: "#E54975"
+image: "images/content/cigarette.png"
+bgColor: "#D12B5A"
+# bgColor: "#E54975"
 ---
 
 Mit Existentialismus (auch Existenzialismus) wird im allgemeinen Sinne die französische philosophische Strömung der Existenzphilosophie bezeichnet. Ihre Hauptvertreter sind: Jean-Paul Sartre, Simone de Beauvoir, Albert Camus und Gabriel Marcel.

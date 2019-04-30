@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Noto+Serif:200,400,500');
 
 @tailwind preflight;
 @tailwind components;
@@ -6,6 +6,7 @@
 
 body {
   overflow-y: scroll;
+  @apply .font-sans .leading-normal .font-light;
 }
 
 a {
@@ -24,8 +25,7 @@ h2,
 h3,
 h4,
 h5 {
-  // @apply .tracking-light;
-  font-family: 'Roboto Condensed', sans-serif;
+  @apply .font-serif .tracking-normal .font-hairline .leading-tight;
 }
 
 figure {
@@ -33,4 +33,9 @@ figure {
   right: 0;
   bottom: auto;
   left: 0;
+}
+
+blockquote {
+  border-left: 4px solid;
+  @apply .text-grey-darker .italic .my-8 .pl-3 .border-grey-lighter
 }
