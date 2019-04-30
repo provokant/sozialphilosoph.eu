@@ -2,6 +2,7 @@
 title: "Satre"
 sort: 101
 bgColor: "#D12B5A"
+image: "images/content/satre.png"
 ---
 Das philosophische Hauptwerk Sartres Das Sein und das Nichts (L’être et le néant, 1943) gilt als theoretisches Fundament des Existentialismus. Hier zeigt Sartre auf, dass sich das menschliche Sein (Für-Sich) von dem anderen Sein, den Dingen, Tieren, Sachen etc. (An-sich) durch seinen Bezug zum Nichts unterscheidet.
 

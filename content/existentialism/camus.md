@@ -1,7 +1,7 @@
 ---
 title: "Camus"
 bgColor: "#D12B5A"
-image: "images/content/foucault.png"
+image: "images/content/camus.png"
 sort: 104
 source: Aronson, Ronald, "Albert Camus", The Stanford Encyclopedia of Philosophy (Summer 2017 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/sum2017/entries/camus/>.
 ---
