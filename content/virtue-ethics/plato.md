@@ -2,7 +2,7 @@
 title: "Plato"
 bgColor: "#6CBC82"
 sort: 601
-source: "Frede, Dorothea, \"Plato\'s Ethics: An Overview\", The Stanford Encyclopedia of Philosophy (Winter 2017 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/win2017/entries/plato-ethics/>."
+source: "Frede, Dorothea, \"Plato's Ethics: An Overview\", The Stanford Encyclopedia of Philosophy (Winter 2017 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/win2017/entries/plato-ethics/>."
 image: "images/content/foucault.png"
 ---
 
