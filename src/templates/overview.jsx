@@ -45,7 +45,10 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [fields___sort], order: ASC }
-      filter: { fields: { slug: { regex: $slug }, isIndex: { ne: true } } }
+      filter: { fields: { 
+        slug: { regex: $slug }, 
+        isIndex: { ne: true }
+      } }
     ) {
       edges {
         node {

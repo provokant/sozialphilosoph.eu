@@ -68,8 +68,20 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       } else {
         sort = 10000
       }
+
+      if (Object.prototype.hasOwnProperty.call(frontmatter, 'highlight') && Object.prototype.hasOwnProperty.call(frontmatter, 'question')) {
+        ({ highlight } = frontmatter);
+        ({ question } = frontmatter)
+      } else {
+        question = null
+        highlight = -1
+      }
     }
+
+
     createNodeField({ node, name: 'slug', value: slug })
+    createNodeField({ node, name: 'highlight', value: highlight })
+    createNodeField({ node, name: 'question', value: question })
     createNodeField({ node, name: 'sort', value: sort })
     createNodeField({ node, name: 'onHeaderMenu', value: onHeaderMenu })
     createNodeField({ node, name: 'onFooterMenu', value: onFooterMenu })
@@ -83,13 +95,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     /**
      * If question and highlight exists, add separate post.
      */
-    if (Object.prototype.hasOwnProperty.call(frontmatter, 'highlight') && Object.prototype.hasOwnProperty.call(frontmatter, 'question')) {
-      createNodeField({ node, name: 'highlight', value: frontmatter.highlight })
-      createNodeField({ node, name: 'question', value: frontmatter.question })
-      createNodeField({ node, name: 'slug', value: `${slug}${_.kebabCase(frontmatter.question)}` })
-
-      postNodes.push(Object.apply({}, node))
-    }
+    
   }
 }
 
@@ -106,7 +112,7 @@ exports.createPages = ({ graphql, actions }) => {
 
   return new Promise((resolve, reject) => {
     const overviewPage = path.resolve('src/templates/overview.jsx')
-    const detailsPage = path.resolve('src/templates/details.jsx')
+    // const detailsPage = path.resolve('src/templates/details.jsx')
     const detailsHighlightPage = path.resolve('src/templates/detailsHighlight.jsx')
 
     resolve(
@@ -162,26 +168,15 @@ exports.createPages = ({ graphql, actions }) => {
           } else {
             createPage({
               path: slug,
-              component: detailsPage,
+              component: detailsHighlightPage,
               context: {
                 slug,
                 title,
+                highlight,
+                question,
+                bgColor
               },
             })
-
-            if (highlight && question) {
-              createPage({
-                path: slug,
-                component: detailsHighlightPage,
-                context: {
-                  slug,
-                  title,
-                  highlight,
-                  question,
-                  bgColor
-                },
-              })
-            }
           }
         })
       })

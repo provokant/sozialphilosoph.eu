@@ -6,7 +6,8 @@ import Image from '../Image/Image'
 
 class PostListItem extends React.Component {
   render() {
-    const { postNode, isOdd, isIntro } = this.props
+    const { postNode, isIntro } = this.props
+    // const { postNode, isOdd, isIntro } = this.props
 
     return (
       <section className={isIntro ? `intro` : `item`} key={postNode.path}>

@@ -4,7 +4,7 @@ sort: 601
 image: "images/content/foucault.png"
 bgColor: "#4E59B7"
 source: Ld'Entreves, Maurizio Passerin, "Hannah Arendt", The Stanford Encyclopedia of Philosophy (Spring 2019 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/spr2019/entries/arendt/>.
-question: Do you want to know the difference between „violence“ and „power“?
+question: Would you like to know the difference between „violence“ and „power“ by Hannah Arendt?
 highlight: 49
 ---
 

@@ -14,9 +14,12 @@ export default class DetailsHighlightTemplate extends React.Component {
     this.question = props.pageContext.question
     this.bgColor = props.pageContext.bgColor
   }
-  
 
   componentDidMount() {
+    if (this.highlight < 0 && !this.question) {
+      return
+    }
+
     const paragraphs = document.querySelectorAll(`section p`)
     const highlightedParagraph = paragraphs[this.highlight]
     const questionNode = document.createElement(`div`)
@@ -27,7 +30,7 @@ export default class DetailsHighlightTemplate extends React.Component {
 
     highlightedParagraph.prepend(questionNode)
     highlightedParagraph.setAttribute(`id`, `highlight`)
-    highlightedParagraph.setAttribute(`style`, `background-color: ${this.bgColor}33`)
+    highlightedParagraph.setAttribute(`style`, `background-color: ${this.bgColor}1c`)
   }
 
   render() {
