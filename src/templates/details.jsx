@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 import Layout from '../layout'
 import SEO from '../components/SEO/SEO'
 import { siteTitle, backgroundColor } from '../../data/SiteConfig'
-// import './post.sass'
 
 export default class DetailsTemplate extends React.Component {
   render() {

@@ -106,7 +106,7 @@ exports.createPages = ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     const overviewPage = path.resolve('src/templates/overview.jsx')
     const detailsPage = path.resolve('src/templates/details.jsx')
-    const detailsHighlightPage = path.resolve('src/templates/detailsHighlight.jsx')
+    // const detailsHighlightPage = path.resolve('src/templates/detailsHighlight.jsx')
 
     resolve(
       graphql(

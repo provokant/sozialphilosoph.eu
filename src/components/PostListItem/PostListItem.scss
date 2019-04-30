@@ -18,9 +18,11 @@ section {
   &.item {
 
     a {
-      background: -webkit-linear-gradient(currentColor, #000);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      // Styles added to src/layout/global.css because of
+      // unhandled transpiling issues 
+      // background: -webkit-linear-gradient(currentColor, #000);
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
     }
 
     p {
