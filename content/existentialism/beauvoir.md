@@ -1,7 +1,7 @@
 ---
 title: "Beauvoir"
 sort: 101
-image: "images/content/foucault.png"
+image: "images/content/beauvoir.png"
 bgColor: "#D12B5A"
 source: Bergoffen, Debra, "Simone de Beauvoir", The Stanford Encyclopedia of Philosophy (Fall 2018 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2018/entries/beauvoir/>.
 
