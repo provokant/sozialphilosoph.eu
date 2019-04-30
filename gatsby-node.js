@@ -165,6 +165,8 @@ exports.createPages = ({ graphql, actions }) => {
               context: {
                 slug,
                 title,
+                highlight,
+                question
               },
             })
 
