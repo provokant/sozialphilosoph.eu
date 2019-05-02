@@ -50,17 +50,14 @@ section {
     }
 
     p {
-      // @apply .font-thin;
       transition: all 360ms;
-      @apply .text-black;
+      @apply .text-grey-darker;
     }
 
     h1, h2, h3, h4, h5 {
-      // border-bottom: 2px solid currentColor;
       color: currentColor;
       display: inline-block;
       transition: all 360ms;
-      // box-shadow: inset 0 -4px 0 #fff, inset 0 -4.5px 0 #fff;
     }
 
     button {
@@ -90,12 +87,6 @@ section {
       mix-blend-mode: screen;
       transition: all 360ms;
     }
-
-    // img {
-    //   mix-blend-mode: multiply;
-
-      
-    // }
   }
 
   &.intro,
@@ -124,13 +115,6 @@ section {
   &.intro {
     height: 100%;
     position: unset;
-    // background: black;
-
-    // img {
-    //   max-height: 6rem;
-    // }
-
-    
   }
 
   &.details {
@@ -170,36 +154,6 @@ section {
       // mix-blend-mode: overlay;
       text-shadow: 0 1px black,  0 3px 0.4rem rgba(0,0,0,0.4);
     }
-
-    // &:after {
-    //   content: "";
-    //   display: none;
-    //   top: 0;
-    //   left: 0;
-    //   width: 100%;
-    //   height: 100%;
-    //   z-index: 10;
-    //   animation: fade-in 120ms 660ms forwards;
-
-    //   @apply .absolute .bg-black;
-
-    //   @keyframes fade-in {
-    //     0% {
-    //       opacity: 1;
-    //       display: block;
-    //     }
-
-    //     99% {
-    //       opacity: 0;
-    //       display: block;
-    //     }
-
-    //     100% {
-    //       opacity: 0;
-    //       display: none;
-    //     }
-    //   }
-    // }
 
     .gatsby-image-wrapper:after {
       content: "";
