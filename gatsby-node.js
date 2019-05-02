@@ -9,6 +9,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   let sort
   let highlight
   let question
+  let questions
   let onLandingPage
   let onHeaderMenu
   let onFooterMenu
@@ -76,12 +77,19 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
         question = null
         highlight = -1
       }
+
+      if (Object.prototype.hasOwnProperty.call(frontmatter, 'questions')) {
+        ({ questions } = frontmatter)
+      } else {
+        questions = null
+      }
     }
 
 
     createNodeField({ node, name: 'slug', value: slug })
     createNodeField({ node, name: 'highlight', value: highlight })
     createNodeField({ node, name: 'question', value: question })
+    createNodeField({ node, name: 'questions', value: questions })
     createNodeField({ node, name: 'sort', value: sort })
     createNodeField({ node, name: 'onHeaderMenu', value: onHeaderMenu })
     createNodeField({ node, name: 'onFooterMenu', value: onFooterMenu })
@@ -95,7 +103,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     /**
      * If question and highlight exists, add separate post.
      */
-    
   }
 }
 
@@ -135,6 +142,10 @@ exports.createPages = ({ graphql, actions }) => {
                     hasChildren
                     highlight
                     question
+                    questions {
+                      question
+                      highlight
+                    }
                   }
                 }
               }
@@ -150,7 +161,7 @@ exports.createPages = ({ graphql, actions }) => {
         result.data.allMarkdownRemark.edges.forEach(edge => {
           const { html, frontmatter, fields } = edge.node
           const { sort, title, bgColor, image } = frontmatter
-          const { slug, isIndex, hasChildren, highlight, question } = fields
+          const { slug, isIndex, hasChildren, questions } = fields
 
           if (isIndex && hasChildren) {
             createPage({
@@ -172,8 +183,7 @@ exports.createPages = ({ graphql, actions }) => {
               context: {
                 slug,
                 title,
-                highlight,
-                question,
+                questions,
                 bgColor
               },
             })

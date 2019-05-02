@@ -11,6 +11,7 @@ class SEO extends Component {
     let description
     let image
     let postURL
+
     if (postSEO) {
       const postMeta = postNode.frontmatter
       title = postMeta.title ? postMeta.title : config.siteTitle
@@ -70,6 +71,7 @@ class SEO extends Component {
     }
     return (
       <Helmet>
+        <html lang={config.siteLanguage} />
         {/* General tags */}
         <meta name="description" content={description} />
         <meta name="image" content={image} />

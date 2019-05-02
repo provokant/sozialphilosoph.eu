@@ -57,6 +57,12 @@ module.exports = {
           {
             resolve: 'gatsby-remark-responsive-iframe',
           },
+          {
+            resolve: 'gatsby-remark-katex',
+            options: {
+              strict: 'ignore'
+            }
+          },
           'gatsby-remark-copy-linked-files',
           'gatsby-remark-autolink-headers',
         ],

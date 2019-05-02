@@ -13,7 +13,7 @@ export default class OverviewTemplate extends React.Component {
     const { data, pageContext } = this.props
     const { allMarkdownRemark } = data
     const { edges } = allMarkdownRemark
-    const { title, bgColor, html, image } = pageContext
+    const { title, html, image } = pageContext
 
     return (
       <Layout>

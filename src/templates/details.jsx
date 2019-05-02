@@ -18,14 +18,14 @@ export default class DetailsTemplate extends React.Component {
       <Layout>
         <Helmet title={`${title} | ${siteTitle}`} />
         <SEO postPath={slug} postNode={markdownRemark} postSEO />
-        <article className="container mx-auto mb-6 py-20 px-4 lg:px-2">
+        <article className="details container">
           <header>
-            <h1 className="text-5xl w-2/3 mb-4">{title}</h1>
+            <h1>{title}</h1>
           </header>
-          <section className="details lg:w-2/3" style={{ backgroundColor }}>
+          <section className="details" style={{ backgroundColor }}>
             <div dangerouslySetInnerHTML={{ __html: html }} />
 
-            {source && <div className="text-italic text-sm border-t-2 pt-3 text-grey-darker">{source}</div>} 
+            {source && <div className="source">{source}</div>} 
           </section>
         </article>
       </Layout>

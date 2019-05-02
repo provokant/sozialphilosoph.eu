@@ -3,7 +3,10 @@ title: "Aristotle"
 bgColor: "#6CBC82"
 sort: 601
 source: Kraut, Richard, "Aristotle's Ethics", The Stanford Encyclopedia of Philosophy (Summer 2018 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/sum2018/entries/aristotle-ethics/>.
-image: "images/content/foucault.png"
+image: "images/content/aristotle.png"
+questions:
+  - question: Are you interested that Aristotle wrote about procrastination 2500 years ago?
+    highlight: 40
 ---
 
 Aristotle conceives of ethical theory as a field distinct from the theoretical sciences. Its methodology must match its subject matter—good action—and must respect the fact that in this field many generalizations hold only for the most part. We study ethics in order to improve our lives, and therefore its principal concern is the nature of human well-being. Aristotle follows Socrates and Plato in taking the virtues to be central to a well-lived life. Like Plato, he regards the ethical virtues (justice, courage, temperance and so on) as complex rational, emotional and social skills. But he rejects Plato's idea that to be completely virtuous one must acquire, through a training in the sciences, mathematics, and philosophy, an understanding of what goodness is. What we need, in order to live well, is a proper appreciation of the way in which such goods as friendship, pleasure, virtue, honor and wealth fit together as a whole. In order to apply that general understanding to particular cases, we must acquire, through proper upbringing and habits, the ability to see, on each occasion, which course of action is best supported by reasons. Therefore practical wisdom, as he conceives it, cannot be acquired solely by learning general rules. We must also acquire, through practice, those deliberative, emotional, and social skills that enable us to put our general understanding of well-being into practice in ways that are suitable to each occasion.
@@ -78,7 +81,7 @@ Perhaps a greater difficulty can be raised if we ask how Aristotle determines wh
 
 He often says, in the course of his discussion, that when the good person chooses to act virtuously, he does so for the sake of the “kalon”—a word that can mean “beautiful”, “noble”, or “fine” (see for example 1120a23–4). This term indicates that Aristotle sees in ethical activity an attraction that is comparable to the beauty of well-crafted artifacts, including such artifacts as poetry, music, and drama. He draws this analogy in his discussion of the mean, when he says that every craft tries to produce a work from which nothing should be taken away and to which nothing further should be added (1106b5–14). A craft product, when well designed and produced by a good craftsman, is not merely useful, but also has such elements as balance, proportion and harmony—for these are properties that help make it useful. Similarly, Aristotle holds that a well-executed project that expresses the ethical virtues will not merely be advantageous but kalon as well—for the balance it strikes is part of what makes it advantageous. The young person learning to acquire the virtues must develop a love of doing what is kalon and a strong aversion to its opposite—the aischron, the shameful and ugly. Determining what is kalon is difficult (1106b28–33, 1109a24–30), and the normal human aversion to embracing difficulties helps account for the scarcity of virtue (1104b10–11).
 
-5.2 Ethical Theory Does Not Offer a Decision Procedure
+### 5.2 Ethical Theory Does Not Offer a Decision Procedure
 It should be clear that neither the thesis that virtues lie between extremes nor the thesis that the good person aims at what is intermediate is intended as a procedure for making decisions. These doctrines of the mean help show what is attractive about the virtues, and they also help systematize our understanding of which qualities are virtues. Once we see that temperance, courage, and other generally recognized characteristics are mean states, we are in a position to generalize and to identify other mean states as virtues, even though they are not qualities for which we have a name. Aristotle remarks, for example, that the mean state with respect to anger has no name in Greek (1125b26–7). Though he is guided to some degree by distinctions captured by ordinary terms, his methodology allows him to recognize states for which no names exist.
 
 So far from offering a decision procedure, Aristotle insists that this is something that no ethical theory can do. His theory elucidates the nature of virtue, but what must be done on any particular occasion by a virtuous agent depends on the circumstances, and these vary so much from one occasion to another that there is no possibility of stating a series of rules, however complicated, that collectively solve every practical problem. This feature of ethical theory is not unique; Aristotle thinks it applies to many crafts, such as medicine and navigation (1104a7–10). He says that the virtuous person “sees the truth in each case, being as it were a standard and measure of them” (1113a32–3); but this appeal to the good person's vision should not be taken to mean that he has an inarticulate and incommunicable insight into the truth. Aristotle thinks of the good person as someone who is good at deliberation, and he describes deliberation as a process of rational inquiry. The intermediate point that the good person tries to find is
@@ -223,9 +226,9 @@ The study of the human good has therefore led to two conclusions: The best life 
 - **appearances**: *phainomena*
 - **beautiful**: *kalon*
 - **clear**: *saphes*
-- **complete** (v*erb, also: to perfect): telein*
+- **complete(verb, also: to perfect)**: *telein*
 - **condition**: *hexis*
-- **continence** (l*iterally: mastery): enkrateia*
+- **continence (literally: mastery)**: *enkrateia*
 - **continent**: *enkratês*
 - **disposition**: *hexis*
 - **emotion**: *pathos*
@@ -236,19 +239,19 @@ The study of the human good has therefore led to two conclusions: The best life 
 - **flourishing**: *eudaimonia*
 - **friendship**: *philia; philein (the verb cognate to the noun “philia”, can sometimes be - translated “like” or even “love”)*
 - **function**: *ergon*
-- **good** will:* eunoia*
+- **good will**: *eunoia*
 - **happiness**: *eudaimonia*
 - **happy**: *eudaimon*
 - **impetuosity**: *propeteia*
-- **incontinence** (l*iterally: lack of mastery): akrasia*
+- **incontinence(literally: lack of mastery)**: *akrasia*
 - **incontinent**: *akratês*
-- **intuitive** understanding:* nous*
-- **live** well:* eu zên*
-- **practical** wisdom:* phronêsis*
+- **intuitive understanding**: *nous*
+- **live well**: *eu zên*
+- **practical** *wisdom: phronêsis*
 - **science**: *epistêmê*
 - **standard**: *horos*
 - **state**: *hexis*
 - **task**: *ergon*
 - **virtue**: *aretê*
 - **weakness**: *astheneia*
-- **work**: *ergon *
+- **work**: *ergon*

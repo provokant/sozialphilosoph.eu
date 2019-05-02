@@ -6,7 +6,7 @@
 
 body {
   overflow-y: scroll;
-  @apply .font-sans .leading-normal .font-light;
+  @apply .font-sans .leading-normal .font-light .text-base;
 }
 
 a {
@@ -37,5 +37,27 @@ figure {
 
 blockquote {
   border-left: 4px solid;
-  @apply .text-grey-darker .italic .my-8 .pl-3 .border-grey-lighter
+  @apply .text-grey-darkest .italic .my-8 .pl-3 .border-grey-lighter
+}
+
+article {
+
+  &.details {
+    @apply .mx-auto .mb-6 .py-20 .px-4 .relative;
+
+    @screen lg {
+      @apply .px-2;
+    }
+
+    header {
+
+      h1 {
+        @apply .text-5xl .w-2/3 .mb-4;
+      }
+    }
+  }
+}
+
+.katex * {
+  @apply .text-base;
 }

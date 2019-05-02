@@ -19,28 +19,43 @@ section {
     max-height: 36rem;
 
     a {
-      // Styles added to src/layout/global.css because of
-      // unhandled transpiling issues 
-      // background: -webkit-linear-gradient(currentColor, #000);
-      // -webkit-background-clip: text;
-      // -webkit-text-fill-color: transparent;
       transition: all 360ms;
 
+      @apply .mb-6 .py-10 .block;
+
+      @screen md {
+        @apply .py-20 .flex;
+      }
+
+      button {
+        @apply .text-black .border-black .bg-transparent .mt-6 .py-2 .px-4 .border .rounded;
+      }
+
+      h2 {
+        @apply .text-5xl .mb-4;
+
+        @screen md {
+          @apply .w-2/3;
+        }
+      }
+
+      p {
+        @apply .leading-normal .text-xl .font-medium .text-grey-darkest;
+
+        @screen lg {
+          @apply .w-2/3;
+        }
+      }
+
       &:hover {
-        -webkit-text-fill-color: unset;
-        color: black;
+        @apply .text-black;
 
         h1, h2, h3, h4, h5 {
-          // box-shadow: inset 0 -3px 0 #fff, inset 0 -5px 0 #000;
           @apply .text-black;
         }
 
         p {
           @apply .text-black;
-        }
-
-        button {
-          @apply .text-black .border-black;
         }
 
         .gatsby-image-wrapper:after {
@@ -101,14 +116,14 @@ section {
       hyphenate-limit-lines: 2;   
       hyphenate-limit-last: always;
       hyphenate-limit-zone: 8%;
-      line-height: 125%;
+      // line-height: 125%;
       margin-bottom: 1rem;
     }
 
     h1, h2, h3, h4, h5 {
-      margin: 0.8rem 0 0.3rem;
-      letter-spacing: 1px;
-      font-weight: 200;
+      // margin: 0.8rem 0 0.3rem;
+      // letter-spacing: 1px;
+      // font-weight: 200;
     }
   }
 
@@ -118,25 +133,55 @@ section {
   }
 
   &.details {
-    height: 100%;
     position: unset;
     border: unset;
+
+    @apply .h-auto;
+
+    @screen lg {
+      @apply .w-2/3;
+    }
 
     img {
       max-height: 6rem;
     }
 
+    h2, h3, h4, h5 {
+      // line-height: 2rem;
+      // box-shadow: 0 0.5rem 1rem #fff;
+
+      @apply .-mx-4 .px-4 .py-4 .pin-t .bg-white .text-xl;
+
+      @screen md {
+        @apply .sticky;
+      }
+    }
+
     p {
-      &#highlight {
-        padding: 1rem 1.1rem;
-        margin: 0 -1.1rem 1rem;
+      &.highlight {
 
-        @apply .rounded .inline-block;
-      }
+        @apply .rounded .relative .inline-block .p-3 .-mx-3 .mb-3;
 
-      .question {
-        @apply .mb-4 .text-xl .tracking-tight .font-thin;
+        .anchor {
+          top: -3.25rem;
+
+          @apply .absolute .pin-l;
+        }
+
+        .question {
+          @apply .mb-4 .text-xl .tracking-tight .font-thin;
+  
+          @screen lg {
+            right: -33.3333%;
+
+            @apply .absolute .w-1/3 .pl-3;
+          }
+        }
       }
+    }
+
+    .source {
+      @apply .italic .text-sm .border-t-2 .pt-3 .text-grey-darker;
     }
   }
 
@@ -157,24 +202,10 @@ section {
 
     .gatsby-image-wrapper:after {
       content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
       background: #18435A;
       mix-blend-mode: screen;
-    }
-  }
 
-  .columns {
-    @media (min-width: 768px) {
-      column-count: 2;
-      column-gap: 2rem;
-    }
-
-    @media (min-width: 992px) {
-      column-count: 3;
+      @apply .absolute .pin-t .pin-l .w-full .h-full;
     }
   }
 

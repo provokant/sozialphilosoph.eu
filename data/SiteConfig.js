@@ -1,17 +1,18 @@
 const config = {
-  siteTitle: 'Praesto - Selected philosophical writings', // Site title.
-  siteTitleShort: 'Praesto', // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: 'GatsbyJS Starter', // Alternative site title for SEO.
-  siteLogo: 'images/logos/logo-1024.png', // Logo used for SEO and manifest.
-  siteUrl: 'https://localhost:8000', // Domain of your website without pathPrefix.
-  pathPrefix: '', // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
-  siteRss: '/rss.xml', // Path to the RSS file.
-  siteDescription: 'Selected philosophical writings', // Website description used for RSS feeds/meta description tag.
-  dateFromFormat: 'YYYY-MM-DD', // Date format used in the frontmatter.
-  dateFormat: 'DD/MM/YYYY', // Date format for display.
-  userLocation: 'North Pole, Earth', // User location to display in the author segment.
-  themeColor: '#c62828', // Used for setting manifest and progress theme colors.
-  backgroundColor: '#fff', // Used for setting manifest background color.
+  siteTitle: 'Praesto - Selected philosophical writings',
+  siteTitleShort: 'Praesto',
+  siteTitleAlt: 'GatsbyJS Starter',
+  siteLogo: 'images/logos/logo-1024.png',
+  siteUrl: 'https://localhost:8000',
+  siteLanguage: 'en',
+  pathPrefix: '',
+  siteRss: '/rss.xml',
+  siteDescription: 'Selected philosophical writings',
+  dateFromFormat: 'YYYY-MM-DD',
+  dateFormat: 'DD/MM/YYYY',
+  userLocation: 'North Pole, Earth',
+  themeColor: '#c62828',
+  backgroundColor: '#fff',
   backgroundImage: 'images/content/bg.jpg',
   landingPageTitle: 'That this fear to error is already the error itself ...',
   landingPageTeaser: 'Selected philosophical writings. We are gathering introductional information for any philosophy-interested person. Easy-to-read, well researched, user-friendly',
