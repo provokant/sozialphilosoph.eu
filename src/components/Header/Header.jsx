@@ -5,7 +5,7 @@ import { siteDescription, siteTitleShort } from '../../../data/SiteConfig'
 import './Header.scss'
 
 const classNames = {
-  default: 'block text-right mt-0 py-3',
+  default: 'block text-center mt-0 py-3',
   get defaultLink() {
     return `${this.default} md:text-left md:inline-block text-grey-darkest hover:text-black`
   },
@@ -13,7 +13,7 @@ const classNames = {
     return `${this.defaultLink} px-3`
   },
   get brand() {
-    return `${this.defaultLink} lowercase font-bold tracking-wide text-black mr-8`
+    return `${this.defaultLink} lowercase font-bold tracking-wide text-black md:mr-8`
   }
 }
 
@@ -57,15 +57,15 @@ class Header extends React.Component {
     ))
 
     const mobileMenu = (
-      <div className="fixed pin-l pin-t pin-r bg-white mt-10">
+      <div className="fixed flex flex-col justify-center pin-l pin-t pin-r pin-b bg-white z-10">
         {menuLinks}
       </div>
     )
 
     return (
-      <header className="header">
+      <header className={showMenu ? `header fixed` : `header`}>
         <nav className="container mx-auto flex items-center justify-between flex-wrap px-4 lg:px-2">
-          <div className="text-sm w-full block flex-grow justify-between flex items-center w-auto">
+          <div className="text-sm w-full block flex-grow justify-between flex items-center w-auto z-20">
             <div className="flex">
               {brandLink}
               <div className="hidden md:block">
@@ -77,8 +77,8 @@ class Header extends React.Component {
             </div>
             <div className="block md:hidden">
               <button type="button" className="text-grey-dark tracking-wide hover:text-black" onClick={this.toggleMenu}>
-                <span className="mr-2">NAVIGATE</span>
-                &#9776; 
+                <span className="mr-2">{showMenu ? `CLOSE MENU` : `NAVIGATE`}</span>
+                &#9776;
               </button>
             </div>
           </div>

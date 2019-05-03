@@ -19,11 +19,7 @@ class Index extends React.Component {
       <Layout>
         <Helmet title={siteTitle} />
         <SEO />
-        <section className="index flex items-center bg-cover" style={{ backgroundImage: `url(${backgroundImage})` }}>
-
-          {/* <figure className="absolute w-full max-w-lg mx-auto my-auto">
-            <Image src={landingPageImage} />
-          </figure> */}
+        <section className="index flex items-center bg-center bg-cover" style={{ backgroundImage: `url(${backgroundImage})` }}>
           <div className="container mx-auto mb-20 relative">
             <div className="mb-6 pt-20 flex justify-center">
               <div className="w-2/3 md:w-1/2">

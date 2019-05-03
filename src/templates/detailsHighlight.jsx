@@ -24,6 +24,10 @@ export default class DetailsHighlightTemplate extends React.Component {
     const paragraphs = document.querySelectorAll(`section p`)
 
     this.questions.forEach(({ question, highlight }) => {
+      if (question !== null || highlight !== null) {
+        return
+      }
+
       const highlightedNode = paragraphs[highlight]
       const questionNode = document.createElement(`div`)
       const anchorNode = document.createElement('a')
@@ -37,8 +41,8 @@ export default class DetailsHighlightTemplate extends React.Component {
       highlightedNode.prepend(questionNode)
 
       anchorNode.setAttribute(`class`, `anchor`)
-      anchorNode.setAttribute(`name`, kebabCase(question))      
-      anchorNode.setAttribute(`id`, kebabCase(question))      
+      anchorNode.setAttribute(`name`, kebabCase(question))
+      anchorNode.setAttribute(`id`, kebabCase(question))
       highlightedNode.prepend(anchorNode)
     })
   }
@@ -63,7 +67,7 @@ export default class DetailsHighlightTemplate extends React.Component {
           </header>
           <section className="details" style={{ backgroundColor }}>
             <div dangerouslySetInnerHTML={{ __html: html }} />
-            {source && <div className="source">{source}</div>} 
+            {source && <div className="source">{source}</div>}
           </section>
         </article>
       </Layout>
