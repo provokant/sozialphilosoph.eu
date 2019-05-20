@@ -1,7 +1,7 @@
 ---
 title: "Habermas"
 sort: 603
-image: "images/content/foucault.png"
+image: "images/content/habermas.png"
 bgColor: "#4E59B7"
 source: Lawlor, Leonard, "Jacques Derrida", The Stanford Encyclopedia of Philosophy (Summer 2018 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/sum2018/entries/derrida/>.
 

@@ -42,7 +42,7 @@ class Question extends React.Component {
     
     return (
       <div className="flex flex-col items-center justify-center py-10 flex-grow">
-        <p className="text-2xl w-2/3 lg:w-1/3 text-center text-white min-h-10">
+        <p className="text-2xl w-2/3 lg:w-2/3 text-center text-white min-h-10">
           {question}
         </p>
         <div className="flex mt-8">

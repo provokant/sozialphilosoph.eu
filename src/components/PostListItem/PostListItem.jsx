@@ -11,14 +11,14 @@ class PostListItem extends React.Component {
 
     return (
       <section className="item" key={postNode.path}>
-        <div className="container mx-auto px-4 lg:px-2">
+        <div className="container">
           <Link to={postNode.path} style={{ color: postNode.bgColor ? postNode.bgColor : `#000`}}>
             <div className="w-full md:w-2/3">
               <h2>{postNode.title}</h2>
               <p>{postNode.excerpt}</p>
               <button type="button">Read more &raquo;</button>
             </div>
-            <div className="image flex items-center justify-center w-full px-12 pt-10 md:w-1/3 md:pl-8 md:pr-0 md:pt-0">
+            <div className="image">
               {postNode.image && <Image src={postNode.image} />}
             </div>
           </Link>
@@ -42,13 +42,13 @@ PostListItem.propTypes = {
       }).isRequired,
     })
   ).isRequired,
-  isOdd: PropTypes.bool,
-  isIntro: PropTypes.bool
+  // isOdd: PropTypes.bool,
+  // isIntro: PropTypes.bool
 }
 
 PostListItem.getDefaultProps = {
-  isOdd: false,
-  isIntro: false
+  // isOdd: false,
+  // isIntro: false
 }
 
 export default PostListItem

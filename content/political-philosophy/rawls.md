@@ -1,7 +1,7 @@
 ---
 title: "Rawls"
 sort: 602
-image: "images/content/foucault.png"
+image: "images/content/rawls.png"
 bgColor: "#4E59B7"
 source: Wenar, Leif, "John Rawls", The Stanford Encyclopedia of Philosophy (Spring 2017 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/spr2017/entries/rawls/>.
 
@@ -69,7 +69,7 @@ Rawls answers these challenges of legitimacy and stability with his theory of po
 ### 3.1 Legitimacy: The Liberal Principle of Legitimacy
 In a democracy, political power is always the power of the people as a collective body. In light of the diversity within a democracy, what would it mean for citizens legitimately to exercise coercive political power over one another? Rawls's test for the acceptable use of political power in a democracy is his liberal principle of legitimacy:
 
-    Our exercise of political power is fully proper only when it is exercised in accordance with a constitution the essentials of which all citizens as free and equal may reasonably be expected to endorse in the light of principles and ideals acceptable to their common human reason. (PL, 137) 
+> Our exercise of political power is fully proper only when it is exercised in accordance with a constitution the essentials of which all citizens as free and equal may reasonably be expected to endorse in the light of principles and ideals acceptable to their common human reason. (PL, 137) 
 
 According to this principle, political power may only be used in ways that all citizens can reasonably be expected to endorse. The use of political power must fulfill a criterion of reciprocity: citizens must reasonably believe that all citizens can reasonably accept the enforcement of a particular set of basic laws. Those coerced by law must be able to endorse the society's fundamental political arrangements freely, not because they are dominated or manipulated or kept uninformed.
 
@@ -91,7 +91,7 @@ The possibility of reasonable pluralism softens but does not solve the challenge
 
 Yet where else then to turn to find the ideas that will flesh out society's most basic laws, which all citizens will be required to obey?
 
-    Since justification is addressed to others, it proceeds from what is, or can be, held in common; and so we begin from shared fundamental ideas implicit in the public political culture in the hope of developing from them a political conception that can gain free and reasoned agreement in judgment. (PL, 100–01) 
+> Since justification is addressed to others, it proceeds from what is, or can be, held in common; and so we begin from shared fundamental ideas implicit in the public political culture in the hope of developing from them a political conception that can gain free and reasoned agreement in judgment. (PL, 100–01) 
 
 There is only one source of fundamental ideas that can serve as a focal point for all reasonable citizens of a liberal society. This is the society's public political culture. The public political culture of a democratic society, Rawls says, “comprises the political institutions of a constitutional regime and the public traditions of their interpretation (including those of the judiciary), as well as historic texts and documents that are common knowledge” (PL, 13–14). Rawls looks to fundamental ideas implicit, for example, in the design of the society's government, in the constitutional list of individual rights, and in the historic decisions of important courts. These fundamental ideas from the public political culture can be crafted into a political conception of justice.
 
@@ -104,9 +104,9 @@ The three most fundamental ideas that Rawls finds in the public political cultur
 
 Because there are many reasonable interpretations of “free,” “equal” and “fair,” there will be many liberal political conceptions of justice. Since all the members of this family interpret the same fundamental ideas, however, all liberal political conceptions of justice will share certain basic features:
 
-    A liberal political conception of justice will ascribe to all citizens familiar individual rights and liberties, such as rights of free expression, liberty of conscience, and free choice of occupation;
-    A political conception will give special priority to these rights and liberties, especially over demands to further the general good (e.g., to increase national wealth) or perfectionist values (e.g., to promote a particular view of human flourishing);
-    A political conception will assure for all citizens sufficient all-purpose means to make effective use of their freedoms.
+> A liberal political conception of justice will ascribe to all citizens familiar individual rights and liberties, such as rights of free expression, liberty of conscience, and free choice of occupation;
+> A political conception will give special priority to these rights and liberties, especially over demands to further the general good (e.g., to increase national wealth) or perfectionist values (e.g., to promote a particular view of human flourishing);
+> A political conception will assure for all citizens sufficient all-purpose means to make effective use of their freedoms.
 
 These abstract features must, Rawls says, be realized in certain kinds of institutions. He mentions several features that all societies that are ordered by a liberal political conception will share: fair opportunities for all citizens (especially in education and training); a decent distribution of income and wealth; government as the employer of last resort; basic health care for all citizens; and public financing of elections.
 
@@ -121,7 +121,7 @@ Recall that the content of a political conception is freestanding: it is specifi
 
 Here is an example. The quotation below from the second Vatican Council of the Catholic Church shows how a particular comprehensive doctrine (Catholicism) affirms one component of a liberal political conception (a familiar individual liberty) from within its own perspective:
 
-    This Vatican Council declares that the human person has a right to religious freedom. This freedom means that all men are to be immune from coercion on the part of individuals or of social groups and of any human power, in such wise that in matters religious no one is forced to act in a manner contrary to his own beliefs. Nor is anyone to be restrained from acting in accordance with his own beliefs, whether privately or publicly, whether alone or in association with others, within due limits. The council further declares that the right to religious freedom has its foundation in the very dignity of the human person, as this dignity is known through the revealed Word of God and by reason itself. This right of the human person to religious freedom is to be recognized in the constitutional law whereby society is governed and thus it is to become a civil right. (1965, art. 2) 
+> This Vatican Council declares that the human person has a right to religious freedom. This freedom means that all men are to be immune from coercion on the part of individuals or of social groups and of any human power, in such wise that in matters religious no one is forced to act in a manner contrary to his own beliefs. Nor is anyone to be restrained from acting in accordance with his own beliefs, whether privately or publicly, whether alone or in association with others, within due limits. The council further declares that the right to religious freedom has its foundation in the very dignity of the human person, as this dignity is known through the revealed Word of God and by reason itself. This right of the human person to religious freedom is to be recognized in the constitutional law whereby society is governed and thus it is to become a civil right. (1965, art. 2) 
 
 Catholic doctrine here supports the liberal right to religious freedom for reasons internal to Catholicism. A reasonable Islamic doctrine, and a reasonable atheistic doctrine, might also affirm this same right to religious freedom--not, of course, for the same reasons as Catholic doctrine, but each for its own reasons. In an overlapping consensus, all reasonable comprehensive doctrines will support the right to religious freedom, each for its own reasons. Indeed, in an overlapping consensus, all reasonable comprehensive doctrines will endorse all of a political conception of justice, each from within its own point of view.
 
@@ -142,19 +142,19 @@ To take a straightforward example: a Supreme Court justice deciding on a gay mar
 
 Rawls's doctrine of public reason can be summarized as follows:
 
-    Citizens engaged in certain political activities have a duty of civility to be able to justify their decisions on fundamental political issues by reference only to public values and public standards. 
+> Citizens engaged in certain political activities have a duty of civility to be able to justify their decisions on fundamental political issues by reference only to public values and public standards. 
 
 Each of the highlighted terms in this doctrine can be further elucidated as follows:
 
-    The public values that citizens must be able to appeal to are the values of a political conception of justice: those related to the freedom and equality of citizens, and to the fairness of the terms of social cooperation. Among such public values are the freedom of religious practice, the political equality of women and of racial minorities, the efficiency of the economy, the preservation of a healthy environment, and the stability of the family (which helps the orderly reproduction of society from one generation to the next). Nonpublic values are the values internal to associations like churches (e.g., that women may not hold the highest offices) or private clubs (e.g., that racial minorities can be excluded) which cannot be squared with public values such as these.
+> The public values that citizens must be able to appeal to are the values of a political conception of justice: those related to the freedom and equality of citizens, and to the fairness of the terms of social cooperation. Among such public values are the freedom of religious practice, the political equality of women and of racial minorities, the efficiency of the economy, the preservation of a healthy environment, and the stability of the family (which helps the orderly reproduction of society from one generation to the next). Nonpublic values are the values internal to associations like churches (e.g., that women may not hold the highest offices) or private clubs (e.g., that racial minorities can be excluded) which cannot be squared with public values such as these.
 
-    Similarly, citizens should be able to justify their political decisions by public standards of inquiry. Public standards are principles of reasoning and rules of evidence that all citizens could reasonably endorse. So citizens are not to justify their political decisions by appeal to divination, or to complex and disputed economic or psychological theories. Rather, publicly acceptable standards are those that rely on common sense, on facts generally known, and on the conclusions of science that are well established and not controversial.
+> Similarly, citizens should be able to justify their political decisions by public standards of inquiry. Public standards are principles of reasoning and rules of evidence that all citizens could reasonably endorse. So citizens are not to justify their political decisions by appeal to divination, or to complex and disputed economic or psychological theories. Rather, publicly acceptable standards are those that rely on common sense, on facts generally known, and on the conclusions of science that are well established and not controversial.
 
-    The duty to abide by public reason applies when the most fundamental political issues are at stake: issues such as who has the right to vote, which religions are to be tolerated, who will be eligible to own property, and what are suspect classifications for discrimination in hiring decisions. These are what Rawls calls constitutional essentials and matters of basic justice. Public reason applies more weakly, if at all, to less momentous political questions, for example to most laws that change the rate of tax, or that put aside public money to maintain national parks.
+> The duty to abide by public reason applies when the most fundamental political issues are at stake: issues such as who has the right to vote, which religions are to be tolerated, who will be eligible to own property, and what are suspect classifications for discrimination in hiring decisions. These are what Rawls calls constitutional essentials and matters of basic justice. Public reason applies more weakly, if at all, to less momentous political questions, for example to most laws that change the rate of tax, or that put aside public money to maintain national parks.
 
-    Citizens have a duty to constrain their decisions by public reason only when they engage in certain political activities, usually when exercising powers of public office. So judges are bound by public reason when they issue their rulings, legislators should abide by public reason when speaking and voting in the legislature, and the executive and candidates for high office should respect public reason in their public pronouncements. Significantly, Rawls says that voters should also heed public reason when they vote. All of these activities are or support exercises of political power, so (by the liberal principle of legitimacy) all must be justifiable in terms that all citizens might reasonably endorse. However, citizens are not bound by any duties of public reason when they engage in other activities, for example when they worship in church, perform on stage, pursue scientific research, send letters to the editor, or talk politics around the dinner table.
+> Citizens have a duty to constrain their decisions by public reason only when they engage in certain political activities, usually when exercising powers of public office. So judges are bound by public reason when they issue their rulings, legislators should abide by public reason when speaking and voting in the legislature, and the executive and candidates for high office should respect public reason in their public pronouncements. Significantly, Rawls says that voters should also heed public reason when they vote. All of these activities are or support exercises of political power, so (by the liberal principle of legitimacy) all must be justifiable in terms that all citizens might reasonably endorse. However, citizens are not bound by any duties of public reason when they engage in other activities, for example when they worship in church, perform on stage, pursue scientific research, send letters to the editor, or talk politics around the dinner table.
 
-    The duty to be able to justify one's political decisions with public reasons is a moral duty, not a legal duty: it is a duty of civility. All citizens always have their full legal rights to free expression, and overstepping the bounds of public reason is never in itself a crime. Rather, citizens have a moral duty of mutual respect and civic friendship not to justify their political decisions on fundamental issues by appeal to partisan values or controversial standards of reasoning that cannot be publicly redeemed.
+> The duty to be able to justify one's political decisions with public reasons is a moral duty, not a legal duty: it is a duty of civility. All citizens always have their full legal rights to free expression, and overstepping the bounds of public reason is never in itself a crime. Rather, citizens have a moral duty of mutual respect and civic friendship not to justify their political decisions on fundamental issues by appeal to partisan values or controversial standards of reasoning that cannot be publicly redeemed.
 
 In an important proviso, Rawls adds that citizens may speak the language of their controversial comprehensive doctrines—even as public officials, and even on the most fundamental issues—so long as they show how these assertions support the public values that all share. So President Lincoln, for instance, could legitimately condemn the evil of slavery using Biblical imagery, since he also condemned slavery in terms of the public values of freedom and equality. Thus even within its limited range of application, Rawls's doctrine of public reason is rather permissive concerning what citizens may say and do within the bounds of civility.
 
@@ -180,12 +180,12 @@ This negative thesis does not say how social goods should be distributed; it mer
 ### 4.3 The Two Principles of Justice as Fairness
 These guiding ideas of justice as fairness are given institutional form by its two principles of justice:
 
-    First Principle: Each person has the same indefeasible claim to a fully adequate scheme of equal basic liberties, which scheme is compatible with the same scheme of liberties for all;
+> First Principle: Each person has the same indefeasible claim to a fully adequate scheme of equal basic liberties, which scheme is compatible with the same scheme of liberties for all;
 
-    Second Principle: Social and economic inequalities are to satisfy two conditions:
+> Second Principle: Social and economic inequalities are to satisfy two conditions:
 
-        They are to be attached to offices and positions open to all under conditions of fair equality of opportunity;
-        They are to be to the greatest benefit of the least-advantaged members of society (the difference principle). (JF, 42–43)
+>> They are to be attached to offices and positions open to all under conditions of fair equality of opportunity;
+>> They are to be to the greatest benefit of the least-advantaged members of society (the difference principle). (JF, 42–43)
 
 The first principle of equal basic liberties is to be embodied in the political constitution, while the second principle applies primarily to economic institutions. Fulfillment of the first principle takes priority over fulfillment of the second principle, and within the second principle fair equality of opportunity takes priority over the difference principle.
 
@@ -225,11 +225,11 @@ Rawlsian citizens are not only free and equal, they are also reasonable and rati
 
 Like every theory of justice (for example those of Locke, Rousseau and Mill), justice as fairness requires an account of citizens' fundamental interests: what citizens need qua citizens. Rawls derives his account of primary goods from the conception of the citizen as free and equal, reasonable and rational. Primary goods are essential for developing and exercising the two moral powers, and are useful for pursuing a wide range of specific conceptions of the good life. Primary goods are:
 
-    The basic rights and liberties;
-    Freedom of movement, and free choice among a wide range of occupations;
-    The powers of offices and positions of responsibility;
-    Income and wealth;
-    The social bases of self-respect: the recognition by social institutions that gives citizens a sense of self-worth and the confidence to carry out their plans. (JF, 58–59)
+> The basic rights and liberties;
+> Freedom of movement, and free choice among a wide range of occupations;
+> The powers of offices and positions of responsibility;
+> Income and wealth;
+> The social bases of self-respect: the recognition by social institutions that gives citizens a sense of self-worth and the confidence to carry out their plans. (JF, 58–59)
 
 All citizens are assumed to have fundamental interests in getting more of these primary goods, and political institutions are to evaluate how well citizens are doing according to what primary goods they have. It is equalities and inequalities of these primary goods that, Rawls claims, are of the greatest political significance.
 
@@ -253,13 +253,13 @@ The most striking feature of the original position is the veil of ignorance, whi
 
 Behind the veil of ignorance, the informational situation of the parties that represent real citizens is as follows:
 
-    Parties do not know:
-        The race, ethnicity, gender, age, income, wealth, natural endowments, comprehensive doctrine, etc. of any of the citizens in society, or to which generation in the history of the society these citizens belong.
-        The political system of the society, its class structure, economic system, or level of economic development.
-    Parties do know:
-        That citizens in the society have different comprehensive doctrines and plans of life; that all citizens have interests in more primary goods.
-        That the society is under conditions of moderate scarcity: there is enough to go around, but not enough for everyone to get what they want;
-        General facts and common sense about human social life; general conclusions of science (including economics and psychology) that are uncontroversial.
+> Parties do not know:
+>> The race, ethnicity, gender, age, income, wealth, natural endowments, comprehensive doctrine, etc. of any of the citizens in society, or to which generation in the history of the society these citizens belong.
+>> The political system of the society, its class structure, economic system, or level of economic development.
+> Parties do know:
+>> That citizens in the society have different comprehensive doctrines and plans of life; that all citizens have interests in more primary goods.
+>> That the society is under conditions of moderate scarcity: there is enough to go around, but not enough for everyone to get what they want;
+>> General facts and common sense about human social life; general conclusions of science (including economics and psychology) that are uncontroversial.
 
 The veil of ignorance situates the representatives of free and equal citizens fairly with respect to one another. No party can press for agreement on principles that will arbitrarily favor the particular citizen they represent, because no party knows the specific attributes of the citizen they represent. The situation of the parties thus embodies reasonable conditions, within which the parties can make a rational agreement. Each party tries to agree to principles that will be best for the citizen they represent (i.e., that will maximize that citizen's share of primary goods). Since the parties are fairly situated, the agreement they reach will be fair to all actual citizens.
 
@@ -332,7 +332,7 @@ Rawls assumes that no tolerable world state could be stable. He cites Kant in as
 
 Rawls describes the main ideas motivating his law of peoples as follows:
 
-    Two main ideas motivate the Law of Peoples. One is that the great evils of human history—unjust war and oppression, religious persecution and the denial of liberty of conscience, starvation and poverty, not to mention genocide and mass murder—follow from political injustice, with its own cruelties and callousness… The other main idea, obviously connected with the first, is that, once the gravest forms of political injustice are eliminated by following just (or at least decent) social policies and establishing just (or at least decent) basic institutions, these great evils will eventually disappear. (LP, 6–7) 
+> Two main ideas motivate the Law of Peoples. One is that the great evils of human history—unjust war and oppression, religious persecution and the denial of liberty of conscience, starvation and poverty, not to mention genocide and mass murder—follow from political injustice, with its own cruelties and callousness… The other main idea, obviously connected with the first, is that, once the gravest forms of political injustice are eliminated by following just (or at least decent) social policies and establishing just (or at least decent) basic institutions, these great evils will eventually disappear. (LP, 6–7) 
 
 The most important feature of the “realistic utopia” that Rawls envisages in The Law of Peoples is that the great evils of human history no longer occur. The most important condition for this realistic utopia to come about is that all societies are internally well-ordered: that all have just, or at least decent, domestic political institutions.
 
@@ -341,14 +341,14 @@ Much of Rawls's presentation of the law of peoples parallels the presentations o
 
 Rawls puts forward eight principles for ordering the international basic structure:
 
-    Peoples are free and independent, and their freedom and independence are to be respected by other peoples.
-    Peoples are to observe treaties and undertakings.
-    Peoples are equal and are parties to the agreements that bind them.
-    Peoples are to observe the duty of nonintervention (except to address grave violations of human rights).
-    Peoples have a right of self-defense, but no right to instigate war for reasons other than self-defense.
-    Peoples are to honor human rights.
-    Peoples are to observe certain specified restrictions in the conduct of war.
-    Peoples have a duty to assist other peoples living under unfavorable conditions that prevent their having a just or decent political and social regime. (LP, 37)
+> Peoples are free and independent, and their freedom and independence are to be respected by other peoples.
+> Peoples are to observe treaties and undertakings.
+> Peoples are equal and are parties to the agreements that bind them.
+> Peoples are to observe the duty of nonintervention (except to address grave violations of human rights).
+> Peoples have a right of self-defense, but no right to instigate war for reasons other than self-defense.
+> Peoples are to honor human rights.
+> Peoples are to observe certain specified restrictions in the conduct of war.
+> Peoples have a duty to assist other peoples living under unfavorable conditions that prevent their having a just or decent political and social regime. (LP, 37)
 
 All of these principles, with the exception of the last one, are familiar from contemporary international law (though Rawls's list of human rights for principles 4 and 6 is shorter than the list in international law). Rawls also leaves room for his law of peoples to accommodate various organizations that may help societies to increase their political and economic coordination, such as idealized versions of a United Nations, a World Trade Organization, and a World Bank.
 
@@ -359,9 +359,9 @@ Rawls's conception of peoples within the law of peoples parallels his conception
 
 Rawls describes the fundamental interests of a people as follows:
 
-    Protecting its political independence, its territory, and the security of its citizens;
-    Maintaining its political and social institutions and its civic culture;
-    Securing its proper self-respect as a people, which rests on its citizens' awareness of its history and cultural accomplishments.
+> Protecting its political independence, its territory, and the security of its citizens;
+> Maintaining its political and social institutions and its civic culture;
+> Securing its proper self-respect as a people, which rests on its citizens' awareness of its history and cultural accomplishments.
 
 Rawls contrasts peoples with states. A state, Rawls says, is moved by the desires to enlarge its territory, or to convert other societies to its religion, or to enjoy the power of ruling over others, or to increase its relative economic strength. Peoples are not states, and as we will see peoples may treat societies that act on state-like desires as international outlaws.
 

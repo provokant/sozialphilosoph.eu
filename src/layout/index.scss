@@ -41,18 +41,16 @@ blockquote {
 }
 
 article {
-
   &.details {
-    @apply .mx-auto .mb-6 .py-20 .px-4 .relative;
+   
+    .container {
+      @apply .mx-auto .mb-6 .py-20;
 
-    @screen lg {
-      @apply .px-2;
-    }
+      header {
 
-    header {
-
-      h1 {
-        @apply .text-5xl .w-2/3 .mb-4;
+        h1 {
+          @apply .text-5xl .w-2/3 .mb-4;
+        }
       }
     }
   }

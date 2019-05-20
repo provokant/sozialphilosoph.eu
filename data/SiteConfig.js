@@ -14,10 +14,11 @@ const config = {
   themeColor: '#c62828',
   backgroundColor: '#fff',
   backgroundImage: 'images/content/bg.jpg',
-  landingPageTitle: 'That this fear to error is already the error itself ...',
-  landingPageTeaser: 'Selected philosophical writings. We are gathering introductional information for any philosophy-interested person. Easy-to-read, well researched, user-friendly',
+  landingPageTitle: 'Selected<br>philosophical<br>writings',
+  landingPageTeaser: 'We collect introductory material for all those interested in philosophy. Easy to read · Well researched · User-friendly',
   landingPageImage: 'images/content/hands.png',
-  footerLogo: 'images/logos/logo-1024.png'
+  footerLogo: 'images/logos/logo-1024.png',
+  footerBackground: '/images/content/footer.png',
 }
 
 // Validate

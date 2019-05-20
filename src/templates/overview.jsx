@@ -13,23 +13,20 @@ export default class OverviewTemplate extends React.Component {
     const { data, pageContext } = this.props
     const { allMarkdownRemark } = data
     const { edges } = allMarkdownRemark
-    const { title, html, image } = pageContext
+    const { title, html, image, source } = pageContext
 
     return (
       <Layout>
         <Helmet title={`${title} | ${siteTitle}`} />
-        <section className="intro">
-          <div className="container mx-auto mb-20 px-4 lg:px-2">
-            <div className="mb-6 pt-20 flex">
-              <div className="w-2/3">
-                <h2 className="text-5xl w-2/3 mb-4">{title}</h2>
-              </div>
+        <section className="overview">
+          <div className="container">
+            <div className="image">
+              {image && <Image src={image} />}
             </div>
-            <div className="flex flex-col-reverse md:flex-row">
-              <div className="md:w-2/3" dangerouslySetInnerHTML={{ __html: html }} />
-              <div className="md:w-1/3 pb-8 md:pb-0 md:pl-8">
-                {image && <Image src={image} />}
-              </div>
+            <div className="w-full md:w-2/3">
+              <h1>{title}</h1>
+              <div dangerouslySetInnerHTML={{ __html: html }} />
+              {source && <div className="source">{source}</div>} 
             </div>
           </div>
         </section>

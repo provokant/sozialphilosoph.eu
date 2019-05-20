@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
-import { siteDescription, footerLogo } from '../../../data/SiteConfig'
+import { siteDescription, footerLogo, footerBackground } from '../../../data/SiteConfig'
 import Image from '../Image/Image'
 import './Footer.scss'
-import Question from '../Question/Question';
+import Question from '../Question/Question'
 
 export default () => (
   <StaticQuery
@@ -29,7 +29,7 @@ export default () => (
       }
     `}
     render={data => (
-      <footer className="bg-black h-screen flex flex-col justify-between px-4 lg:px-2">
+      <footer className="bg-black h-screen flex flex-col justify-between px-4 lg:px-2" style={{ backgroundImage: `url(${footerBackground})` }}>
         <Question />
         <nav className="container flex justify-end mx-auto py-10">
           <div className="max-h-10">

@@ -1,3 +1,6 @@
 footer {
   position: sticky;
+  background-blend-mode: multiply;
+
+  @apply .flex .items-center .bg-center .bg-cover;
 }

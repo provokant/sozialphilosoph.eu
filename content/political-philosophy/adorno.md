@@ -1,7 +1,7 @@
 ---
 title: "Adorno"
 sort: 604
-image: "images/content/foucault.png"
+image: "images/content/adorno.png"
 bgColor: "#4E59B7"
 source: Zuidervaart, Lambert, "Theodor W. Adorno", The Stanford Encyclopedia of Philosophy (Winter 2015 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/win2015/entries/adorno/>.
 

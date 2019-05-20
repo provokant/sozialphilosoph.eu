@@ -1,7 +1,7 @@
 ---
 title: "Arendt"
 sort: 601
-image: "images/content/foucault.png"
+image: "images/content/arendt.png"
 bgColor: "#4E59B7"
 source: Ld'Entreves, Maurizio Passerin, "Hannah Arendt", The Stanford Encyclopedia of Philosophy (Spring 2019 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/spr2019/entries/arendt/>.
 question: Would you like to know the difference between „violence“ and „power“ by Hannah Arendt?
@@ -179,7 +179,7 @@ Moreover, in discussing the non-coercive character of judgment, the fact that it
 
 For Arendt the validity of political judgment depends on our ability to think “representatively,” that is, from the standpoint of everyone else, so that we are able to look at the world from a number of different perspectives. And this ability, in turn, can only be acquired and tested in a public forum where individuals have the opportunity to exchange their opinions on particular matters and see whether they accord with the opinions of others. In this respect the process of opinion formation is never a solitary activity; rather, it requires a genuine encounter with different opinions so that a particular issue may be examined from every possible standpoint until, as she puts it, “it is flooded and made transparent by the full light of human comprehension” (BPF, 242). Debate and discussion, and the capacity to enlarge one’s perspective, are indeed crucial to the formation of opinions that can claim more than subjective validity; individuals may hold personal opinions on many subject matters, but they can form representative opinions only by enlarging their standpoint to incorporate those of others. As Arendt says:
 
-    Political thought is representative. I form an opinion by considering a given issue from different viewpoints, by making present to my mind the standpoints of those who are absent; that is, I represent them … The more people’s standpoints I have present in my mind while I am pondering a given issue, and the better I can imagine how I would feel and think if I were in their place, the stronger will be my capacity for representative thinking and the more valid my final conclusions, my opinion. (BPF, 241)
+> Political thought is representative. I form an opinion by considering a given issue from different viewpoints, by making present to my mind the standpoints of those who are absent; that is, I represent them … The more people’s standpoints I have present in my mind while I am pondering a given issue, and the better I can imagine how I would feel and think if I were in their place, the stronger will be my capacity for representative thinking and the more valid my final conclusions, my opinion. (BPF, 241)
 
 Opinions, in fact, are never self-evident. In matters of opinion, but not in matters of truth, “our thinking is truly discursive, running, as it were, from place to place, from one part of the world to another, through all kinds of conflicting views, until it finally ascends from these particularities to some impartial generality” (BPF, 242). In this respect one is never alone while forming an opinion; as Arendt notes, “even if I shun all company or am completely isolated while forming an opinion, I am not simply together only with myself in the solitude of philosophical thought; I remain in this world of universal interdependence, where I can make myself the representative of everybody else” (BPF, 242).
 

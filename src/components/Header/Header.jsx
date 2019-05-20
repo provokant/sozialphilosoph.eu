@@ -64,7 +64,7 @@ class Header extends React.Component {
 
     return (
       <header className={showMenu ? `header fixed` : `header`}>
-        <nav className="container mx-auto flex items-center justify-between flex-wrap px-4 lg:px-2">
+        <nav className="container">
           <div className="text-sm w-full block flex-grow justify-between flex items-center w-auto z-20">
             <div className="flex">
               {brandLink}
@@ -78,7 +78,7 @@ class Header extends React.Component {
             <div className="block md:hidden">
               <button type="button" className="text-grey-dark tracking-wide hover:text-black" onClick={this.toggleMenu}>
                 <span className="mr-2">{showMenu ? `CLOSE MENU` : `NAVIGATE`}</span>
-                &#9776;
+                {showMenu ? `✕` : `☰`}
               </button>
             </div>
           </div>

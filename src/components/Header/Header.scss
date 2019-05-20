@@ -10,4 +10,12 @@
   background: white;
   background-blend-mode: overlay;
   font-family: 'Roboto Condensed', sans-serif;
+
+  .container {
+    @apply .mx-auto .flex .items-center .justify-between .flex-wrap;
+
+    // @screen lg {
+    //   @apply .px-2;
+    // }
+  }
 }

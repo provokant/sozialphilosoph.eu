@@ -19,12 +19,12 @@ class Index extends React.Component {
       <Layout>
         <Helmet title={siteTitle} />
         <SEO />
-        <section className="index flex items-center bg-center bg-cover" style={{ backgroundImage: `url(${backgroundImage})` }}>
-          <div className="container mx-auto mb-20 relative">
+        <section className="index" style={{ backgroundImage: `url(${backgroundImage})` }}>
+          <div className="container">
             <div className="mb-6 pt-20 flex justify-center">
-              <div className="w-2/3 md:w-1/2">
-                <h2 className="md:text-5xl font-thin tracking-normal mb-4">{landingPageTitle}</h2>
-                <p className="md:text-xl leading-normal text-white font-bold">{landingPageTeaser}</p>
+              <div className="w-2/3 md:w-2/3">
+                <h1 dangerouslySetInnerHTML={{ __html: landingPageTitle }} />
+                <p dangerouslySetInnerHTML={{ __html: landingPageTeaser }} />
               </div>
             </div>
           </div>

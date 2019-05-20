@@ -160,7 +160,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
         result.data.allMarkdownRemark.edges.forEach(edge => {
           const { html, frontmatter, fields } = edge.node
-          const { sort, title, bgColor, image } = frontmatter
+          const { sort, title, bgColor, image, source } = frontmatter
           const { slug, isIndex, hasChildren, questions } = fields
 
           if (isIndex && hasChildren) {
@@ -173,7 +173,8 @@ exports.createPages = ({ graphql, actions }) => {
                 sort,
                 title,
                 image,
-                bgColor
+                bgColor,
+                source
               },
             })
           } else {
