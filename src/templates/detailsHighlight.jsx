@@ -73,20 +73,18 @@ export default class DetailsHighlightTemplate extends React.Component {
       <Layout>
         <Helmet title={`${title} | ${siteTitle}`} />
         <SEO postPath={slug} postNode={markdownRemark} postSEO />
-        <article className="details">
+        <section className="details" style={{ backgroundColor }}>
           <div className="container">
-            <aside className="absolute pin-r w-20 pb-8 lg:w-1/3 lg:pb-0 lg:pl-8 lg:pl-8">
+            <div className="image">
               {image && <Image src={image} />}
-            </aside>
-            <header>
+            </div>
+            <div className="content">
               <h1>{title}</h1>
-            </header>
-            <section className="details" style={{ backgroundColor }}>
               <div dangerouslySetInnerHTML={{ __html: htmlAppendedQuestions() }} />
               {source && <div className="source">{source}</div>}
-            </section>
+            </div>
           </div>
-        </article>
+        </section>
       </Layout>
     )
   }

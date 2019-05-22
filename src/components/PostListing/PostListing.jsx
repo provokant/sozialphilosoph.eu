@@ -10,13 +10,16 @@ class PostListing extends React.Component {
     postEdges.forEach(postEdge => {
       const { node } = postEdge
       const { fields, frontmatter, excerpt } = node
-      const { image, title, bgColor } = frontmatter
+      const { image, title, bgColor, teaser } = frontmatter
+
+      console.log(frontmatter)
 
       postList.push({
         path: fields.slug,
         excerpt,
         image,
         title,
+        teaser,
         bgColor
       })
     })
@@ -27,7 +30,7 @@ class PostListing extends React.Component {
     return (
       <>
         {this.postList.map((post, i) => (
-          <PostListItem postNode={post} isOdd={i % 2 !== 0} key={post.slug} />
+          <PostListItem {...post} isOdd={i % 2 !== 0} key={post.slug} />
         ))}
       </>
     )
@@ -40,6 +43,7 @@ PostListing.propTypes = {
       node: PropTypes.shape({
         frontmatter: PropTypes.shape({
           title: PropTypes.string.isRequired,
+          teaser: PropTypes.string,
         }).isRequired,
         fields: PropTypes.shape({
           slug: PropTypes.string.isRequired,

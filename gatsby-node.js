@@ -106,20 +106,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
-// exports.setFieldsOnGraphQLNodeType = ({ type, actions }) => {
-//   const { name } = type
-//   const { createNodeField } = actions
-//   if (name === "MarkdownRemark") {
-//     addSiblingNodes(createNodeField)
-//   }
-// }
-
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   return new Promise((resolve, reject) => {
     const overviewPage = path.resolve('src/templates/overview.jsx')
-    // const detailsPage = path.resolve('src/templates/details.jsx')
     const detailsHighlightPage = path.resolve('src/templates/detailsHighlight.jsx')
 
     resolve(
@@ -135,6 +126,7 @@ exports.createPages = ({ graphql, actions }) => {
                     title
                     image
                     bgColor
+                    teaser
                   }
                   fields {
                     slug
@@ -160,7 +152,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
         result.data.allMarkdownRemark.edges.forEach(edge => {
           const { html, frontmatter, fields } = edge.node
-          const { sort, title, bgColor, image, source } = frontmatter
+          const { sort, title, bgColor, image, source, teaser } = frontmatter
           const { slug, isIndex, hasChildren, questions } = fields
 
           if (isIndex && hasChildren) {
@@ -174,7 +166,8 @@ exports.createPages = ({ graphql, actions }) => {
                 title,
                 image,
                 bgColor,
-                source
+                source,
+                teaser
               },
             })
           } else {

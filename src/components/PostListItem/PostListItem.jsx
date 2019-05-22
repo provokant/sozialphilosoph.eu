@@ -6,49 +6,41 @@ import Image from '../Image/Image'
 
 class PostListItem extends React.Component {
   render() {
-    const { postNode } = this.props
-    // const { postNode, isOdd, isIntro } = this.props
+    const { path, title, bgColor, teaser, excerpt, image } = this.props
+
+    console.log(this.props)
 
     return (
-      <section className="item" key={postNode.path}>
-        <div className="container">
-          <Link to={postNode.path} style={{ color: postNode.bgColor ? postNode.bgColor : `#000`}}>
-            <div className="w-full md:w-2/3">
-              <h2>{postNode.title}</h2>
-              <p>{postNode.excerpt}</p>
-              <button type="button">Read more &raquo;</button>
-            </div>
-            <div className="image">
-              {postNode.image && <Image src={postNode.image} />}
-            </div>
-          </Link>
-        </div>
+      <section className="item" key={path}>
+        <Link to={path} style={{ color: bgColor || `#000`}} className="container">
+          <div className="content">
+            <h2>{title}</h2>
+            {teaser && <div className="teaser">{teaser}</div>}
+            <p className="excerpt">{excerpt}</p>
+            <button type="button">Read more &raquo;</button>
+          </div>
+          <div className="image">
+            {image && <Image src={image} />}
+          </div>
+        </Link>
       </section>
     )
   }
 }
 
 PostListItem.propTypes = {
-  postNode: PropTypes.shape(
-    PropTypes.shape({
-      node: PropTypes.shape({
-        frontmatter: PropTypes.shape({
-          title: PropTypes.string.isRequired,
-        }).isRequired,
-        fields: PropTypes.shape({
-          slug: PropTypes.string.isRequired,
-        }).isRequired,
-        excerpt: PropTypes.string.isRequired
-      }).isRequired,
-    })
-  ).isRequired,
-  // isOdd: PropTypes.bool,
-  // isIntro: PropTypes.bool
+  bgColor: PropTypes.string,
+  image: PropTypes.string,
+  path: PropTypes.string.isRequired,
+  teaser: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  excerpt: PropTypes.string.isRequired
 }
 
-PostListItem.getDefaultProps = {
-  // isOdd: false,
-  // isIntro: false
+PostListItem.defaultProps = {
+  bgColor: ``,
+  image: ``,
+  teaser: ``,
 }
 
 export default PostListItem

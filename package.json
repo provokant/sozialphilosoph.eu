@@ -1,6 +1,6 @@
 {
   "name": "gatsby-praesto",
-  "description": "Flat-file content management system based on GatsbyJS",
+  "description": "Flat-file Content Management System based on GatsbyJS",
   "version": "0.0.0-0",
   "author": "Michael Czechowski <mail@dailysh.it",
   "dependencies": {

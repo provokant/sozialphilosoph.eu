@@ -2,9 +2,8 @@
 title: "Habermas"
 sort: 603
 image: "images/content/habermas.png"
-bgColor: "#4E59B7"
+bgColor: "#5b6c83"
 source: Lawlor, Leonard, "Jacques Derrida", The Stanford Encyclopedia of Philosophy (Summer 2018 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/sum2018/entries/derrida/>.
-
 ---
 
 Jürgen Habermas currently ranks as one of the most influential philosophers in the world. Bridging continental and Anglo-American traditions of thought, he has engaged in debates with thinkers as diverse as Gadamer and Putnam, Foucault and Rawls, Derrida and Brandom. His extensive written work addresses topics stretching from social-political theory to aesthetics, epistemology and language to philosophy of religion, and his ideas have significantly influenced not only philosophy but also political-legal thought, sociology, communication studies, argumentation theory and rhetoric, developmental psychology and theology. Moreover, he has figured prominently in Germany as a public intellectual, commenting on controversial issues of the day in German newspapers such as Die Zeit.

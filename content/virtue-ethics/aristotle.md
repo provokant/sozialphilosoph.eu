@@ -1,6 +1,6 @@
 ---
 title: "Aristotle"
-bgColor: "#6CBC82"
+bgColor: "#fa7102"
 sort: 601
 source: Kraut, Richard, "Aristotle's Ethics", The Stanford Encyclopedia of Philosophy (Summer 2018 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/sum2018/entries/aristotle-ethics/>.
 image: "images/content/aristotle.png"

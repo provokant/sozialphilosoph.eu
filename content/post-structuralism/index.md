@@ -4,6 +4,7 @@ sort: 200
 image: "images/content/structure.png"
 bgColor: "#1D73AD"
 onHeaderMenu: true
+isActive: false
 ---
 
 Post-structuralism offers a way of studying how knowledge is produced and critiques structuralist premises. 

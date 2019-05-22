@@ -7,13 +7,13 @@ import './Header.scss'
 const classNames = {
   default: 'block text-center mt-0 py-3',
   get defaultLink() {
-    return `${this.default} md:text-left md:inline-block text-grey-darkest hover:text-black`
+    return `${this.default} md:text-left md:inline-block`
   },
   get link() {
-    return `${this.defaultLink} px-3`
+    return `${this.defaultLink} pl-3 lg:pr-3`
   },
   get brand() {
-    return `${this.defaultLink} lowercase font-bold tracking-wide text-black md:mr-8`
+    return `${this.defaultLink} lowercase font-bold tracking-wide md:mr-8`
   }
 }
 
@@ -36,7 +36,7 @@ class Header extends React.Component {
 
   render() {
     const { showMenu } = this.state
-    const { menuList } = this.props
+    const { menuList, isLandingPage } = this.props
 
     const brandLink = (
       <Link to="/" className={classNames.brand}>{siteTitleShort}</Link>
@@ -57,27 +57,29 @@ class Header extends React.Component {
     ))
 
     const mobileMenu = (
-      <div className="fixed flex flex-col justify-center pin-l pin-t pin-r pin-b bg-white z-10">
+      <div className="mobile-menu">
         {menuLinks}
       </div>
     )
 
+    const headerClassNames = `header ${showMenu ? `fixed` : ``} ${isLandingPage ? `dark` : ``}`
+
     return (
-      <header className={showMenu ? `header fixed` : `header`}>
+      <header className={headerClassNames}>
         <nav className="container">
-          <div className="text-sm w-full block flex-grow justify-between flex items-center w-auto z-20">
-            <div className="flex">
+          <div className="outer">
+            <div className="inner">
               {brandLink}
               <div className="hidden md:block">
                 {menuLinks}
               </div>
             </div>
-            <div className="text-grey italic hidden xl:block">
+            <div className="description">
               {siteDescription}
             </div>
-            <div className="block md:hidden">
-              <button type="button" className="text-grey-dark tracking-wide hover:text-black" onClick={this.toggleMenu}>
-                <span className="mr-2">{showMenu ? `CLOSE MENU` : `NAVIGATE`}</span>
+            <div className="mobile-toggle">
+              <button type="button" onClick={this.toggleMenu}>
+                <span>{showMenu ? `CLOSE MENU` : `NAVIGATE`}</span>
                 {showMenu ? `✕` : `☰`}
               </button>
             </div>
@@ -89,7 +91,7 @@ class Header extends React.Component {
   }
 }
 
-export default () => (
+export default props => (
   <StaticQuery
     query={graphql`
       query HeaderMenuQuery {
@@ -112,7 +114,7 @@ export default () => (
         }
       }
     `}
-    render={({ menuList }) => <Header menuList={menuList.nodes} />}
+    render={({ menuList }) => <Header menuList={menuList.nodes} {...props} />}
   />
 )
 
@@ -131,4 +133,9 @@ Header.propTypes = {
       }).isRequired,
     })
   ).isRequired,
+  isLandingPage: PropTypes.bool
+}
+
+Header.defaultProps = {
+  isLandingPage: false
 }

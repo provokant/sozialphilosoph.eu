@@ -16,13 +16,13 @@ class Index extends React.Component {
     const { edges } = allMarkdownRemark
 
     return (
-      <Layout>
+      <Layout isLandingPage>
         <Helmet title={siteTitle} />
         <SEO />
         <section className="index" style={{ backgroundImage: `url(${backgroundImage})` }}>
           <div className="container">
-            <div className="mb-6 pt-20 flex justify-center">
-              <div className="w-2/3 md:w-2/3">
+            <div className="outer">
+              <div className="inner">
                 <h1 dangerouslySetInnerHTML={{ __html: landingPageTitle }} />
                 <p dangerouslySetInnerHTML={{ __html: landingPageTeaser }} />
               </div>
@@ -62,6 +62,7 @@ export const pageQuery = graphql`
             title
             bgColor
             image
+            teaser
           }
           fields {
             slug

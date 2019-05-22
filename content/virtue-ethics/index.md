@@ -2,7 +2,7 @@
 title: "Virtue Ethics"
 sort: 600
 image: "images/content/horses.png"
-bgColor: "#6CBC82"
+bgColor: "#fa7102"
 onHeaderMenu: true
 source: Hursthouse, Rosalind and Pettigrove, Glen, "Virtue Ethics", The Stanford Encyclopedia of Philosophy (Winter 2018 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/win2018/entries/ethics-virtue/>.
 ---

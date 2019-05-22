@@ -105,7 +105,7 @@ SEO.propTypes = {
   postSEO: PropTypes.bool
 }
 
-SEO.getDefaultProps = {
+SEO.defaultProps = {
   postNode: undefined,
   postPath: ``,
   postSEO: false

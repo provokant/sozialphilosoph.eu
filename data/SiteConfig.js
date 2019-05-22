@@ -7,18 +7,21 @@ const config = {
   siteLanguage: 'en',
   pathPrefix: '',
   siteRss: '/rss.xml',
-  siteDescription: 'Selected philosophical writings',
+  siteDescription: 'Selected Philosophical Writings',
   dateFromFormat: 'YYYY-MM-DD',
   dateFormat: 'DD/MM/YYYY',
   userLocation: 'North Pole, Earth',
   themeColor: '#c62828',
   backgroundColor: '#fff',
-  backgroundImage: 'images/content/bg.jpg',
-  landingPageTitle: 'Selected<br>philosophical<br>writings',
-  landingPageTeaser: 'We collect introductory material for all those interested in philosophy. Easy to read · Well researched · User-friendly',
+  backgroundImage: '/images/content/spiral.jpg',
+  landingPageTitle: 'Selected<br>Philosophical<br>Writings',
+  landingPageTeaser: 'We\'re constantly collecting introductory material for all those interested in philosophy.<br><br><br><i><small>Easy to read · Well researched · User-friendly</small></i>',
   landingPageImage: 'images/content/hands.png',
   footerLogo: 'images/logos/logo-1024.png',
-  footerBackground: '/images/content/footer.png',
+  footerLink: '//dailysh.it',
+  footerBackground: '/images/content/sky.jpg',
+  questionDeny: 'No, thanks',
+  questionAccept: 'Yes, let me read more!'
 }
 
 // Validate

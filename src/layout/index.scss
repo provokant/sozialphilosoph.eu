@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Noto+Serif:200,400,500');
+// @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Noto+Serif:200,400,500');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,500|IBM+Plex+Sans:300,400,600,700|IBM+Plex+Serif:100,200,300,400,700&display=swap');
+
 
 @tailwind preflight;
 @tailwind components;
@@ -25,7 +27,7 @@ h2,
 h3,
 h4,
 h5 {
-  @apply .font-serif .tracking-normal .font-hairline .leading-tight;
+  @apply .font-serif .tracking-normal .font-medium .leading-tight;
 }
 
 figure {
@@ -33,6 +35,11 @@ figure {
   right: 0;
   bottom: auto;
   left: 0;
+}
+
+ul,
+ol {
+  @apply .mb-3;
 }
 
 blockquote {
@@ -44,7 +51,7 @@ article {
   &.details {
    
     .container {
-      @apply .mx-auto .mb-6 .py-20;
+      @apply .mb-6 .py-20;
 
       header {
 

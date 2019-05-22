@@ -2,7 +2,7 @@
 title: "Marcel"
 sort: 104
 image: "images/content/marcel.png"
-bgColor: "#D12B5A"
+bgColor: "#87465f"
 ---
 Gabriel Marcel (1889–1973) was a philosopher, drama critic, playwright and musician. He converted to Catholicism in 1929 and his philosophy was later described as “Christian Existentialism” (most famously in Jean-Paul Sartre's “Existentialism is a Humanism”) a term he initially endorsed but later repudiated. In addition to his numerous philosophical publications, he was the author of some thirty dramatic works. Marcel gave the Gifford Lectures in Aberdeen in 1949–1950, which appeared in print as the two-volume The Mystery of Being, and the William James Lectures at Harvard in 1961–1962, which were collected and published as The Existential Background of Human Dignity.
 

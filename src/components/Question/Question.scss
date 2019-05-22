@@ -1,0 +1,32 @@
+.question {
+  @apply .flex .flex-col .items-center .justify-center .py-10 .flex-grow;
+
+  p {
+    @apply .text-2xl .w-2/3 .text-center .text-white .min-h-20 .font-medium;
+    
+    @screen lg {
+      @apply .w-2/3;
+    }
+  }
+
+  div {
+    @apply .flex .mt-8;
+  }
+
+  a,
+  button {
+    @apply .bg-transparent .text-white .font-normal .py-2 .px-4 .rounded;
+
+    &:hover {
+      @apply .text-grey;
+    }
+  }
+
+  a {
+    @apply .border .ml-6;
+
+    &:hover {
+      @apply .text-grey .border-grey;
+    }
+  }
+}

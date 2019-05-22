@@ -2,6 +2,8 @@ import React from 'react'
 import { kebabCase } from 'lodash'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
+import { questionDeny, questionAccept } from '../../../data/SiteConfig'
+import './Question.scss'
 
 class Question extends React.Component {  
   constructor(props) {
@@ -11,13 +13,7 @@ class Question extends React.Component {
     this.questions = questionList.flatMap(({ fields }) => {
       const { slug, questions } = fields
 
-      return questions.map(({ question, highlight }) => {
-        return {
-          slug,
-          question,
-          highlight
-        }
-      })
+      return questions.map(({ question, highlight }) => ({ slug, question, highlight }))
     })
 
     this.state = {
@@ -41,14 +37,14 @@ class Question extends React.Component {
     const { question, slug } = currentQuestion
     
     return (
-      <div className="flex flex-col items-center justify-center py-10 flex-grow">
-        <p className="text-2xl w-2/3 lg:w-2/3 text-center text-white min-h-10">
+      <div className="question">
+        <p>
           {question}
         </p>
-        <div className="flex mt-8">
-          <button className="bg-transparent text-white font-bold py-2 px-4 rounded hover:text-grey" type="button" onClick={this.nextQuestion}>No, thanks</button>
-          <Link to={`${slug}#${kebabCase(question)}`} className="border text-white font-bold py-2 px-4 rounded ml-6 hover:text-grey hover:border-grey">
-            Yes, let me read more!
+        <div>
+          <button type="button" onClick={this.nextQuestion}>{questionDeny}</button>
+          <Link to={`${slug}#${kebabCase(question)}`}>
+            {questionAccept}
           </Link>
         </div>
       </div>

@@ -3,7 +3,7 @@ title: "Political Philosophy"
 sort: 600
 onHeaderMenu: true
 image: "images/content/birds.png"
-bgColor: "#4E59B7"
+bgColor: "#5b6c83"
 source: Wikipedia contributors, "Political philosophy," Wikipedia, The Free Encyclopedia, https://en.wikipedia.org/w/index.php?title=Political_philosophy&oldid=891354055 (accessed May 2, 2019).
 ---
 

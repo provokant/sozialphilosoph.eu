@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 import Layout from '../layout/index'
 import PostListing from '../components/PostListing/PostListing'
 import Image from '../components/Image/Image'
-// import PostListItem from '../components/PostListItem/PostListItem' 
 import { siteTitle } from '../../data/SiteConfig'
 
 export default class OverviewTemplate extends React.Component {
@@ -13,7 +12,7 @@ export default class OverviewTemplate extends React.Component {
     const { data, pageContext } = this.props
     const { allMarkdownRemark } = data
     const { edges } = allMarkdownRemark
-    const { title, html, image, source } = pageContext
+    const { title, html, image, source, teaser } = pageContext
 
     return (
       <Layout>
@@ -23,8 +22,9 @@ export default class OverviewTemplate extends React.Component {
             <div className="image">
               {image && <Image src={image} />}
             </div>
-            <div className="w-full md:w-2/3">
+            <div className="content">
               <h1>{title}</h1>
+              {teaser && <div className="teaser">{teaser}</div>}
               <div dangerouslySetInnerHTML={{ __html: html }} />
               {source && <div className="source">{source}</div>} 
             </div>
@@ -54,6 +54,7 @@ export const pageQuery = graphql`
             title
             bgColor
             image
+            teaser
           }
           fields {
             slug

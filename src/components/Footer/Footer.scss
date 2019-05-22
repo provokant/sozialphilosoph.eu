@@ -1,6 +1,30 @@
 footer {
-  position: sticky;
-  background-blend-mode: multiply;
+  background-blend-mode: soft-light;
+  box-shadow: 0 -2rem 2rem rgba(0, 0, 0, 0.03);
 
-  @apply .flex .items-center .bg-center .bg-cover;
+  @apply .sticky .flex .items-center .bg-center .bg-cover .bg-black .h-screen .flex .flex-col .justify-between .px-4;
+
+  @screen lg {
+    @apply .px-2;
+  }
+
+  .container {
+    @apply .flex .py-10 .justify-between .items-center;
+
+    .logo {
+      @apply .w-12;
+    }
+
+    .menu {
+      @apply .flex .flex-col;
+
+      @screen md {
+        @apply .flex-row;
+      }
+    }
+
+    .description {
+      @apply .text-grey .text-right .italic;
+    }
+  }
 }

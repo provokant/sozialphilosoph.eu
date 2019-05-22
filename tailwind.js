@@ -191,6 +191,7 @@ module.exports = {
 
   fonts: {
     sans: [
+      'IBM Plex Sans',
       'Source Sans Pro',
       'Noto Sans',
       'Open Sans',
@@ -208,6 +209,7 @@ module.exports = {
       'sans-serif',
     ],
     serif: [
+      'IBM Plex Serif',
       'Noto Serif',
       'Constantia',
       'Lucida Bright',
@@ -484,6 +486,7 @@ module.exports = {
     '12': '3rem',
     '16': '4rem',
     '24': '6rem',
+    '28': '7rem',
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
@@ -535,6 +538,7 @@ module.exports = {
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    half: '50%',
     full: '100%',
     screen: '100vh',
   },
@@ -576,6 +580,21 @@ module.exports = {
 
   minHeight: {
     '0': '0',
+    '1': '0.25rem',
+    '2': '0.5rem',
+    '3': '0.75rem',
+    '4': '1rem',
+    '5': '1.25rem',
+    '6': '1.5rem',
+    '8': '2rem',
+    '10': '2.5rem',
+    '12': '3rem',
+    '16': '4rem',
+    '20': '5rem',
+    '24': '6rem',
+    '32': '8rem',
+    '48': '12rem',
+    '64': '16rem',
     full: '100%',
     screen: '100vh',
   },
@@ -798,6 +817,8 @@ module.exports = {
 
   opacity: {
     '0': '0',
+    '10': '.1',
+    '20': '.2',
     '25': '.25',
     '50': '.5',
     '75': '.75',
@@ -931,7 +952,7 @@ module.exports = {
 
   plugins: [
     require('tailwindcss/plugins/container')({
-      // center: true,
+      center: true,
       // padding: '1rem',
     }),
   ],

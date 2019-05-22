@@ -2,7 +2,7 @@
 title: "Rawls"
 sort: 602
 image: "images/content/rawls.png"
-bgColor: "#4E59B7"
+bgColor: "#5b6c83"
 source: Wenar, Leif, "John Rawls", The Stanford Encyclopedia of Philosophy (Spring 2017 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/spr2017/entries/rawls/>.
 
 ---
