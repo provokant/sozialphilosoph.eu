@@ -111,7 +111,7 @@ exports.createPages = ({ graphql, actions }) => {
 
   return new Promise((resolve, reject) => {
     const overviewPage = path.resolve('src/templates/overview.jsx')
-    const detailsHighlightPage = path.resolve('src/templates/detailsHighlight.jsx')
+    const detailsPage = path.resolve('src/templates/details.jsx')
 
     resolve(
       graphql(
@@ -173,7 +173,7 @@ exports.createPages = ({ graphql, actions }) => {
           } else {
             createPage({
               path: slug,
-              component: detailsHighlightPage,
+              component: detailsPage,
               context: {
                 slug,
                 title,

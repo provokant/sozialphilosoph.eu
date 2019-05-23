@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-praesto",
+  "name": "gatsby-praesto-starter",
   "description": "Flat-file Content Management System based on GatsbyJS",
   "version": "0.0.0-0",
   "author": "Michael Czechowski <mail@dailysh.it",
@@ -55,9 +55,9 @@
   },
   "keywords": [
     "gatsby",
-    "berlin",
-    "portfolio",
-    "nextlevelshit"
+    "starter",
+    "boilerplate",
+    "document-based"
   ],
   "license": "Apache-2.0",
   "main": "n/a",
