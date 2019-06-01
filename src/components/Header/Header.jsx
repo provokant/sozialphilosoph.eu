@@ -36,7 +36,7 @@ class Header extends React.Component {
 
   render() {
     const { showMenu } = this.state
-    const { menuList, isLandingPage } = this.props
+    const { menuList, isLandingPage, fromHeader } = this.props
 
     const brandLink = (
       <Link to="/" className={classNames.brand}>{siteTitleShort}</Link>
@@ -50,6 +50,7 @@ class Header extends React.Component {
         activeStyle={{
           color: fields.hasChildren ? frontmatter.bgColor : ``
         }}
+        state={{ fromHeader: true }}
         partiallyActive
       >
         {frontmatter.title}
@@ -62,7 +63,12 @@ class Header extends React.Component {
       </div>
     )
 
-    const headerClassNames = `header ${showMenu ? `fixed` : ``} ${isLandingPage ? `dark` : ``}`
+    const headerClassNames = `
+      header
+      ${showMenu ? `fixed` : ``}
+      ${isLandingPage ? `dark` : ``}
+      ${!fromHeader ? `fade-in`: ``}
+    `
 
     return (
       <header className={headerClassNames}>
@@ -79,7 +85,7 @@ class Header extends React.Component {
             </div>
             <div className="mobile-toggle">
               <button type="button" onClick={this.toggleMenu}>
-                <span>{showMenu ? `CLOSE MENU` : `NAVIGATE`}</span>
+                <span>NAVIGATE</span>
                 {showMenu ? `✕` : `☰`}
               </button>
             </div>
@@ -133,9 +139,11 @@ Header.propTypes = {
       }).isRequired,
     })
   ).isRequired,
-  isLandingPage: PropTypes.bool
+  isLandingPage: PropTypes.bool,
+  fromHeader: PropTypes.bool
 }
 
 Header.defaultProps = {
-  isLandingPage: false
+  isLandingPage: false,
+  fromHeader: false
 }

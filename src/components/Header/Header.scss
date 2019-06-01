@@ -5,9 +5,12 @@
 .header {
   background-blend-mode: overlay;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
-  animation: fade-in 800ms;
 
-  @apply .px-4 .bg-white .absolute .z-10 .w-full .font-normal;
+  @apply .px-4 .bg-white .absolute .z-50 .w-full .font-normal;
+
+  &.fade-in {
+    animation: fade-in 1200ms;
+  }
 
   &.dark {
     background: #0000008f;

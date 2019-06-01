@@ -8,7 +8,7 @@ import './index.scss'
 
 export default class MainLayout extends React.Component {
   render() {
-    const { children, isLandingPage } = this.props
+    const { children, isLandingPage, fromHeader } = this.props
 
     return (
       <div>
@@ -16,7 +16,7 @@ export default class MainLayout extends React.Component {
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         <main>
-          <Header isLandingPage={isLandingPage} />
+          <Header isLandingPage={isLandingPage} fromHeader={fromHeader} />
           {children}
           <Footer />
         </main>
@@ -27,9 +27,11 @@ export default class MainLayout extends React.Component {
 
 MainLayout.propTypes = {
   children: PropTypes.node.isRequired,
-  isLandingPage: PropTypes.bool
+  isLandingPage: PropTypes.bool,
+  fromHeader: PropTypes.bool
 }
 
 MainLayout.defaultProps = {
-  isLandingPage: false
+  isLandingPage: false,
+  fromHeader: false
 }

@@ -2,7 +2,7 @@
   @apply .flex .flex-col .items-center .justify-center .py-10 .flex-grow;
 
   p {
-    @apply .text-2xl .w-2/3 .text-center .text-white .min-h-20 .font-medium;
+    @apply .text-2xl .w-2/3 .text-center .text-white .min-h-40 .font-medium;
     
     @screen lg {
       @apply .w-2/3;

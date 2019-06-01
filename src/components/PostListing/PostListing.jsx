@@ -12,7 +12,7 @@ class PostListing extends React.Component {
       const { fields, frontmatter, excerpt } = node
       const { image, title, bgColor, teaser } = frontmatter
 
-      console.log(frontmatter)
+      // console.log(frontmatter)
 
       postList.push({
         path: fields.slug,

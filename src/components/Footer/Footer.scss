@@ -2,7 +2,7 @@ footer {
   background-blend-mode: soft-light;
   box-shadow: 0 -2rem 2rem rgba(0, 0, 0, 0.03);
 
-  @apply .sticky .flex .items-center .bg-center .bg-cover .bg-black .h-screen .flex .flex-col .justify-between .px-4;
+  @apply .sticky .flex .items-center .bg-center .bg-cover .bg-black .h-screen .flex .flex-col .justify-between .px-4 .z-30;
 
   @screen lg {
     @apply .px-2;
