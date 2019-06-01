@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import Layout from '../layout/index'
 import PostListing from '../components/PostListing/PostListing'
-// import Image from '../components/Image/Image'
+import Image from '../components/Image/Image'
 import { siteTitle } from '../../data/SiteConfig'
 
 export default class OverviewTemplate extends React.Component {
@@ -47,8 +47,8 @@ export default class OverviewTemplate extends React.Component {
     const { data, pageContext, location } = this.props
     const { allMarkdownRemark } = data
     const { edges } = allMarkdownRemark
-    // const { title, html, image, source, teaser } = pageContext
-    const { title, html, source, teaser } = pageContext
+    const { title, html, image, source, teaser } = pageContext
+    // const { title, html, source, teaser } = pageContext
     const { isCollapsed, isCollapsable } = this.state
     const { fromHeader } = location.state
 
@@ -57,9 +57,9 @@ export default class OverviewTemplate extends React.Component {
         <Helmet title={`${title} | ${siteTitle}`} />
         <section ref={this.wrapper} className={`overview ${isCollapsed ? `collapsed` : ``}`}>
           <div ref={this.container} className="container">
-            {/* <div className="image">
+            <div className="image">
               {image && <Image src={image} />}
-            </div> */}
+            </div>
             <div className="content">
               <h1>{title}</h1>
               {teaser && <div className="teaser">{teaser}</div>}

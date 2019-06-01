@@ -5,7 +5,7 @@ import { siteDescription, siteTitleShort } from '../../../data/SiteConfig'
 import './Header.scss'
 
 const classNames = {
-  default: 'block text-center mt-0 py-3',
+  default: 'block text-center mt-0 py-5',
   get defaultLink() {
     return `${this.default} md:text-left md:inline-block`
   },
