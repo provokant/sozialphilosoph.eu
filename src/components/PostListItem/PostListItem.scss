@@ -105,7 +105,7 @@ section {
     @apply .px-4;
 
     & > .container {
-      @apply .relative .py-20;
+      @apply .relative .py-20 .flex;
     }
 
     .content {
@@ -145,14 +145,6 @@ section {
 
     @apply .relative;
 
-    .button-wrapper {
-      @apply .absolute .pin-b .pin-l .pin-r .px-4 .z-40;
-
-      button {
-        @apply .mb-8;
-      }
-    }
-
     &.collapsed {
       height: $this-height;
 
@@ -162,6 +154,32 @@ section {
         background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
   
         @apply .absolute .pin-l .pin-r .pin-b .h-48 .z-10;
+      }
+    }
+
+    .button-wrapper {
+      @apply .absolute .pin-b .pin-l .pin-r .px-4 .z-40;
+
+      button {
+        @apply .mb-8;
+      }
+    }
+
+    .categories {
+      margin-top: 3.25rem;
+
+      @apply .hidden .list-reset .text-right .z-40;
+
+      @screen md {
+        @apply .block .w-1/3;
+      }
+
+      li {
+        @apply .pb-2;
+      }
+
+      a {
+        @apply .font-normal .text-lg .block;
       }
     }
   }

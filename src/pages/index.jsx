@@ -13,7 +13,7 @@ class Index extends React.Component {
   render() {
     const { data } = this.props
     const { allMarkdownRemark } = data
-    const { edges } = allMarkdownRemark
+    const { nodes } = allMarkdownRemark
 
     return (
       <Layout isLandingPage>
@@ -29,7 +29,7 @@ class Index extends React.Component {
             </div>
           </div>
         </section>
-        <PostListing postEdges={edges} />
+        <PostListing postEdges={nodes} />
       </Layout>
     )
   }
@@ -40,7 +40,7 @@ export default Index
 Index.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array.isRequired
+      nodes: PropTypes.array.isRequired
     }).isRequired,
   }).isRequired
 }
@@ -55,20 +55,18 @@ export const pageQuery = graphql`
         fields: { onLandingPage: { eq: true }, isActive: { eq: true } }
       }
     ) {
-      edges {
-        node {
-          excerpt(pruneLength: 300)
-          frontmatter {
-            title
-            bgColor
-            image
-            teaser
-          }
-          fields {
-            slug
-            sort
-            hasChildren
-          }
+      nodes {
+        excerpt(pruneLength: 300)
+        frontmatter {
+          title
+          bgColor
+          image
+          teaser
+        }
+        fields {
+          slug
+          sort
+          hasChildren
         }
       }
     }

@@ -1,7 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import PropTypes from 'prop-types'
+import { kebabCase } from 'lodash'
 import Layout from '../layout/index'
 import PostListing from '../components/PostListing/PostListing'
 import Image from '../components/Image/Image'
@@ -46,11 +47,17 @@ export default class OverviewTemplate extends React.Component {
   render() {
     const { data, pageContext, location } = this.props
     const { allMarkdownRemark } = data
-    const { edges } = allMarkdownRemark
-    const { title, html, image, source, teaser } = pageContext
+    const { nodes } = allMarkdownRemark
+    const { title, html, image, source, teaser, slug, bgColor } = pageContext
     // const { title, html, source, teaser } = pageContext
     const { isCollapsed, isCollapsable } = this.state
     const { fromHeader } = location.state
+    const anchors = nodes.map(({ frontmatter }) => {
+      const { title: pageTitle } = frontmatter
+      const anchor = `${slug}#${kebabCase(pageTitle)}`
+      
+      return { pageTitle, anchor }
+    })
 
     return (
       <Layout fromHeader={fromHeader}>
@@ -66,6 +73,15 @@ export default class OverviewTemplate extends React.Component {
               <div dangerouslySetInnerHTML={{ __html: html }} />
               {source && <div className="source">{source}</div>} 
             </div>
+            <ul className="categories">
+              {anchors.map(({ pageTitle, anchor}) => (
+                <li key={kebabCase(pageTitle)}>
+                  <Link to={anchor} style={{ color: bgColor }}>
+                    {pageTitle}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
           <div className={`button-wrapper ${!isCollapsable ? `hidden`: ``}`}>
             <div className="container">
@@ -76,7 +92,7 @@ export default class OverviewTemplate extends React.Component {
             </div>
           </div>
         </section>
-        <PostListing postEdges={edges} />
+        <PostListing postEdges={nodes} />
       </Layout>
     )
   }
@@ -93,18 +109,16 @@ export const pageQuery = graphql`
         isIndex: { ne: true }
       } }
     ) {
-      edges {
-        node {
-          excerpt(pruneLength: 300)
-          frontmatter {
-            title
-            bgColor
-            image
-            teaser
-          }
-          fields {
-            slug
-          }
+      nodes {
+        excerpt(pruneLength: 300)
+        frontmatter {
+          title
+          bgColor
+          image
+          teaser
+        }
+        fields {
+          slug
         }
       }
     }
@@ -114,7 +128,7 @@ export const pageQuery = graphql`
 OverviewTemplate.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array.isRequired
+      nodes: PropTypes.array.isRequired
     }).isRequired,
   }).isRequired,
   pageContext: PropTypes.shape({

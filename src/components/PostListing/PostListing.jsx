@@ -7,9 +7,7 @@ class PostListing extends React.Component {
     const postList = []
     const { postEdges } = this.props
 
-    postEdges.forEach(postEdge => {
-      const { node } = postEdge
-      const { fields, frontmatter, excerpt } = node
+    postEdges.forEach(({ fields, frontmatter, excerpt }) => {
       const { image, title, bgColor, teaser } = frontmatter
 
       // console.log(frontmatter)
@@ -40,16 +38,14 @@ class PostListing extends React.Component {
 PostListing.propTypes = {
   postEdges: PropTypes.arrayOf(
     PropTypes.shape({
-      node: PropTypes.shape({
-        frontmatter: PropTypes.shape({
-          title: PropTypes.string.isRequired,
-          teaser: PropTypes.string,
-        }).isRequired,
-        fields: PropTypes.shape({
-          slug: PropTypes.string.isRequired,
-        }).isRequired,
-        excerpt: PropTypes.string.isRequired
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        teaser: PropTypes.string,
       }).isRequired,
+      fields: PropTypes.shape({
+        slug: PropTypes.string.isRequired,
+      }).isRequired,
+      excerpt: PropTypes.string.isRequired
     })
   ).isRequired,
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
+import { kebabCase } from 'lodash'
 import './PostListItem.scss'
 import Image from '../Image/Image'
 
@@ -25,9 +26,10 @@ class PostListItem extends React.Component {
 
   render() {
     const { path, title, bgColor, teaser, excerpt, image } = this.props
+    const slug = kebabCase(title)
 
     return (
-      <section className="item" key={path} ref={this.wrapper}>
+      <section className="item" key={path} ref={this.wrapper} id={slug}>
         <Link to={path} ref={this.link} style={{ color: bgColor || `#000`}} className="container" onClick={e => this.scrollIntoView(e)}>
           <div className="content">
             <h2>{title}</h2>
