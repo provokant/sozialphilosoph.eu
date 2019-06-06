@@ -4,6 +4,7 @@
   "version": "0.0.0-0",
   "author": "Michael Czechowski <mail@dailysh.it",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
     "gatsby": "^2.3.27",
     "gatsby-image": "2.0.26",
     "gatsby-plugin-catch-links": "2.0.9",

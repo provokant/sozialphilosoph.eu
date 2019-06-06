@@ -3,6 +3,7 @@ import { kebabCase } from 'lodash'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
+import cheerio from 'cheerio'
 import Layout from '../layout'
 import SEO from '../components/SEO/SEO'
 import { siteTitle, backgroundColor } from '../../data/SiteConfig'
@@ -26,47 +27,77 @@ export default class DetailsHighlightTemplate extends React.Component {
     const { title, source, image } = markdownRemark.frontmatter
 
     const htmlAppendedQuestions = () => {
-      const doc = new DOMParser()
-        .parseFromString(html, `text/html`)
+      // const doc = new DOMParser()
+      //   .parseFromString(html, `text/html`)
+      const doc = cheerio.load(html)
         
-      const paragraphs = doc.querySelectorAll(`p`)
+      // const paragraphs = doc.querySelectorAll(`p`)
+      const paragraphs = doc(`p`)
 
       if (this.questions) {
         this.questions.forEach(({ question, highlight }) => {
           if (question === null || highlight === null ) return
 
-          const highlightedText = paragraphs[highlight].innerHTML
-          const questionNode = document.createElement(`a`)
-          const anchorNode = document.createElement('div')
-          const highlightedNode = document.createElement(`div`)
-          const paragraphNode = document.createElement(`p`)
+          const questionSlug = kebabCase(question)
+          const paragraph = doc(paragraphs[highlight])
+          const wrapperNode = doc(`<div/>`)
 
-          highlightedNode.setAttribute(`class`, `highlight`)
-          highlightedNode.setAttribute(`style`, `background-color: ${this.bgColor}1c`)
-          // highlightedNode.setAttribute(`id`, kebabCase(question))
+          // const highlightedText = paragraphs[highlight].text
+          // const highlightedText = paragraph.html()
+          const highlightedParagraph = paragraph.wrap(wrapperNode)
+          // const questionNode = document.createElement(`a`)
+          // const anchorNode = document.createElement('div')
+          // const highlightedParagraph = document.createElement(`div`)
+          // const paragraphNode = document.createElement(`p`)
+          const questionNode = doc(`<a/>`)
 
-          questionNode.setAttribute(`class`, `question`)
-          questionNode.setAttribute(`aria-hidden`, true)
-          questionNode.setAttribute(`href`, `#${kebabCase(question)}`)
-          questionNode.setAttribute(`style`, `color: ${this.bgColor}`)
+          questionNode
+            .addClass(`question`)
+            .attr(`aria-hidden`, true)
+            .attr(`href`, `#${questionSlug}`)
+            .css(`color`, this.bgColor)
+
+          highlightedParagraph
+            .css(`background-color`, `${this.bgColor}1c`)
+            .attr(`id`, questionSlug)
+            .addClass(`highlight`)
+
+          wrapperNode
+            .prepend(questionNode)
+
           
-          questionNode.innerText = question
 
-          anchorNode.setAttribute(`class`, `paragraph-anchor`)
-          anchorNode.setAttribute(`id`, kebabCase(question))
-
-          paragraphNode.innerHTML = highlightedText
           
 
-          highlightedNode.appendChild(anchorNode)
-          highlightedNode.appendChild(questionNode)
-          highlightedNode.appendChild(paragraphNode)
+          // highlightedParagraph
+          // highlightedParagraph
+          // highlightedParagraph.setAttribute(`class`, `highlight`)
+          // highlightedParagraph.setAttribute(`style`, `background-color: ${this.bgColor}1c`)
+          // // highlightedParagraph.setAttribute(`id`, kebabCase(question))
 
-          paragraphs[highlight].replaceWith(highlightedNode)
+          // questionNode.setAttribute(`class`, `question`)
+          // questionNode.setAttribute(`aria-hidden`, true)
+          // questionNode.setAttribute(`href`, `#${kebabCase(question)}`)
+          // questionNode.setAttribute(`style`, `color: ${this.bgColor}`)
+          
+          // questionNode.innerText = question
+
+          // anchorNode.setAttribute(`class`, `paragraph-anchor`)
+          // anchorNode.setAttribute(`id`, kebabCase(question))
+
+          // paragraphNode.innerHTML = highlightedText
+          
+
+          // highlightedParagraph.appendChild(anchorNode)
+          // highlightedParagraph.appendChild(questionNode)
+          // highlightedParagraph.appendChild(paragraphNode)
+          // const highlightedParagraph = doc.append(`<div/>`)
+
+          paragraph.replaceWith(highlightedParagraph)
         })
       }
 
-      return doc.body.innerHTML
+      return doc.html()
     }
 
     return (
