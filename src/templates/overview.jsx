@@ -7,7 +7,7 @@ import Layout from '../layout/index'
 import PostListing from '../components/PostListing/PostListing'
 import Image from '../components/Image/Image'
 import Back from '../components/Back/Back'
-import { siteTitle } from '../../data/SiteConfig'
+import { siteTitle, showCategoryLinks } from '../../data/SiteConfig'
 
 export default class OverviewTemplate extends React.Component {
 
@@ -59,7 +59,7 @@ export default class OverviewTemplate extends React.Component {
     })
 
     return (
-      <Layout fromHeader={(location) ? location.state.fromHeader : false}>
+      <Layout fromHeader={(location.state) ? location.state.fromHeader : false}>
         <Helmet title={`${title} | ${siteTitle}`} />
         <section ref={this.wrapper} className={`overview ${isCollapsed ? `collapsed` : ``}`}>
           <div ref={this.container} className="container">
@@ -82,14 +82,16 @@ export default class OverviewTemplate extends React.Component {
               ))}
             </ul>
           </div>
-          <div className={`button-wrapper ${!isCollapsable ? `hidden`: ``}`}>
-            <div className="container">
-              <button type="button" onClick={this.toggleCollapse}>
-                Read all 
-                {isCollapsed ? ` ▼` : ` ▲`}
-              </button>
+          {showCategoryLinks && (
+            <div className={`button-wrapper ${!isCollapsable ? `hidden`: ``}`}>
+              <div className="container">
+                <button type="button" onClick={this.toggleCollapse}>
+                  Read all 
+                  {isCollapsed ? ` ▼` : ` ▲`}
+                </button>
+              </div>
             </div>
-          </div>
+          )}
         </section>
         <PostListing postEdges={nodes} />
         <Back />

@@ -21,7 +21,9 @@ const config = {
   footerLink: '//dailysh.it',
   footerBackground: '/images/content/sky.jpg',
   questionDeny: 'No, thanks',
-  questionAccept: 'Yes, let me read more!'
+  questionAccept: 'Yes, let me read more!',
+  showBackButton: true,
+  showCategoryLinks: true
 }
 
 // Validate

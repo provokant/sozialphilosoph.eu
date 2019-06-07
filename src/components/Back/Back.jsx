@@ -1,4 +1,5 @@
 import React from 'react'
+import { showBackButton } from '../../../data/SiteConfig'
 import './Back.scss'
 
 const goBack = () => {
@@ -8,9 +9,11 @@ const goBack = () => {
 }
 
 export default () => (
-  <div className="back-wrapper">
-    <div className="container">
-      <button type="button" className="back" onClick={goBack}>«</button>
+  (showBackButton && (
+    <div className="back-wrapper">
+      <div className="container">
+        <button type="button" className="back" onClick={goBack}>«</button>
+      </div>
     </div>
-  </div>
+  ))
 )
