@@ -1,7 +1,7 @@
 ---
 title: "Heidegger"
 sort: 303
-image: "images/content/foucault.png"
+image: "images/content/heidegger.png"
 bgColor: "#AA66A5"
 source: Thomson, Iain, "Heidegger's Aesthetics", The Stanford Encyclopedia of Philosophy (Fall 2015 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2015/entries/heidegger-aesthetics/>.
 

@@ -1,7 +1,7 @@
 ---
 title: "Hegel"
 bgColor: "#AA66A5"
-image: "images/content/foucault.png"
+image: "images/content/hegel.png"
 sort: 302
 source: Houlgate, Stephen, "Hegel's Aesthetics", The Stanford Encyclopedia of Philosophy (Spring 2016 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/spr2016/entries/hegel-aesthetics/>.
 ---

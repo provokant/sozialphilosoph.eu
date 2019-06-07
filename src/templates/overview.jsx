@@ -6,6 +6,7 @@ import { kebabCase } from 'lodash'
 import Layout from '../layout/index'
 import PostListing from '../components/PostListing/PostListing'
 import Image from '../components/Image/Image'
+import Back from '../components/Back/Back'
 import { siteTitle } from '../../data/SiteConfig'
 
 export default class OverviewTemplate extends React.Component {
@@ -49,7 +50,6 @@ export default class OverviewTemplate extends React.Component {
     const { allMarkdownRemark } = data
     const { nodes } = allMarkdownRemark
     const { title, html, image, source, teaser, slug, bgColor } = pageContext
-    // const { title, html, source, teaser } = pageContext
     const { isCollapsed, isCollapsable } = this.state
     const { fromHeader } = location.state
     const anchors = nodes.map(({ frontmatter }) => {
@@ -76,7 +76,7 @@ export default class OverviewTemplate extends React.Component {
             <ul className="categories">
               {anchors.map(({ pageTitle, anchor}) => (
                 <li key={kebabCase(pageTitle)}>
-                  <Link to={anchor} style={{ color: bgColor }}>
+                  <Link to={anchor} className="button" style={{ color: bgColor }}>
                     {pageTitle}
                   </Link>
                 </li>
@@ -93,6 +93,7 @@ export default class OverviewTemplate extends React.Component {
           </div>
         </section>
         <PostListing postEdges={nodes} />
+        <Back />
       </Layout>
     )
   }
@@ -106,7 +107,8 @@ export const pageQuery = graphql`
       sort: { fields: [fields___sort], order: ASC }
       filter: { fields: { 
         slug: { regex: $slug }, 
-        isIndex: { ne: true }
+        isIndex: { ne: true },
+        isActive: { eq: true }
       } }
     ) {
       nodes {

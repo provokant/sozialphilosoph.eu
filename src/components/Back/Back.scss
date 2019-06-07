@@ -1,0 +1,19 @@
+.back {
+  @apply .-ml-20 .z-40 .absolute .pin-l .pin-t .border-black .bg-white .py-2 .px-4 .border .rounded .opacity-10 .h-full;
+
+  &:hover {
+    @apply .opacity-25;
+  }
+
+  &-wrapper {
+    @apply .fixed .text-3xl .hidden .pin-t .pin-l .pin-r .pin-b .mt-20 .mb-20;
+
+    @screen md {
+      @apply .block;
+    }
+
+    .container {
+      @apply .relative .h-full;
+    }
+  }
+}

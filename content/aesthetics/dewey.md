@@ -1,7 +1,7 @@
 ---
 title: "Dewey"
 sort: 301
-image: "images/content/foucault.png"
+image: "images/content/dewey.png"
 bgColor: "#AA66A5"
 source: Leddy, Tom, "Dewey's Aesthetics", The Stanford Encyclopedia of Philosophy (Winter 2016 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/win2016/entries/dewey-aesthetics/>.
 question: Are you excited to hear what John Dewey says is an „Aesthetic Experience“?

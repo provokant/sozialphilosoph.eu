@@ -4,7 +4,7 @@ sort: 304
 image: "images/content/foucault.png"
 bgColor: "#AA66A5"
 source: Giovannelli, Alessandro, "Goodman's Aesthetics", The Stanford Encyclopedia of Philosophy (Fall 2017 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2017/entries/goodman-aesthetics/>.
-
+isActive: false
 ---
 
 Nelson Goodman has certainly been one of the most influential figures in contemporary aesthetics and analytic philosophy in general (in addition to aesthetics, his contributions cover the areas of applied logic, metaphysics, epistemology, and philosophy of science). His Languages of Art (first published in 1968 [Goodman 1976]), together with Ernst Gombrich’s Art and Illusion (1960) and Richard Wollheim’s Art and Its Objects (1968), represents a fundamental turning point in the analytic approach to artistic issues in Anglo-American philosophy. His often unorthodox take on art is part of a general approach to knowledge and reality, and is always pervasively informed by his cognitivism, nominalism, relativism, and constructivism. From Languages of Art and subsequent works, a general view of the arts as contributing to the understanding and indeed to the building of the realities we live in emerges. Ultimately, in Goodman’s view, art is not sharply distinguished, in goals and means, from science and ordinary experience. Paintings, musical sonatas, dances, etc. all are symbols that classify parts of reality for us, as do such things as scientific theories and what makes up common, ordinary knowledge.

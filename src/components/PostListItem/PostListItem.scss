@@ -3,8 +3,15 @@ $min-height: 100vh;
 section {
   @apply .overflow-hidden;
 
-  button {
+  button,
+  .button {
     @apply .text-black .border-black .bg-white .mt-6 .py-2 .px-4 .border .rounded;
+  }
+
+  .button {
+    border-color: currentColor;
+
+    @apply .ml-8 .mb-2 .mt-0 .bg-transparent;
   }
 
   .teaser {
@@ -166,7 +173,7 @@ section {
     }
 
     .categories {
-      margin-top: 3.25rem;
+      // margin-top: 3.5rem;
 
       @apply .hidden .list-reset .text-right .z-40;
 
@@ -179,7 +186,12 @@ section {
       }
 
       a {
-        @apply .font-normal .text-lg .block;
+        @apply .font-normal .block .opacity-25 .bg-white;
+
+        &:hover,
+        &:focus {
+          @apply .opacity-100;
+        }
       }
     }
   }

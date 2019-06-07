@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 import cheerio from 'cheerio'
 import Layout from '../layout'
 import SEO from '../components/SEO/SEO'
+import Back from '../components/Back/Back'
 import { siteTitle, backgroundColor } from '../../data/SiteConfig'
 import Image from '../components/Image/Image'
 import 'katex/dist/katex.min.css'
@@ -27,11 +28,7 @@ export default class DetailsHighlightTemplate extends React.Component {
     const { title, source, image } = markdownRemark.frontmatter
 
     const htmlAppendedQuestions = () => {
-      // const doc = new DOMParser()
-      //   .parseFromString(html, `text/html`)
       const doc = cheerio.load(html)
-        
-      // const paragraphs = doc.querySelectorAll(`p`)
       const paragraphs = doc(`p`)
 
       if (this.questions) {
@@ -41,14 +38,7 @@ export default class DetailsHighlightTemplate extends React.Component {
           const questionSlug = kebabCase(question)
           const paragraph = doc(paragraphs[highlight])
           const wrapperNode = doc(`<div/>`)
-
-          // const highlightedText = paragraphs[highlight].text
-          // const highlightedText = paragraph.html()
           const highlightedParagraph = paragraph.wrap(wrapperNode)
-          // const questionNode = document.createElement(`a`)
-          // const anchorNode = document.createElement('div')
-          // const highlightedParagraph = document.createElement(`div`)
-          // const paragraphNode = document.createElement(`p`)
           const questionNode = doc(`<a/>`)
 
           questionNode
@@ -56,42 +46,13 @@ export default class DetailsHighlightTemplate extends React.Component {
             .attr(`aria-hidden`, true)
             .attr(`href`, `#${questionSlug}`)
             .css(`color`, this.bgColor)
+            .text(question)
 
           highlightedParagraph
             .css(`background-color`, `${this.bgColor}1c`)
             .attr(`id`, questionSlug)
             .addClass(`highlight`)
-
-          wrapperNode
-            .prepend(questionNode)
-
-          
-
-          
-
-          // highlightedParagraph
-          // highlightedParagraph
-          // highlightedParagraph.setAttribute(`class`, `highlight`)
-          // highlightedParagraph.setAttribute(`style`, `background-color: ${this.bgColor}1c`)
-          // // highlightedParagraph.setAttribute(`id`, kebabCase(question))
-
-          // questionNode.setAttribute(`class`, `question`)
-          // questionNode.setAttribute(`aria-hidden`, true)
-          // questionNode.setAttribute(`href`, `#${kebabCase(question)}`)
-          // questionNode.setAttribute(`style`, `color: ${this.bgColor}`)
-          
-          // questionNode.innerText = question
-
-          // anchorNode.setAttribute(`class`, `paragraph-anchor`)
-          // anchorNode.setAttribute(`id`, kebabCase(question))
-
-          // paragraphNode.innerHTML = highlightedText
-          
-
-          // highlightedParagraph.appendChild(anchorNode)
-          // highlightedParagraph.appendChild(questionNode)
-          // highlightedParagraph.appendChild(paragraphNode)
-          // const highlightedParagraph = doc.append(`<div/>`)
+            .prepend(questionNode)      
 
           paragraph.replaceWith(highlightedParagraph)
         })
@@ -116,6 +77,7 @@ export default class DetailsHighlightTemplate extends React.Component {
             </div>
           </div>
         </section>
+        <Back />
       </Layout>
     )
   }
