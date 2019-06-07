@@ -51,7 +51,6 @@ export default class OverviewTemplate extends React.Component {
     const { nodes } = allMarkdownRemark
     const { title, html, image, source, teaser, slug, bgColor } = pageContext
     const { isCollapsed, isCollapsable } = this.state
-    const { fromHeader } = location.state
     const anchors = nodes.map(({ frontmatter }) => {
       const { title: pageTitle } = frontmatter
       const anchor = `${slug}#${kebabCase(pageTitle)}`
@@ -60,7 +59,7 @@ export default class OverviewTemplate extends React.Component {
     })
 
     return (
-      <Layout fromHeader={fromHeader}>
+      <Layout fromHeader={(location) ? location.state.fromHeader : false}>
         <Helmet title={`${title} | ${siteTitle}`} />
         <section ref={this.wrapper} className={`overview ${isCollapsed ? `collapsed` : ``}`}>
           <div ref={this.container} className="container">
