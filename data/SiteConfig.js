@@ -13,7 +13,7 @@ const config = {
   userLocation: "North Pole, Earth",
   themeColor: "#c62828",
   backgroundColor: "#fff",
-  backgroundImage: "/images/content/spiral.jpg",
+  backgroundImage: "images/content/spiral.jpg",
   landingPageTitle: "Philosophical<br>Paragraphs<br>Explained",
   landingPageTeaser:
     "We're constantly collecting introductory material for all those interested in philosophy.<br><br><br><i><small>Easy language · Well researched · User-friendly</small></i>",
