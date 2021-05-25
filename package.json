@@ -60,7 +60,7 @@
     "boilerplate",
     "document-based"
   ],
-  "license": "Apache-2.0",
+  "license": "MIT",
   "main": "n/a",
   "scripts": {
     "start": "gatsby develop",
