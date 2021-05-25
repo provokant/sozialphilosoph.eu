@@ -5,7 +5,7 @@ const config = {
   siteLogo: "images/logos/logo-1024.png",
   siteUrl: "https://localhost:8000",
   siteLanguage: "en",
-  pathPrefix: "https://nextlevelshit.github.io/gatsby-praesto-starter/",
+  pathPrefix: "/gatsby-praesto-starter/",
   siteRss: "/rss.xml",
   siteDescription: "Selected Philosophical Writings",
   dateFromFormat: "YYYY-MM-DD",
