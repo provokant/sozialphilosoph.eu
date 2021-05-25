@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://localhost:8000/about-us/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/aesthetics/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/critical-rationalism/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/existentialism/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/imprint/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/existentialism/sartre/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/political-philosophy/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/post-structuralism/laucan/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/post-structuralism/luhman/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/virtue-ethics/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/political-philosophy/adorno/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/existentialism/beauvoir/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/post-structuralism/derrida/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/post-structuralism/foucault/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/critical-rationalism/popper/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/existentialism/marcel/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/existentialism/camus/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/political-philosophy/rawls/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/virtue-ethics/aristotle/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/aesthetics/hegel/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/political-philosophy/arendt/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/political-philosophy/habermas/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/aesthetics/dewey/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/critical-rationalism/kant/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/virtue-ethics/plato/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/aesthetics/heidegger/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://localhost:8000/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+</urlset>
