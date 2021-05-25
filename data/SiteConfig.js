@@ -1,5 +1,5 @@
 const config = {
-  siteTitle: 'Praesto - Selected philosophical writings',
+  siteTitle: 'Praesto - Philosophical paragraphs explained',
   siteTitleShort: 'Praesto',
   siteTitleAlt: 'GatsbyJS Starter',
   siteLogo: 'images/logos/logo-1024.png',
@@ -14,8 +14,8 @@ const config = {
   themeColor: '#c62828',
   backgroundColor: '#fff',
   backgroundImage: '/images/content/spiral.jpg',
-  landingPageTitle: 'Selected<br>Philosophical<br>Writings',
-  landingPageTeaser: 'We\'re constantly collecting introductory material for all those interested in philosophy.<br><br><br><i><small>Easy to read · Well researched · User-friendly</small></i>',
+  landingPageTitle: 'Philosophical<br>Paragraphs<br>Explained',
+  landingPageTeaser: 'We\'re constantly collecting introductory material for all those interested in philosophy.<br><br><br><i><small>Easy language · Well researched · User-friendly</small></i>',
   landingPageImage: 'images/content/hands.png',
   footerLogo: 'images/logos/logo-1024.png',
   footerLink: '//dailysh.it',
