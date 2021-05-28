@@ -6,7 +6,7 @@ import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import './index.scss'
 
-export default class MainLayout extends React.Component {
+export default class Layout extends React.Component {
   render() {
     const { children, isLandingPage, fromHeader } = this.props
 
@@ -25,13 +25,13 @@ export default class MainLayout extends React.Component {
   }
 }
 
-MainLayout.propTypes = {
+Layout.propTypes = {
   children: PropTypes.node.isRequired,
   isLandingPage: PropTypes.bool,
   fromHeader: PropTypes.bool
 }
 
-MainLayout.defaultProps = {
+Layout.defaultProps = {
   isLandingPage: false,
   fromHeader: false
 }
