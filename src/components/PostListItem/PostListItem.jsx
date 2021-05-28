@@ -25,11 +25,11 @@ class PostListItem extends React.Component {
   }
 
   render() {
-    const { path, title, bgColor, teaser, excerpt, image } = this.props
+    const { path, title, bgColor, teaser, excerpt, image, key } = this.props
     const slug = kebabCase(title)
 
     return (
-      <section className="item" key={path} ref={this.wrapper} id={slug}>
+      <section className="item" key={key} ref={this.wrapper} id={slug}>
         <Link to={path} ref={this.link} style={{ color: bgColor || `#000`}} className="container" onClick={e => this.scrollIntoView(e)}>
           <div className="content">
             <h2>{title}</h2>
@@ -48,11 +48,12 @@ class PostListItem extends React.Component {
 
 PostListItem.propTypes = {
   bgColor: PropTypes.string,
+  excerpt: PropTypes.string.isRequired,
   image: PropTypes.string,
   path: PropTypes.string.isRequired,
+  key: PropTypes.string.isRequired,
   teaser: PropTypes.string,
   title: PropTypes.string.isRequired,
-  excerpt: PropTypes.string.isRequired
 }
 
 PostListItem.defaultProps = {
