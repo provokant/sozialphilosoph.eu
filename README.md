@@ -9,12 +9,11 @@
 
 <br><br>
 
-Kick off your project with this text centered boilerplate.
-This starter ships with the main Gatsby configuration files, Tailwind CSS and markdown support for your content files.
+This starter ships with the main Gatsby configuration files, Tailwind CSS and markdown support for your publishing content.
 
 ## Examples
 
-- [https://praesto.dailysh.it](https://praesto.dailysh.it)
+- [https://nextlevelshit.github.io/gatsby-praesto-starter](https://nextlevelshit.github.io/gatsby-praesto-starter/)
 
 *Feel free to contribute other online examples of this template.*
 
