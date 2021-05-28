@@ -4,24 +4,13 @@ import PostListItem from '../PostListItem/PostListItem'
 
 class PostListing extends React.Component {
   get postList() {
-    const postList = []
     const { postEdges } = this.props
 
-    postEdges.forEach(({ fields, frontmatter, excerpt }) => {
-      const { image, title, bgColor, teaser } = frontmatter
-
-      // console.log(frontmatter)
-
-      postList.push({
-        path: fields.slug,
-        excerpt,
-        image,
-        title,
-        teaser,
-        bgColor
-      })
-    })
-    return postList
+    return postEdges.map(({
+      fields: { slug: path },
+      frontmatter: { image, title, bgColor, teaser },
+      excerpt
+    }) => ({ path, excerpt, image, title, teaser, bgColor }))
   }
 
   render() {
