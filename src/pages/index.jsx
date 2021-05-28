@@ -10,8 +10,9 @@ import { landingPageTeaser, landingPageTitle, siteTitle } from '../../data/SiteC
 class Index extends React.Component {
   render() {
     const { data } = this.props
-    const { allMarkdownRemark, file } = data
-    const { nodes } = allMarkdownRemark
+    const { nodes } = data.allMarkdownRemark
+    const { backgroundColor, images } = data.file.childImageSharp.gatsbyImageData
+    const { src: backgroundImageSrc } = images.fallback
 
     return (
       <Layout isLandingPage>
@@ -19,7 +20,10 @@ class Index extends React.Component {
         <SEO />
         <section
           className="index"
-          style={{ backgroundImage: `url(${file.childImageSharp.gatsbyImageData.images.fallback.src})` }}
+          style={{
+            backgroundImage: `url(${backgroundImageSrc})`,
+            backgroundColor
+          }}
         >
           <div className="container">
             <div className="outer">
@@ -41,7 +45,6 @@ export default Index
 Index.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      // eslint-disable-next-line react/forbid-prop-types
       nodes: PropTypes.array.isRequired
     }).isRequired,
     file: PropTypes.shape({
@@ -49,16 +52,16 @@ Index.propTypes = {
         gatsbyImageData: PropTypes.shape({
           images: PropTypes.shape({
             fallback: PropTypes.shape({
-              src: PropTypes.string
+              src: PropTypes.string.isRequired
             })
-          })
+          }),
+          backgroundColor: PropTypes.string.isRequired
         })
       })
-    })
+    }).isRequired
   }).isRequired
 }
 
-/* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
