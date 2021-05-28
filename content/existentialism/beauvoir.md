@@ -5,7 +5,7 @@ image: "images/content/beauvoir.png"
 bgColor: "#87465f"
 source: Bergoffen, Debra, "Simone de Beauvoir", The Stanford Encyclopedia of Philosophy (Fall 2018 Edition), Edward N. Zalta (ed.), URL = <https://plato.stanford.edu/archives/fall2018/entries/beauvoir/>.
 questions:
-  - question: Are you intrested what Simone de Beauvoir means by „One is not born but becomes a woman”?
+  - question: Are you interested what Simone de Beauvoir means by „One is not born but becomes a woman”?
     highlight: 33
   - question: Testing multiple questions
     highlight: 1
